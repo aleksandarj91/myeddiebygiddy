@@ -399,4 +399,73 @@ s.price-item.price-item--regular {
 }
 }
 
+/* css for Home-Meet-Eddie-Banner */
+.left-column-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 45px;
+    gap: 64px;
+}
+
+.stat-percentage {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--color-primary); /* Solid button color from the scheme */
+
+}
+
+.stat-line {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.h1-56 {
+    font-size: 56px;
+}
+
+.h4-24 {
+    font-size: 24px;
+
+}
+
+.h3-32 {
+    font-size: 32px;
+}
+
+.stats-wrapper {
+    gap: 16px;
+}
+
+.stat-box {
+    gap: 8px;
+}
+
+.headline-wrapper {
+    padding: 0 5.34px;
+}
+
+.cta-wrapper {
+    padding: 13px 88px;
+}
+
+.brand-logos {
+    row-gap: 16px;
+}
+
+.brand-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Right Banner Styling */
+.right-banner-image {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    display: block;
+}
 
