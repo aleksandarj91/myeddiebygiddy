@@ -11,8 +11,6 @@
                                     <div class="logo">
                                         <a href="/"><img src="{{ section.settings.footer_logo | img_url: 'master' }}" height="60%" alt="Eddie Logo"> </a>
                                     </div>
-                                        <br>
-                                        <br> © {{  "now" | date: '%Y' }} {{ section.settings.copyright_text }} </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12"> &nbsp; </div>
@@ -21,6 +19,9 @@
                                   <p class="description mt--20"> {{ section.settings.footer_info }}
                                 </div>
                             </div>
+                        </div>
+                        <div class="row g-5">                          
+                          <p class="description mt--20">© {{  "now" | date: '%Y' }} {{ section.settings.copyright_text }} </p>
                         </div>
                     </div>
                 </div>
