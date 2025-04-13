@@ -1,1 +1,110 @@
-{"type":"header","name":"Group name","sections":{"header_new_7GqAFB":{"type":"header-new","settings":{"desktop_logo":"shopify:\/\/shop_images\/eddie_logo.png","mobile_logo":"shopify:\/\/shop_images\/eddie_logo_dark.png","mobile_ED_img":"shopify:\/\/shop_images\/red_small_b4ba0d46-cb2f-44fb-9368-20bb907ac851.png","buy_button_label":"BUY","buy_link":"shopify:\/\/products\/eddie-by-giddy","quiz_link":"shopify:\/\/pages\/quiz1","main_menu":""}}},"order":["header_new_7GqAFB"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Group name",
+  "sections": {
+    "header_new_7GqAFB": {
+      "type": "header-new",
+      "settings": {
+        "buy_button_label": "BUY",
+        "buy_link": "shopify://products/eddie-by-giddy",
+        "quiz_link": "shopify://pages/quiz1",
+        "main_menu": ""
+      }
+    },
+    "home_meet_eddie_banner_iQG4qp": {
+      "type": "Home-Meet-Eddie-Banner",
+      "blocks": {
+        "brand_logo_QCBaV3": {
+          "type": "brand_logo",
+          "settings": {
+            "alt": "Brand logo"
+          }
+        },
+        "brand_logo_JzaqTf": {
+          "type": "brand_logo",
+          "settings": {
+            "alt": "Brand logo"
+          }
+        },
+        "brand_logo_CmpCkd": {
+          "type": "brand_logo",
+          "settings": {
+            "alt": "Brand logo"
+          }
+        },
+        "brand_logo_CnHTER": {
+          "type": "brand_logo",
+          "settings": {
+            "alt": "Brand logo"
+          }
+        },
+        "brand_logo_xbJERb": {
+          "type": "brand_logo",
+          "settings": {
+            "alt": "Brand logo"
+          }
+        }
+      },
+      "block_order": [
+        "brand_logo_QCBaV3",
+        "brand_logo_JzaqTf",
+        "brand_logo_CmpCkd",
+        "brand_logo_CnHTER",
+        "brand_logo_xbJERb"
+      ],
+      "settings": {
+        "stat_1_percentage": "93%",
+        "stat_1_line_1": "improved",
+        "stat_1_line_2": "hardness",
+        "stat_2_percentage": "95%",
+        "stat_2_line_1": "report",
+        "stat_2_line_2": "effectiveness",
+        "headline": "Perform Better with Eddie",
+        "subheadline": "The wearable FDA Class || medical device to treat ED.",
+        "cta_title": "See if Eddie is right for you",
+        "cta_text": "TAKE THE QUIZ & GET $20 OFF",
+        "cta_link": "#",
+        "color_scheme": ""
+      }
+    },
+    "use_about_section_Dkrgdt": {
+      "type": "Use-About-Section",
+      "settings": {
+        "section_heading": "Experiencing ED is difficult. Treating ED with Eddie is easy",
+        "use_label": "EASY-TO-USE",
+        "use_heading": "Wear",
+        "use_content": "Place Eddie at the base of your shaft with the opening facing down. Apply whether soft or hard.",
+        "fit_label": "BETTER FIT",
+        "fit_heading": "Secure",
+        "fit_content": "Select the tension band that provides you the best fit. Use the blue band for standard tension or the red band for a tighter fit.",
+        "sex_label": "MORE PLEASURE",
+        "sex_heading": "Enjoy",
+        "sex_content": "Apply at any time prior to intercourse and wear throughout. Eddie's unique design allows for a pleasurable climax and finish."
+      }
+    },
+    "home_take_pleasure_RFUn9t": {
+      "type": "Home-Take-Pleasure",
+      "settings": {
+        "section_heading": "Try Eddie risk-free.",
+        "section_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
+        "section_btn_label": "TAKE THE QUIZ & GET $20 OFF",
+        "section_btn_url": "shopify://products/eddie-by-giddy"
+      }
+    }
+  },
+  "order": [
+    "header_new_7GqAFB",
+    "home_meet_eddie_banner_iQG4qp",
+    "use_about_section_Dkrgdt",
+    "home_take_pleasure_RFUn9t"
+  ]
+}

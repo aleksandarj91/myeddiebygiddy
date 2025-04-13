@@ -1,1 +1,25 @@
-{"type":"header","name":"Group name","sections":{"footer_new_tbcjPL":{"type":"footer-new","settings":{"footer_logo":"shopify:\/\/shop_images\/eddie_logo.png","newsletter_label":"Get the latest from Eddie.","footer_info":"This information does not constitute medical advice and it should not be relied upon as such. Consult with your doctor before modifying your regular medical regimen.","copyright_text":"Copyright Giddy® | All Rights Reserved.","link_label":"","link_menu":"","support_label":"","support_menu":""}}},"order":["footer_new_tbcjPL"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Group name",
+  "sections": {
+    "footer_new_tbcjPL": {
+      "type": "footer-new",
+      "settings": {
+        "footer_info": "This information does not constitute medical advice and it should not be relied upon as such. Consult with your doctor before modifying your regular medical regimen.",
+        "copyright_text": "Copyright Giddy® | All Rights Reserved."
+      }
+    }
+  },
+  "order": [
+    "footer_new_tbcjPL"
+  ]
+}
