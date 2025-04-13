@@ -414,7 +414,13 @@ s.price-item.price-item--regular {
     padding: 0px;
     margin: 0px;
     color: var(--color-primary); /* Solid button color from the scheme */
+}
 
+.stat-divider {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--color-black); /* Solid button color from the scheme */
 }
 
 .stat-line {
