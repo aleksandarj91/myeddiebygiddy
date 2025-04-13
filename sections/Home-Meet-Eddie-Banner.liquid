@@ -1,76 +1,199 @@
-<div style="background-image: url({{ section.settings.banner_img | img_url: 'master' }});" class="edy-banner-6 variation-02 bg_image bg_home_hero header-transperent-spacer" data-black-overlay="2">
-  <div class="wrapper w-100">
-      <div class="container">
-          <div class="row row--15 align-items-center">
-              <div class="col-lg-12">
-                  <div class="inner text-center hero-mt">
-                      <h2 class="title" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="250" data-sal-easing="ease-out-elastic">{{ section.settings.banner_heading }}</h2>
-                      <p class="para-home-subtitle" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="500" data-sal-easing="ease-out-elastic"> {{ section.settings.banner_sub_heading }} </p>
-                      <div class="contact-btn xmt--10 ">
-                          <p class="para-24-book text-white" data-sal="fade-in" data-sal-duration="1000" data-sal-delay="2000" data-sal-easing="ease-out-elastic"> {{ section.settings.banner_small_label }} </p>
-                          <p class="para-24-book text-white d-block d-sm-none"> HSA/FSA Eligible </p>
-                          <a id="btn-quiz" class="edy-btn hover-icon-reverse radius-round replace-url" href="{{ section.settings.banner_btn_url }}">
-                              <div class="icon-reverse-wrapper"> 
-                                  <span class="btn-text">{{ section.settings.banner_btn_label }}</span> 
-                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
-                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
-                              </div>
-                          </a>
-                      </div>
-                      <p class="para-24-book text-white text-bottom d-none d-sm-block"> HSA/FSA Eligible </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+<div class="row color-{{ section.settings.color_scheme }}">
+
+    <div class="col-md-12 col-lg-6 order-2 order-lg-1">
+        <div class="left-column-content">
+            <!-- Stats -->
+            <div class="stats-wrapper">
+                <div class="d-flex justify-content-center align-items-center gap-5">
+                    <div class="d-flex justify-content-end align-items-center stat-box">
+                        <h4 class="stat-percentage">{{ section.settings.stat_1_percentage }}</h4>
+                        <div>
+                            <h6 class="stat-line">{{ section.settings.stat_1_line_1 }}</h6>
+                            <h6 class="stat-line">{{ section.settings.stat_1_line_2 }}</h6>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="d-flex justify-content-start align-items-center stat-box">
+                        <h4 class="stat-percentage">{{ section.settings.stat_2_percentage }}</h4>
+                        <div>
+                            <h6 class="stat-line">{{ section.settings.stat_2_line_1 }}</h6>
+                            <h6 class="stat-line">{{ section.settings.stat_2_line_2 }}</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="headline-wrapper text-center">
+                    <h1 class="h1-56">{{ section.settings.headline }}</h1>
+                    <h4 class="h4-24">{{ section.settings.subheadline }}</h4>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-wrapper text-center">
+                <h3 class="h3-32">{{ section.settings.cta_title }}</h3>
+                <a id="btn-quiz" class="edy-btn radius-round button--full-width"
+                   href="{{ section.settings.cta_link }}">
+                    <span class="btn-text">{{ section.settings.cta_text }}</span>
+                </a>
+            </div>
+
+            <!-- Brand Images -->
+            <div class="row flex-row d-flex justify-content-center brand-logos">
+                {% for block in section.blocks %}
+                    {% if block.type == 'brand_logo' %}
+                        <div class="col-4 justify-content-center d-flex brand-logo">
+                            {% assign index = forloop.index %}
+                            <img
+                                    src="{% if block.settings.image != blank %}{{ block.settings.image | img_url: 'medium' }}{% else %}{{ 'logo-' | append: index | append: '.png.png' | asset_url }}{% endif %}"
+                                    alt="{{ block.settings.alt | default: 'Brand logo' }}"
+                            />
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Right Banner -->
+    <div class="col-md-12 col-lg-6 order-1 order-lg-2">
+        <img
+                src="{% if section.settings.banner_img != blank %} {{ section.settings.banner_img | img_url: 'master' }} {% else %}{{ section.settings.banner_img | default: 'home-right-banner.webp' | asset_url }} {% endif %});"
+                class="right-banner-image img-fluid"
+                alt="Right banner Image"
+                loading="lazy"
+        />
+        {% comment %}<div{% endcomment %}
+        {% comment %}style="background-image: url({% if section.settings.banner_img != blank %} {{ section.settings.banner_img | img_url: 'master' }} {% else %}{{ section.settings.banner_img | default: 'home-right-banner.webp' | asset_url }} {% endif %});"{% endcomment %}
+        {% comment %}class="right-banner-image"{% endcomment %}
+        {% comment %}>{% endcomment %}
+        {% comment %}</div>{% endcomment %}
+    </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Home Meet Eddie Banner",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Eddie Banner Content"
-      },
-      {
-        "type": "image_picker",
-        "id": "banner_img",
-        "label": "Banner Image"
-      },
-      {
+{
+  "name": "Home Meet Eddie Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "stat_1_percentage",
+      "label": "Stat 1 - Percentage",
+      "default": "93%"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_line_1",
+      "label": "Stat 1 - Line 1",
+      "default": "improved"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_line_2",
+      "label": "Stat 1 - Line 2",
+      "default": "hardness"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_percentage",
+      "label": "Stat 2 - Percentage",
+      "default": "95%"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_line_1",
+      "label": "Stat 2 - Line 1",
+      "default": "report"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_line_2",
+      "label": "Stat 2 - Line 2",
+      "default": "effectiveness"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Main Headline",
+      "default": "Perform Better with Eddie"
+    },
+    {
+      "type": "text",
+      "id": "subheadline",
+      "label": "Subheadline",
+      "default": "The wearable FDA Class || medical device to treat ED."
+    },
+    {
+      "type": "text",
+      "id": "cta_title",
+      "label": "CTA Title",
+      "default": "See if Eddie is right for you"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "TAKE THE QUIZ & GET $20 OFF"
+    },
+    {
+      "type": "text",
+      "id": "cta_link",
+      "label": "CTA Button Link",
+      "default": "#"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_img",
+      "label": "Right Side Background Image"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand_logo",
+      "name": "Brand Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo Image"
+        },
+        {
           "type": "text",
-          "id": "banner_heading",
-          "label": "Banner Heading",
-          "default": "Meet Eddie"
-      },
-      {
-          "type": "textarea",
-          "id": "banner_sub_heading",
-          "label": "Banner Sub Heading",
-          "default": "The drug-free, wearable FDA Class II medical device for better sex."
-      },
-      {
-          "type": "text",
-          "id": "banner_small_label",
-          "label": "Banner Label",
-          "default": "See if Eddie® is right for you."
-      },
-      {
-          "type": "text",
-          "id": "banner_btn_label",
-          "label": "Banner Button Label",
-          "default": "TAKE THE QUIZ"
-      },
-      {
-          "type": "url",
-          "id": "banner_btn_url",
-          "label": "Banner Button Link"
-      }
-    ],
-    "presets": [{
+          "id": "alt",
+          "label": "Alt Text",
+          "default": "Brand logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
       "name": "Home Meet Eddie Banner",
-      "category": "Home"
-    }]
-  }
+      "category": "Home",
+      "blocks": [
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
