@@ -1,0 +1,74 @@
+<div style='background-image: url({{ section.settings.banner_img | img_url: 'master' }});' class="edy-banner-6 variation-02 bg_image bg_size_hero header-transperent-spacer" data-black-overlay="2">
+    <div class="wrapper w-100">
+        <div class="container">
+            <div class="row row--15 align-items-center">
+                <div class="col-lg-12">
+                    <div class="inner text-center hero-mt">
+                        <h2 class="title">{{ section.settings.banner_heading }}</h2>
+                        <p class="para-home-subtitle d-none d-sm-block"> {{ section.settings.banner_desktop_content }} </p>
+                        <p class="para-home-subtitle d-block d-sm-none"> {{ section.settings.banner_mobile_content }} </p>
+                        <div class="contact-btn xmt--10 ">								
+                            <a id="btn-quiz" class="edy-btn hover-icon-reverse radius-round replace-url" href="{{ section.settings.button_url }}">
+                                <div class="icon-reverse-wrapper"> 
+                                    <span class="btn-text">{{ section.settings.button_label }}</span> 
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Size Banner Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Banner Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Banner image"
+      },
+      {
+        "type": "text",
+        "id": "banner_heading",
+        "label": "Banner Heading",
+        "default": "Made for you"
+      },
+      {
+        "type": "textarea",
+        "id": "banner_desktop_content",
+        "label": "Banner Desktop Content",
+        "default": "Eddie® is an FDA Class II medical device<br>designed as an oval shape to work with the<br>natural physiology of an erection."
+      },
+      {
+        "type": "textarea",
+        "id": "banner_mobile_content",
+        "label": "Banner Mobile Content",
+        "default": "Eddie® is an FDA Class II medical device designed as an oval shape to work with the natural physiology of an erection."
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "ORDER NOW"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }
+    ],
+  "presets": [{
+    "name": "Size Banner Section",
+    "category": "Size page"
+  }]
+  }
+{% endschema %}

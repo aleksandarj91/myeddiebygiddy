@@ -1,0 +1,76 @@
+<div style="background-image: url({{ section.settings.banner_img | img_url: 'master' }});" class="edy-banner-6 variation-02 bg_image bg_home_hero header-transperent-spacer" data-black-overlay="2">
+  <div class="wrapper w-100">
+      <div class="container">
+          <div class="row row--15 align-items-center">
+              <div class="col-lg-12">
+                  <div class="inner text-center hero-mt">
+                      <h2 class="title" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="250" data-sal-easing="ease-out-elastic">{{ section.settings.banner_heading }}</h2>
+                      <p class="para-home-subtitle" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="500" data-sal-easing="ease-out-elastic"> {{ section.settings.banner_sub_heading }} </p>
+                      <div class="contact-btn xmt--10 ">
+                          <p class="para-24-book text-white" data-sal="fade-in" data-sal-duration="1000" data-sal-delay="2000" data-sal-easing="ease-out-elastic"> {{ section.settings.banner_small_label }} </p>
+                          <p class="para-24-book text-white d-block d-sm-none"> HSA/FSA Eligible </p>
+                          <a id="btn-quiz" class="edy-btn hover-icon-reverse radius-round replace-url" href="{{ section.settings.banner_btn_url }}">
+                              <div class="icon-reverse-wrapper"> 
+                                  <span class="btn-text">{{ section.settings.banner_btn_label }}</span> 
+                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                              </div>
+                          </a>
+                      </div>
+                      <p class="para-24-book text-white text-bottom d-none d-sm-block"> HSA/FSA Eligible </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Home Meet Eddie Banner",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Eddie Banner Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Banner Image"
+      },
+      {
+          "type": "text",
+          "id": "banner_heading",
+          "label": "Banner Heading",
+          "default": "Meet Eddie"
+      },
+      {
+          "type": "textarea",
+          "id": "banner_sub_heading",
+          "label": "Banner Sub Heading",
+          "default": "The drug-free, wearable FDA Class II medical device for better sex."
+      },
+      {
+          "type": "text",
+          "id": "banner_small_label",
+          "label": "Banner Label",
+          "default": "See if Eddie® is right for you."
+      },
+      {
+          "type": "text",
+          "id": "banner_btn_label",
+          "label": "Banner Button Label",
+          "default": "TAKE THE QUIZ"
+      },
+      {
+          "type": "url",
+          "id": "banner_btn_url",
+          "label": "Banner Button Link"
+      }
+    ],
+    "presets": [{
+      "name": "Home Meet Eddie Banner",
+      "category": "Home"
+    }]
+  }
+{% endschema %}

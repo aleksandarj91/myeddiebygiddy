@@ -1,0 +1,23 @@
+<section id="section-health-slider">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="edy-advance-tab-area splash-layout-presentation pb--40 bg-color-white">
+                  <div class="wrapper">
+                      <div class="container p-0">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                  <div class="my-slider-box-2" id="product_gallery_slider">
+                                      {% for image in product.images %}
+                                          <img class="product_gallery_img" src="{{ image.src | product_img_url: 'master' }}" alt="Product Gallery image" style="display: none;">
+                                      {%endfor%}
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+		</div>
+	</div>
+</section>

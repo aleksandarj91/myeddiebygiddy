@@ -1,0 +1,335 @@
+<section class="edy-about-area about-style-1 bg-color-white edy-section-gap pb--0 my-faq">
+  <div class="container">
+      <div class="row justify-content-sm-start justify-content-center">
+          <div class="col-12">				
+              <div class="section-title faq-title text-start mb--60">
+                  <h1 class="title-contact mb--5">{{ section.settings.faq_heading }}</h1> 					
+              </div>
+          </div>
+          <div class="row g-5">
+              <div class="col-lg-3">
+                  <!-- BEGIN - Sidebar -->
+                  <div class="edy-default-sidebar sticky-top edy-shadow-box faq-side-box">
+                      <div class="inner">
+                          <div class="content-item-content">
+                              <div class="edy-default-sidebar-wrapper">
+                                  <nav class="mainmenu-nav">
+                                      <ul class="dashboard-mainmenu edy-default-sidebar-list">
+                                          <li><a href="#id_faq_page" class="faq-menu-item"><span>{{ section.settings.about_eddie_heading }}</span></a></li>
+                                          <li><a href="#id_faq_page_sizing" class="faq-menu-item"><span>{{ section.settings.sizing_heading }}</span></a></li>
+                                          <li><a href="#id_faq_page_subscription" class="faq-menu-item"><span>{{ section.settings.subscription_heading }}</span></a></li>
+                                          <li><a href="#id_faq_page_billing" class="faq-menu-item"><span>{{ section.settings.billing_heading }}</span></a></li>
+                                          <li><a href="#id_faq_page_abouted" class="faq-menu-item"><span>{{ section.settings.about_ED_heading }}</span></a></li>
+                                      </ul>
+                                  </nav>									
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+              <div class="col-lg-9 pl--50 pl_20">
+                  <div class="edy-accordion-style accordion" id="id_faq_page">
+                      <div class="section-title faq-subtitle text-start mb--20">
+                          <h4 class="title">{{ section.settings.about_eddie_heading }}</h4>
+                      </div>
+                      <div class="edy-accordion-style edy-accordion-04 accordion">
+                          <div class="accordion">
+                            {% assign abouteddie = 1 %}
+                            {% for block in section.blocks %}
+                            {% if block.type == 'abouteddie' %}  
+                            <div class="accordion-item card">
+                                  <h2 class="accordion-header card-header " id="faqs-headingAbout{{ abouteddie }}">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqs-collapseAbout{{ abouteddie }}" aria-expanded="true" aria-controls="faqs-collapseAbout{{ abouteddie }}">
+                                         {{ block.settings.abouteddie_heading }}
+                                      </button>
+                                  </h2>
+                                  <div id="faqs-collapseAbout{{ abouteddie }}" class="accordion-collapse collapse" aria-labelledby="faqs-headingAbout{{ abouteddie }}" data-bs-parent="#id_faq_page">
+                                      <div class="accordion-body card-body">
+                                          {{ block.settings.abouteddie_content }}
+                                      </div>
+                                  </div>
+                              </div>
+                              {% endif %}
+                              {% assign abouteddie = abouteddie | plus: 1 %}
+                              {% endfor %}										
+                          </div>
+                      </div>
+                  </div>
+
+                <!-- BEGIN - Sizing -->
+                <div class="edy-accordion-style accordion" id="id_faq_page_sizing">
+                  <div class="section-title text-start faq-subtitle mt--60 mb--20">
+                    <h4 class="title">{{ section.settings.sizing_heading }}</h4>
+                  </div>
+                  <div class="edy-accordion-style edy-accordion-04 accordion">
+                    <div class="accordion">
+                        {% assign sizing = 1 %}
+                        {% for block in section.blocks %}
+                        {% if block.type == 'sizing' %}  
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header card-header" id="faqs-headingSize{{ sizing }}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqs-collapseSize{{ sizing }}" aria-expanded="false" aria-controls="faqs-collapseSize{{ sizing }}">
+                                    {{ block.settings.sizing_heading }}
+                                </button>
+                            </h2>
+                            <div id="faqs-collapseSize{{ sizing }}" class="accordion-collapse collapse" aria-labelledby="faqs-headingSize{{ sizing }}" data-bs-parent="#id_faq_page_sizing">
+                                <div class="accordion-body card-body">
+                                    {{ block.settings.sizing_content }}											
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% assign sizing = sizing | plus: 1 %}
+                        {% endfor %}				
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END - Sizing -->
+                  
+                  <!-- BEGIN - Subscription -->
+                  <div class="edy-accordion-style accordion" id="id_faq_page_subscription">
+                    <div class="section-title text-start faq-subtitle mt--60 mb--20">
+                      <h4 class="title">{{ section.settings.subscription_heading }}</h4>
+                    </div>
+                    <div class="edy-accordion-style edy-accordion-04 accordion">
+                      <div class="accordion">
+                    
+                          {% assign subscription = 1 %}
+                          {% for block in section.blocks %}
+                          {% if block.type == 'subscription' %} 
+                          <div class="accordion-item card">
+                              <h2 class="accordion-header card-header" id="faqs-headingSubscription{{ subscription }}">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqs-collapseSubscription{{ subscription }}" aria-expanded="false" aria-controls="faqs-collapseSubscription{{ subscription }}">
+                                      {{ block.settings.subscription_heading }}
+                                  </button>
+                              </h2>
+                              <div id="faqs-collapseSubscription{{ subscription }}" class="accordion-collapse collapse" aria-labelledby="faqs-headingSubscription{{ subscription }}" data-bs-parent="#id_faq_page_subscription">
+                                  <div class="accordion-body card-body">
+                                      {{ block.settings.subscription_content }}											
+                                  </div>
+                              </div>
+                          </div>
+                          {% endif %}
+                          {% assign subscription = subscription | plus: 1 %}
+                          {% endfor %}			
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END - Subscription -->
+                  
+                  <!-- BEGIN - Billing -->
+                  <div class="edy-accordion-style accordion" id="id_faq_page_billing">
+                  <div class="section-title text-start faq-subtitle mt--60 mb--20">
+                    <h4 class="title">{{ section.settings.billing_heading }}</h4>
+                  </div>
+                  <div class="edy-accordion-style edy-accordion-04 accordion">
+                    <div class="accordion">
+                  
+                        {% assign billing = 1 %}
+                        {% for block in section.blocks %}
+                        {% if block.type == 'billing' %}
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header card-header" id="faqs-headingBilling{{ billing }}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqs-collapseBilling{{ billing }}" aria-expanded="false" aria-controls="faqs-collapseBilling{{ billing }}">
+                                    {{ block.settings.billing_heading }}
+                                </button>
+                            </h2>
+                            <div id="faqs-collapseBilling{{ billing }}" class="accordion-collapse collapse" aria-labelledby="faqs-headingBilling{{ billing }}" data-bs-parent="#id_faq_page_billing">
+                                <div class="accordion-body card-body">
+                                    {{ block.settings.billing_content }}									
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% assign billing = billing | plus: 1 %}
+                        {% endfor %}			
+                    </div>
+                  </div>
+                  </div>
+                  <!-- END - Billing -->
+                  
+                  <!-- BEGIN - About ED -->
+                  <div class="edy-accordion-style accordion" id="id_faq_page_abouted">
+                  <div class="section-title text-start faq-subtitle mt--60 mb--20">
+                    <h4 class="title">{{ section.settings.about_ED_heading }}</h4>
+                  </div>
+                  <div class="edy-accordion-style edy-accordion-04 accordion">
+                    <div class="accordion">
+
+                        {% assign aboutED = 1 %}
+                        {% for block in section.blocks %}
+                        {% if block.type == 'aboutED' %}
+                        <div class="accordion-item card">
+                            <h2 class="accordion-header card-header" id="faqs-headingAboutED1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqs-collapseAboutED{{ aboutED }}" aria-expanded="false" aria-controls="faqs-collapseAboutED{{ aboutED }}">
+                                   {{ block.settings.aboutED_heading }}
+                                </button>
+                            </h2>
+                            <div id="faqs-collapseAboutED{{ aboutED }}" class="accordion-collapse collapse" aria-labelledby="faqs-headingAboutED{{ aboutED }}" data-bs-parent="#id_faq_page_abouted">
+                                <div class="accordion-body card-body">
+                                     {{ block.settings.aboutED_content }}
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% assign aboutED = aboutED | plus: 1 %}
+                        {% endfor %}				
+                    </div>
+                  </div>
+                  </div>
+                  <!-- END - About ED -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- End Card Style -->
+</section>
+
+{% schema %}
+  {
+    "name": "Faq Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Faq Content"
+      },
+      {
+        "type": "text",
+        "id": "faq_heading",
+        "label": "Faq Heading",
+        "default": "Frequently Asked Questions"
+      },
+      {
+        "type": "header",
+        "content": "Faqs Sidebar Heading"
+      },
+      {
+        "type": "text",
+        "id": "about_eddie_heading",
+        "label": "About Eddie Heading",
+        "default": "About Eddie"
+      },
+      {
+        "type": "text",
+        "id": "sizing_heading",
+        "label": "Sizing Heading",
+        "default": "Sizing"
+      },
+      {
+        "type": "text",
+        "id": "subscription_heading",
+        "label": "Subscription Heading",
+        "default": "Subscription"
+      },
+      {
+        "type": "text",
+        "id": "billing_heading",
+        "label": "Billing Heading",
+        "default": "Billing & Customer Service"
+      },
+      {
+        "type": "text",
+        "id": "about_ED_heading",
+        "label": "About ED Heading",
+        "default": "About ED"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "abouteddie",
+        "name": "About Eddie",
+        "settings": [
+          {
+            "type": "text",
+			"id": "abouteddie_heading",
+            "label": "About Eddie Heading",
+			"default": "About Eddie Heading.."
+          },
+          {
+            "type": "html",
+			"id": "abouteddie_content",
+            "label": "About Eddie Description",
+			"default": "About Eddie Description.."
+          }
+        ]
+      },
+      {
+        "type": "sizing",
+        "name": "Sizing",
+        "settings": [
+          {
+            "type": "text",
+			"id": "sizing_heading",
+            "label": "Sizing Heading",
+			"default": "Sizing Heading.."
+          },
+          {
+            "type": "html",
+			"id": "sizing_content",
+            "label": "Sizing Description",
+			"default": "Sizing Description.."
+          }
+        ]
+      },
+      {
+        "type": "subscription",
+        "name": "Subscription",
+        "settings": [
+          {
+            "type": "text",
+			"id": "subscription_heading",
+            "label": "Subscription Heading",
+			"default": "Subscription Heading.."
+          },
+          {
+            "type": "html",
+			"id": "subscription_content",
+            "label": "Subscription Description",
+			"default": "Subscription Description.."
+          }
+        ]
+      },
+      {
+        "type": "billing",
+        "name": "Billing",
+        "settings": [
+          {
+            "type": "text",
+			"id": "billing_heading",
+            "label": "Billing Heading",
+			"default": "Billing Heading.."
+          },
+          {
+            "type": "html",
+			"id": "billing_content",
+            "label": "Billing Description",
+			"default": "Billing Description.."
+          }
+        ]
+      },
+      {
+        "type": "aboutED",
+        "name": "About ED",
+        "settings": [
+          {
+            "type": "text",
+			"id": "aboutED_heading",
+            "label": "About ED Heading",
+			"default": "About ED Heading.."
+          },
+          {
+            "type": "html",
+			"id": "aboutED_content",
+            "label": "About ED Description",
+			"default": "About ED Description.."
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Faq Page Section",
+      "category": "Faq"
+    }]
+  }
+{% endschema %}

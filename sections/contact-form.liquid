@@ -1,0 +1,313 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="edy-about-area about-style-1 bg-color-white edy-section-gap pb--0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              
+              <div class="section-title text-start mb--60">
+                  <h1 class="title-contact mb--5">{{ section.settings.message_heading }}</h1> 					
+                  <p class="para-contact"> 
+                      {{ section.settings.message_description }}
+                  </p>
+              </div>
+              
+              <div class="color-{{ section.settings.color_scheme }}">
+                <div class="contact section-{{ section.id }}-padding">
+                  {%- if section.settings.heading != blank -%}
+                    <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                      {{ section.settings.heading }}
+                    </h2>
+                  {%- else -%}
+                    <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+                  {%- endif -%}
+                  {%- liquid
+                    assign contact_form_class = 'isolate'
+                    if settings.animations_reveal_on_scroll
+                      assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+                    endif
+                  -%}
+                  {%- form 'contact', id: 'ContactForm', class: 'gradient edy-profile-row edy-default-form row row--15' -%}
+                    {%- if form.posted_successfully? -%}
+                      <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                        {% render 'icon-success' %}
+                        {{ 'templates.contact.form.post_success' | t }}
+                      </h2>
+                    {%- elsif form.errors -%}
+                      <div class="form__message">
+                        <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                          {% render 'icon-error' %}
+                          {{ 'templates.contact.form.error_heading' | t }}
+                        </h2>
+                      </div>
+                      <ul class="form-status-list caption-large" role="list">
+                        <li>
+                          <a href="#ContactForm-email" class="link">
+                            {{ form.errors.translated_fields.email | capitalize }}
+                            {{ form.errors.messages.email }}
+                          </a>
+                        </li>
+                      </ul>
+                    {%- endif -%}
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+    					<div class="edy-form-group">
+                          <label for="ContactForm-fname">First Name</label>
+                            <input
+                              autocomplete="name"
+                              type="text"
+                              id="ContactForm-fname"
+                              name="contact[{{ 'templates.contact.form.name' | t }}]"
+                              value="{% if form.fname %}{{ form.fname }}{% elsif customer %}{{ customer.fname }}{% endif %}"
+                              placeholder="First Name"
+                            >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+    					<div class="edy-form-group">
+                          <label for="ContactForm-lname">Last name</label>
+                            <input
+                              autocomplete="name"
+                              type="text"
+                              id="ContactForm-lname"
+                              name="contact[{{ 'templates.contact.form.name' | t }}]"
+                              value="{% if form.lname %}{{ form.lname }}{% elsif customer %}{{ customer.lname }}{% endif %}"
+                              placeholder="Last Name"
+                            >
+                        </div>
+                      </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+					  <div class="edy-form-group">
+                        <label for="ContactForm-email">User Name</label>
+                        <div class="field field--with-error">
+                          <input
+                            autocomplete="email"
+                            type="email"
+                            id="ContactForm-email"
+                            name="contact[email]"
+                            spellcheck="false"
+                            autocapitalize="off"
+                            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                            aria-required="true"
+                            {% if form.errors contains 'email' %}
+                              aria-invalid="true"
+                              aria-describedby="ContactForm-email-error"
+                            {% endif %}
+                            placeholder="Your Email Address"
+                          >
+                          {%- if form.errors contains 'email' -%}
+                            <small class="contact__field-error" id="ContactForm-email-error">
+                              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                              <span class="form__message">
+                                {%- render 'icon-error' -%}
+                                {{- form.errors.translated_fields.email | capitalize }}
+                                {{ form.errors.messages.email -}}
+                              </span>
+                            </small>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+					  <div class="edy-form-group">
+                        <label for="ContactForm-phone">Phone Number (Optional)</label>
+                        <input
+                          type="tel"
+                          id="ContactForm-phone"
+                          autocomplete="tel"
+                          name="contact[{{ 'templates.contact.form.phone' | t }}]"
+                          pattern="[0-9\-]*"
+                          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                          placeholder="Your Phone Number"
+                        >
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="edy-form-group">
+                        <label for="ContactForm-subject">Email Subject</label>
+                          <input
+                            autocomplete="name"
+                            type="text"
+                            id="ContactForm-subject"
+                            name="contact[{{ 'templates.contact.form.name' | t }}]"
+                            value="{% if form.ContactForm-subject %}{{ form.ContactForm-subject }}{% elsif customer %}{{ customer.ContactForm-subject }}{% endif %}"
+                            placeholder="Email Subject"
+                          >
+                      </div>
+                    </div>
+                    
+                   <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  					 <div class="edy-form-group">
+                        <label for="ContactForm-body">Email Description</label>
+                        <textarea
+                          rows="10"
+                          id="ContactForm-body"
+                          cols="20" 
+                          rows="5"
+                          name="contact[{{ 'templates.contact.form.comment' | t }}]"
+                          placeholder="Email Description"
+                        >
+                          {{- form.body -}}
+                        </textarea>
+                      </div>
+                    </div>
+                    
+                    <div class="contact__button col-12 mt--20 mb--60">
+                      <div class="edy-form-group">																
+						<div class="edy-btn btn-border hover-icon-reverse">
+                          <span class="icon-reverse-wrapper">
+                            <button type="submit">
+                              <span class="btn-text">SUBMIT</span>
+                              <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+    						  <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  {%- endform -%}
+                </div>
+              </div>
+
+              <div class="section-title text-start mb--60">						
+                  <p class="para-contact"> 
+                      {{ section.settings.office_hours }}
+                  </p>
+                  <p class="para-contact"> 
+                      {{ section.settings.address }}
+                  </p>
+                  <p class="para-contact"> 
+                      {{ section.settings.phone }}
+                  </p>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contact Form Message"
+    },
+    {
+      "type": "text",
+      "id": "message_heading",
+      "label": "Message Heading",
+      "default": "Thank you for contacting us."
+    },
+    {
+      "type": "text",
+      "id": "message_description",
+      "label": "Message Description",
+      "default": "Please fill out the form below and our Customer Care Team will reply as soon as possible."
+    },
+    {
+      "type": "header",
+      "content": "Contact Details"
+    },
+    {
+      "type": "html",
+      "id": "office_hours",
+      "label": "Ofice Hours",
+      "default": "Office Hours: <br> Mon-Fri 9:00am - 6:00pm CST"
+    },
+    {
+      "type": "html",
+      "id": "address",
+      "label": "Address",
+      "default": "Address: <br> 1005 E. St. Elmo Road, <br> Austin, TX  78745"
+    },
+    {
+      "type": "html",
+      "id": "phone",
+      "label": "Customer Service Phone",
+      "default": "Customer Service Phone: <br> <tel>737-370-9209</tel>"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

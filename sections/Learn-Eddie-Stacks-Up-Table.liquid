@@ -1,0 +1,100 @@
+<section id="fact-table" class="edy-events-area bg-color-gray-lightest">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div>
+                  <div class="container">
+                      <div class="row g-5 align-items-center mb--40 mt--40">
+                          <div class="col-lg-12">
+                              <div class="section-title text-center">
+                                  <h2 class="title-devices">{{ section.settings.table_heading }}</h2> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row g-5">
+                          <div class="table-responsive">
+                              <table class="edy-table">
+                                  <thead>
+                                      <tr class="first-row row-size">
+                                          <th scope="col">PRODUCT</th>
+                                          <th scope="col" class="text-center">EFFECTIVENESS</th>
+                                          <th scope="col" class="text-center">NO SIDE<br>EFFECTS</th>
+                                          <th scope="col" class="text-center">WORKS<br>IMMEDIATELY</th>
+                                          <th scope="col" class="text-center">AVAILABLE<br>OTC</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr class="info-row row-size">
+                                          <th scope="row"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/eddie_logo_dark.png?v=1722232952" class="table-logo" alt="logo"></th>
+                                          <td class="text-center logo-td">95%</td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/star.png?v=1722430632"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/star.png?v=1722430632"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/star.png?v=1722430632"></td>
+                                      </tr>
+                                      <tr>
+                                          <th class="table-eddie" scope="row">Medications</th>
+                                          <td class="text-center">20-45% *</td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                      </tr>
+                                      <tr>
+                                          <th scope="row">Pumps</th>
+                                          <td class="text-center">15-35%</td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_check.png?v=1722430721"></td>
+                                      </tr>
+                                      <tr>
+                                          <th scope="row">Toys</th>
+                                          <td class="text-center">15-35%</td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430721"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_check.png?v=1722430721"></td>
+                                      </tr>
+                                      <tr>
+                                          <th scope="row">Wave Therapy</th>
+                                          <td class="text-center">Unclear</td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>
+                                          <td class="text-center"><img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/icon_x.png?v=1722430675"></td>								
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <p class="font-footnote mb-5 pb-5">{{ section.settings.table_description }}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Eddie Stacks Up Table",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Table Content"
+      },
+      {
+        "type": "textarea",
+        "id": "table_heading",
+        "label": "Table Heading",
+        "default": "See How Eddie Stacks Up."
+      },
+      {
+        "type": "textarea",
+        "id": "table_description",
+        "label": "Table Small description",
+        "default": "*per usage of medication"
+      }
+    ],
+    "presets": [{
+      "name": "Learn Eddie Stacks Up Table",
+      "category": "Learn"
+    }]
+  }
+{% endschema %}

@@ -1,0 +1,215 @@
+<section id="fact-table" class="edy-events-area edy-section-gap bg-color-gray-lightest">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div>
+                  <div class="container">
+                      <div class="row g-5 align-items-center mt--40 mb--60">
+                          <div class="col-lg-12">
+                              <div class="section-title text-center">
+                                  <h2 class="title-devices">
+                                      {{ section.settings.section_heading }}
+                                  </h2> 
+                                  <p class="para-size"> 
+                                      {{ section.settings.section_content }}  
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row g-5">
+                          <div class="table-responsive">
+                              <table class="edy-table">
+                                  <thead>
+                                      <tr class="first-row row-size">												
+                                          <th scope="col" class="text-center">PENIS<br>CIRCUMFERENCE* <br>
+                                              <div class="btn-group btn-toggle"> 
+                                                  <button class="btn btn-default">CM</button>
+                                                  <button class="btn btn-primary active">IN</button>
+                                              </div>
+                                          </th>
+                                          <th scope="col" class="text-center">CONDOM<br>SIZE</th>
+                                          <th scope="col" class="text-center">EDDIE<br>FIT**</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      {% for block in section.blocks %}
+                                      {% if block.type == 'table' %}
+                                      <tr>
+                                          <td class="text-center" data-cm="{{ block.settings.circumference_cm }}" data-in="{{ block.settings.circumference }}">{{ block.settings.circumference }}</td>
+                                          <td class="text-center">{{ block.settings.size }}</td>
+                                          <td class="text-center">{{ block.settings.fit }}</td>
+                                      </tr>
+                                      {% endif %}
+                                      {% endfor %}
+                                  </tbody>
+                              </table>
+                              <p class="font-footnote mb-5 pb-5">
+                                  {{ section.settings.table_content }}
+                              </p>
+                              <!-- <img src="{{ section.settings.size_image | img_url: 'master' }}" alt="Eddie Sizes Shown for Comparison"> -->
+                          </div>
+                          <div class="edy-categories-area edy-section-gap">
+                              <div class="container">
+                                  <div class="row g-5">
+                                      <!-- Start Size Box Layout  -->
+                                      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                          <div class="edy-cat-box edy-cat-box-1 variation-3 text-center">
+                                              <div class="inner">
+                                                  <div class="thumbnail">
+                                                      <a href="https://store.eddiebygiddy.com/products/eddie-by-giddy?variant=46897167466818">
+                                                          <img src="https://cdn.shopify.com/s/files/1/0834/1926/7394/files/size_a.png?v=1727289879" alt="Size A">
+                                                          <div class="read-more-btn">
+                                                              <span class="edy-btn btn-sm btn-white radius-round">Select</span>
+                                                          </div>
+                                                      </a>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h5 class="title">A - NARROW</h5>
+                                                      <p class="description">0 - 3⁵⁄₈" IN (0 - 9.2 CM)</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- End Size Box Layout  -->
+                                      <!-- Start Size Box Layout  -->
+                                      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                          <div class="edy-cat-box edy-cat-box-1 variation-3 text-center">
+                                              <div class="inner">
+                                                  <div class="thumbnail">
+                                                      <a href="https://store.eddiebygiddy.com/products/eddie-by-giddy?variant=46897167368514">
+                                                          <img src="https://cdn.shopify.com/s/files/1/0834/1926/7394/files/size_b.png?v=1727289879" alt="Size B">
+                                                          <div class="read-more-btn">
+                                                              <span class="edy-btn btn-sm btn-white radius-round">Select</span>
+                                                          </div>
+                                                      </a>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h5 class="title">B - REGULAR</h5>
+                                                      <p class="description">3¹¹⁄₁₆ - 3⁷⁄₈" IN (9.3 - 9.8 CM) </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- End Size Box Layout  -->
+                                      <!-- Start Size Box Layout  -->
+                                      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                          <div class="edy-cat-box edy-cat-box-1 variation-3 text-center">
+                                              <div class="inner">
+                                                  <div class="thumbnail">
+                                                      <a href="https://store.eddiebygiddy.com/products/eddie-by-giddy?variant=46897167499586">
+                                                          <img src="https://cdn.shopify.com/s/files/1/0834/1926/7394/files/size_c.png?v=1727289879" alt="Size C">
+                                                          <div class="read-more-btn">
+                                                              <span class="edy-btn btn-sm btn-white radius-round">Select</span>
+                                                          </div>
+                                                      </a>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h5 class="title">C - WIDE</h5>
+                                                      <p class="description">3¹⁵⁄₁₆ - 4³⁄₁₆" IN (9.9 - 10.4 CM)</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- End Size Box Layout  -->
+                                      <!-- Start Size Box Layout  -->
+                                      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                          <div class="edy-cat-box edy-cat-box-1 variation-3 text-center">
+                                              <div class="inner">
+                                                  <div class="thumbnail">
+                                                      <a href="https://store.eddiebygiddy.com/products/eddie-by-giddy?variant=47036193079618">
+                                                          <img src="https://cdn.shopify.com/s/files/1/0834/1926/7394/files/size_d.png?v=1727289879" alt="Size D">
+                                                          <div class="read-more-btn">
+                                                              <span class="edy-btn btn-sm btn-white radius-round">Select</span>
+                                                          </div>
+                                                      </a>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h5 class="title">D - EXTRA WIDE</h5>
+                                                      <p class="description">4¹⁄₄" IN + (10.5 CM +)</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- End Size Box Layout  -->
+                                  </div>
+                              </div>
+                          </div>
+
+
+
+
+                        
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Size Width Table",
+    "settings": [
+    {
+      "type": "header",
+      "content": "Table Section Content"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Width, not length."
+    },
+    {
+      "type": "textarea",
+      "id": "section_content",
+      "label": "Section Content",
+      "default": "With Eddie you’re going for a firm but comfortable fit. Eddie is available in four sizes (A, B, C, D) based on circumference or girth, which fit 99% of men. If you decide you need a different size, we’ll ship a replacement free of charge."
+    },
+    {
+      "type": "textarea",
+      "id": "table_content",
+      "label": "Table Content",
+      "default": "*Measured when flaccid. Picking a size based on measurement is the best way to ensure good fit. <br> **The vast majority of men fit within A, B, or C."
+    },
+    {
+      "type": "image_picker",
+      "id": "size_image",
+      "label": "Size Image"
+    }
+    ],
+    "blocks": [
+      {
+        "type": "table",
+        "name": "Table Column Detail",
+        "settings": [
+          {
+            "type": "text",
+			"id": "circumference",
+            "label": "Penis Circumference IN"
+          },
+          {
+            "type": "text",
+			"id": "circumference_cm",
+            "label": "Penis Circumference CM"
+          },
+          {
+            "type": "text",
+			"id": "size",
+            "label": "Condom Size"
+          },
+          {
+            "type": "text",
+			"id": "fit",
+            "label": "Eddie Fit"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Size Width Table",
+      "category": "Size"
+    }]
+  }
+{% endschema %}

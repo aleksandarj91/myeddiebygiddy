@@ -1,0 +1,225 @@
+<section class="edy-about-area about-style-1 bg-color-black edy-section-gap pb--0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="container">
+                        <div class="row g-5 mb--5p">
+                            <div class="col-lg-8">
+                                <h3 class="title-devices text-white">{{ section.settings.section_heading }}</h3>
+                            </div>
+                        </div>
+                        <div class="row g-5 xalign-items-center">
+                            <div class="col-lg-5">
+                                <div class="content animate__animated animate__slideInLeft"> 
+                                    <img class="w-100 radius-10" src="{{ section.settings.use_image | img_url: 'master' }}" alt="Easy to Use - How to Wear" style="border: 2px solid #fff;"> 
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="inner pl--50 pl_sm--0 pl_md--0 pl_lg--0">
+                                    <hr class="edy-separator m-0"></hr>
+                                    <p class="description-devices text-white mt-2"> {{ section.settings.use_label }} </p>
+                                    <div class="section-title text-start mt--15p">
+                                        <h2 class="title-devices text-white">{{ section.settings.use_heading }}</h2>
+                                        <p class="description-devices text-white mt--20"> {{ section.settings.use_content }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edy-about-area about-style-1 bg-color-black edy-section-gap">
+                    <div class="container">
+                        <div class="row g-5 xalign-items-center">
+                            <div class="col-lg-7 order-2 order-lg-1">
+                                <div class="inner pr--50 pr_sm--0 pr_md--0 pr_lg--0">
+                                    <hr class="edy-separator m-0"></hr>
+                                    <p class="description-devices text-white mt-2"> {{ section.settings.fit_label }} </p>
+                                    <div class="section-title text-start mt--15p">
+                                        <h2 class="title-devices text-white">{{ section.settings.fit_heading }}</h2>
+                                        <p class="description-devices text-white mt--20"> {{ section.settings.fit_content }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-1 order-lg-2">
+                                <div class="content"> 
+                                    <img class="w-100 radius-10" src="{{ section.settings.fit_image | img_url: 'master' }}" alt="Eddie with Band Applied" style="border: 2px solid #fff;">  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edy-about-area about-style-1 bg-color-black">
+                    <div class="container">
+                        <div class="row g-5 xalign-items-center">
+                            <div class="col-lg-5">
+                                <div class="content"> 
+                                    <img class="w-100 radius-10" src="{{ section.settings.sex_image | img_url: 'master' }}" alt="Enjoy Better Sex" style="border: 2px solid #fff;"> 
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="inner pl--50 pl_sm--0 pl_md--0 pl_lg--0">
+                                    <hr class="edy-separator m-0"></hr>
+                                    <p class="description-devices text-white mt-2"> {{ section.settings.sex_label }} </p>
+                                    <div class="section-title text-start mt--15p">
+                                        <h2 class="title-devices text-white">{{ section.settings.sex_heading }}</h2>
+                                        <p class="description-devices text-white mt--20"> {{ section.settings.sex_content }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edy-course-card-area edy-section-gap2 bg-color-black">
+                    <div class="container">
+                        <div class="row g-5 mb--60 align-items-center">
+                            <div class="col-lg-12">
+                                <div class="section-title text-center">
+                                    <h2 class="title-devices text-white">{{ section.settings.try_heading }}</h2>
+                                    <p class="description-devices text-white mt--20"> {{ section.settings.try_content }} </p>									
+                                    <a class="edy-btn hover-icon-reverse radius-round replace-url" href="{{ section.settings.try_btn_url }}">
+                                        <div class="icon-reverse-wrapper"> 
+                                            <span class="btn-text">{{ section.settings.try_btn_label }}</span> 
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Use About Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Use About Content"
+      },
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section Heading",
+        "default": "There's nothing easy about diminished performance. But using Eddie is a cinch."
+      },
+      {
+        "type": "header",
+        "content": "EASY TO USE Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "use_image",
+        "label": "EASY TO USE image"
+      },
+      {
+        "type": "text",
+        "id": "use_label",
+        "label": "EASY TO USE Label",
+        "default": "EASY-TO-USE"
+      },
+      {
+        "type": "text",
+        "id": "use_heading",
+        "label": "EASY TO USE Heading",
+        "default": "Wear"
+      },
+      {
+        "type": "textarea",
+        "id": "use_content",
+        "label": "EASY TO USE Content",
+        "default": "Putting on Eddie is simple. Place the device at the base of your penis, whether soft or hard, with the opening facing down."
+      },
+      {
+        "type": "header",
+        "content": "BETTER FIT Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "fit_image",
+        "label": "BETTER FIT image"
+      },
+      {
+        "type": "text",
+        "id": "fit_label",
+        "label": "BETTER FIT Label",
+        "default": "BETTER FIT"
+      },
+      {
+        "type": "text",
+        "id": "fit_heading",
+        "label": "BETTER FIT Heading",
+        "default": "Secure"
+      },
+      {
+        "type": "textarea",
+        "id": "fit_content",
+        "label": "BETTER FIT Content",
+        "default": "Apply a tension band to the ends of your device. Use the blue band for a gentle touch or the red band for a tighter fit."
+      },
+      {
+        "type": "header",
+        "content": "BETTER SEX Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "sex_image",
+        "label": "BETTER SEX image"
+      },
+      {
+        "type": "text",
+        "id": "sex_label",
+        "label": "BETTER SEX Label",
+        "default": "BETTER SEX"
+      },
+      {
+        "type": "text",
+        "id": "sex_heading",
+        "label": "BETTER SEX Heading",
+        "default": "Enjoy"
+      },
+      {
+        "type": "textarea",
+        "id": "sex_content",
+        "label": "BETTER SEX Content",
+        "default": "Start whenever you're ready, during foreplay or intercourse. Eddie's unique, open-bottom shape leads to a more comfortable orgasm."
+      },
+      {
+        "type": "header",
+        "content": "Try Eddie Content"
+      },
+      {
+        "type": "text",
+        "id": "try_heading",
+        "label": "Try Eddie Heading",
+        "default": "Try Eddie risk-free."
+      },
+      {
+        "type": "textarea",
+        "id": "try_content",
+        "label": "Try Eddie Content",
+        "default": "Get free shipping, free resizes, and a 30-day money back guarantee"
+      },
+      {
+        "type": "text",
+        "id": "try_btn_label",
+        "label": "Button Label",
+        "default": "ORDER NOW."
+      },
+      {
+        "type": "url",
+        "id": "try_btn_url",
+        "label": "Button URL"
+      }
+    ],
+  "presets": [{
+    "name": "Use About Section",
+    "category": "Use page"
+  }]
+  }
+{% endschema %}

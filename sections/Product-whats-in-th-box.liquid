@@ -1,0 +1,67 @@
+<section class="whats-in-the-box py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="title">{{ section.settings.box_heading }}</h2>
+    </div>
+    <div class="row">
+      {% for block in section.blocks %}
+      {% if block.type == 'box' %}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="box_card p-4 text-center">
+          <img src="{{ block.settings.box_img | img_url:'master'}}" alt="Tension Bands" class="img-fluid mb-3">
+          <h3 class="h5 font-weight-semibold text-dark">{{ block.settings.box_title }}</h3>
+          <p class="mt-2 text-dark">{{ block.settings.box_descriotion }}</p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Whats in the Box Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Box Content"
+      },
+      {
+        "type": "text",
+        "id": "box_heading",
+        "label": "Box Section Heading",
+        "default": "What's in the Box"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "box",
+        "name": "Box Detail",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "box_img",
+            "label": "Box Image"
+          },
+          {
+            "type": "text",
+			"id": "box_title",
+            "label": "Box Title",
+			"default": "Box Title.."
+          },
+          {
+            "type": "html",
+			"id": "box_descriotion",
+            "label": "Box Details",
+			"default": "Box Details.."
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Whats in the Box Section",
+      "category": "Product"
+    }]
+  }
+{% endschema %}

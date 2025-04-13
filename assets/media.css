@@ -1,0 +1,394 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .mb--60{
+        margin-bottom: 10px !important;
+    }
+    /* header part start */
+    .edy-header .logo a img{
+        margin-top: 0;
+    }
+    .edy-header .edy-header-wrapper{
+        padding: 15px 0;
+        min-height: 60px;
+        height: auto;
+    }
+    .edy-btn.btn-sm {
+        padding: 0 20px;
+    }
+    /* header part end */
+
+    /* great sex part start */
+    .pl-0{
+        padding-left: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-mt {
+        margin-top: 0px !important;
+      }
+
+    .edy-accordion-style .card .card-header button {
+        font-size: 18px;
+        line-height: 27px;
+        outline: none;
+        text-decoration: none;
+        box-shadow: none;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        background-color: transparent;
+        position: relative;
+        font-weight: 600;
+        font-family: var(--font-secondary);
+      }
+
+      .para-size {
+        font-size: 24px;
+        line-height: 28px;
+        color: var(--color-heading);
+        font-weight: 100;
+        font-family: var(--font-primary);
+        padding-bottom: 5px;
+    }
+      
+
+    .para-devices {
+        font-size: 22px;
+        line-height: 24px;
+        color: var(--color-heading);
+        font-weight: 100;
+        font-family: var(--font-primary);
+    }
+
+    
+    .para-40-book {
+        font-size: 24px;
+        line-height: 28px;
+        color: var(--color-heading);
+        font-weight: 100;
+        font-family: var(--font-primary);
+        /*padding-bottom: 5px;*/
+      }
+
+    .big-number{
+        font-size: 120px;
+        line-height: 120px;
+        margin-bottom: 5px;
+        margin-top: 3px;
+        text-align: center;
+        border-top: 2px solid #fff;      
+    }
+
+    .big-number-none{
+        font-size: 120px;
+        line-height: 120px;
+        margin-bottom: 5px;
+        margin-top: 3px;
+        text-align: center;        
+    }
+
+    .big-number-dark{
+        font-size: 120px;
+        line-height: 120px;
+        margin-bottom: 5px;
+        margin-top: 3px;
+        text-align: center;
+        /*border-top: 2px solid #27272E; */
+    }
+
+    .para-doctorquote {
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--color-white);
+        font-weight: 100;
+        font-family: var(--font-primary);
+        padding-bottom: 5px;
+      }
+
+
+    .content-center {
+        padding-bottom: 20px;
+      }
+
+    .section-margin {
+        margin-bottom: 15px;
+      }      
+
+
+    .description {
+        text-align: center;
+    }
+    .my-great-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .my-great-box p br{
+        display: none;
+    }
+    .my-great-box p,
+    .my-great-p{
+        font-size: 14px;
+    }
+    .plan-offer-list li{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    #section-health-slider .slick-dots{
+        bottom: -60px;
+    }
+
+    .splash-layout-presentation-box{
+        min-height: 1252px;
+    }
+
+
+    .edy-table tbody tr th, .edy-table tbody tr td {
+        /* font-weight: 400; */
+        color: var(--color-body);
+        font-size: 20px;
+        font-weight: 100;
+        font-family: var(--font-primary);
+    }
+
+
+
+    /* great sex part end */
+
+    /* banner part start */
+    .banner-content{
+        padding-top: 40px !important;
+    }
+    .edy-splite-style .split-inner .title,
+    .section-title .title-pleasure,       
+    .section-title .title-sex{
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .section-title .title-p2 {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 60px;
+        margin-left: 0px;
+        margin-top: 75%;
+        text-align: center;
+    }
+
+    .health-p2{
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .health-p3{
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 5%;
+        /*text-align: center;*/
+    }
+
+
+    .title-devices
+    {
+        font-size: 33px;
+        line-height: 43px;
+    }
+
+    .description-devices{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+
+    .edy-section-gap{
+        padding: 40px 0 !important;
+    }
+    .edy-call-to-action-area h2{
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .section-title .title-pleasure{
+        margin-top: 20px !important;
+    }
+
+    .para-home-subtitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .para-24-book {
+        font-size: 20px;
+        line-height: 2px;
+    }
+
+    .edy-splite-style .split-inner .subtitle  {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    /* banner part end */
+
+    /* testimonial part start */
+    #testimonials{
+        padding-top: 40px !important;
+    }
+    .edy-testimonial-box .inner{
+        height: 310px;
+    }
+    .single-my-slider{
+        padding: 12px 0;
+    }
+    .single-my-slider p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .my-slider-img img{
+        width: 150px;
+    }
+    
+    /* testimonial part end */
+
+    /* faq part start */
+    .faq-title .title-contact{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .pl_20{
+        padding-left: 20px !important;
+    }
+
+    .my-faq .accordion-header.show-acco::before{
+        bottom: 7px;
+    }
+
+    .my-faq .edy-accordion-style.edy-accordion-04 .card .card-header{
+        padding: 0px;
+    }
+    .my-faq .edy-accordion-style .card .card-header button{
+        padding: 15px 20px;
+    }
+    
+    /* faq part end */
+
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    /* header part start */
+    .edy-header .logo a img{
+        margin-top: 0;
+    }
+    .edy-header .edy-header-wrapper{
+        padding: 15px 0;
+        min-height: 60px;
+        height: auto;
+    }
+    .edy-btn.btn-sm {
+        padding: 0 20px;
+    }
+    /* header part end */
+
+    /* great sex part start */
+    .pl-0{
+        padding-left: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .splash-layout-presentation-box{
+        min-height: 1247px;
+    }
+    /* great sex part end */
+
+    /* banner part start */
+    .banner-content{
+        padding-top: 40px !important;
+    }
+    .edy-splite-style .split-inner .title{
+        font-size: 70px;
+    }
+    /* banner part end */
+
+    /* testimonial part start */
+    .edy-testimonial-box .inner{
+        height: 300px;
+    }
+    .single-my-slider{
+        padding: 12px 0;
+    }
+    /* testimonial part end */
+
+    /* faq part start */
+    .my-faq .accordion-header.show-acco::before{
+        bottom: 7px;
+    }
+    /* faq part end */
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /* header part start */
+    .edy-header .logo a img{
+        margin-top: 0;
+    }
+    .edy-header .edy-header-wrapper{
+        height: auto;
+    }
+    .splash-layout-presentation-box{
+        min-height: 852px;
+    }
+    /* header part end */
+
+    /* great sex part start */
+    .pl-0{
+        padding-left: 0 !important;
+    }
+    .splash-layout-presentation-box{
+        min-height: 1202px;
+    }
+    /* great sex part end */
+
+    /* banner part start */
+    .banner-content{
+        padding-top: 40px !important;
+    }
+    /* banner part end */
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* header part start */
+    .edy-header .logo a img{
+        margin-top: 0;
+    }
+    .edy-header .edy-header-wrapper{
+        height: auto;
+    }
+    /* header part end */
+
+    /* banner part start */
+    .banner-content{
+        padding-top: 40px !important;
+    }
+    /* banner part end */
+
+    /* mens health part start */
+    .big-number{
+        font-size: 190px;
+    }
+    .splash-layout-presentation-box{
+        min-height: 1089px;
+    }
+    /* mens health part end */
+ }
+
+/*Extra large devices (Extra large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    /* testimonial part start */
+    .edy-testimonial-box .inner{
+        height: 430px;
+    }
+    /* testimonial part end */
+ }
+
+/*Extra large devices (Extra Extra large desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }

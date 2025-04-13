@@ -1,0 +1,86 @@
+<section id="id_section_faq">
+  <div class="edy-call-to-action-area edy-section-gap bg-color-black">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="edy-callto-action edy-cta-default style-6">
+                      <div class="container">
+                          <div class="row g-5 align-items-center content-wrapper">
+                              <div class="col-xxl-4 col-xl-4 col-lg-6">
+                                  <div class="inner">
+                                      <div class="content text-start text-white">
+                                          <h2 class="title-devices color-white mb--0">{{ section.settings.faq_section_heading }}</h2> </div>
+                                  </div>
+                              </div>
+                              <div class="col-xxl-8 col-xl-8 col-lg-6">
+                                  <div class="edy-accordion-style edy-accordion-02 accordion">
+                                      <div class="accordion" id="accordionExampleb2">
+                                          {% assign faqNum = 1 %}
+                                          {% for block in section.blocks %}
+                                          {% if block.type == 'faq' %}
+                                        <div class="accordion-item card">
+                                              <h2 class="accordion-header card-header" id="headingTwo{{ faqNum }}">
+                                                  <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo{{ faqNum }}" aria-expanded="false" aria-controls="collapseTwo{{ faqNum }}">
+                                                      {{ block.settings.faq_heading}}
+                                                  </button>
+                                              </h2>
+                                              <div id="collapseTwo{{ faqNum }}" class="accordion-collapse collapse" aria-labelledby="headingTwo{{ faqNum }}" data-bs-parent="#accordionExampleb2">
+                                                  <div class="accordion-body card-body text-white"> 											
+                                                      {{ block.settings.faq_content }}
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          {% endif %}
+                                          {% assign faqNum = faqNum | plus: 1 %}  
+                                          {% endfor %}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Home Learning Faqs",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Faqs Content"
+      },
+      {
+        "type": "text",
+        "id": "faq_section_heading",
+        "label": "Learning Faq Heading",
+        "default": "Learning about the basics of ED"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "Faq",
+        "settings": [
+          {
+            "type": "text",
+			"id": "faq_heading",
+            "label": "Faq Heading"
+          },
+          {
+            "type": "textarea",
+			"id": "faq_content",
+            "label": "Faq Content"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+        "name": "Home Learning Faqs",
+      "category": "Home"
+    }]
+  }
+{% endschema %}

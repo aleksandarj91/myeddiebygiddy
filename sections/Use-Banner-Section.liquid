@@ -1,0 +1,66 @@
+<div style="background-image: url({{ section.settings.banner_image | img_url: 'master' }});" class="edy-banner-6 variation-02 bg_image bg_use_hero header-transperent-spacer" data-black-overlay="2">
+    <div class="wrapper w-100">
+        <div class="container">
+            <div class="row row--15 align-items-center">
+                <div class="col-lg-12">
+                    <div class="inner text-center hero-mt">
+                        <h2 class="title">{{ section.settings.banner_heading }}</h2>
+                        <p class="para-home-subtitle d-none d-sm-block"> {{ section.settings.banner_content }} </p>
+                        <p class="para-home-subtitle d-block d-sm-none"> {{ section.settings.banner_mobile_content }}</p>
+                        <div class="contact-btn xmt--10 ">								
+                            <a class="edy-btn btn-border-white rounded-player popup-video" href="{{ section.settings.youtube_video_url }}">
+                                <span><i class="feather-play"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Use Banner Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Banner Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner image"
+      },
+      {
+        "type": "text",
+        "id": "banner_heading",
+        "label": "Banner Heading",
+        "default": "How to Use Eddie"
+      },
+      {
+        "type": "html",
+        "id": "banner_content",
+        "label": "Banner Desktop Content",
+        "default": "Learn how to use the unique, clinically-proven erectile<br> dysfunction device that experts are talking about."
+      },
+      {
+        "type": "html",
+        "id": "banner_mobile_content",
+        "label": "Banner Mobile Content",
+        "default": "Learn how to use the unique, clinically-proven erectile dysfunction device that experts are talking about."
+      },
+      {
+        "type": "video_url",
+        "id": "youtube_video_url",
+        "accept": ["youtube", "vimeo"],
+        "label": "Youtube video URL",
+        "default": "https://www.youtube.com/watch?v=ww1vF5Hc1KA",
+      }
+    ],
+  "presets": [{
+    "name": "Use Banner Section",
+    "category": "Use page"
+  }]
+  }
+{% endschema %}

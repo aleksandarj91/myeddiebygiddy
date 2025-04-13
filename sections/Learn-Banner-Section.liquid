@@ -1,0 +1,94 @@
+<div style="background-image: url({{ section.settings.banner_img | img_url: 'master' }})" class="edy-banner-6 variation-02 bg_image bg_learn_hero header-transperent-spacer" data-black-overlay="2">
+  <div class="wrapper w-100">
+      <div class="container">
+          <div class="row row--15 align-items-center">
+              <div class="col-lg-12">
+                  <div class="inner text-center hero-mt">
+                      <h2 class="title">{{ section.settings.banner_heading }}</h2>
+                      <p class="para-home-subtitle d-none d-sm-block"> {{ section.settings.banner_desktop_content }}</p>
+                      <p class="para-home-subtitle d-block d-sm-none"> {{ section.settings.banner_mobile_content }}</p>
+                      <div class="contact-btn xmt--10 ">								
+                          <a id="btn-quiz" class="edy-btn hover-icon-reverse radius-round replace-url" href="{{ section.settings.banner_btn_url }}">
+                              <div class="icon-reverse-wrapper"> 
+                                  <span class="btn-text">{{ section.settings.banner_btn_label }}</span> 
+                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
+                              </div>
+                          </a>
+                      </div>
+                      <div class="text-bottom-small">
+                          <p class="para-36-book-light text-white d-none d-xl-block"> 
+                              {{ section.settings.banner_bottom_content_heading }}
+                          </p>
+                          <p class="para-24-book-light text-white d-none d-xl-block"> 
+                              {{ section.settings.banner_bottom_content_description }}							
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Learn Banner Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Banner Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "banner_heading",
+        "label": "Banner Heading",
+        "default": "The Science of Sexual Health"
+      },
+      {
+        "type": "textarea",
+        "id": "banner_desktop_content",
+        "label": "Banner Desktop Content",
+        "default": "Eddie® was designed and developed by doctors to create<br>an ED treatment based on actual physiology."
+      },
+      {
+        "type": "textarea",
+        "id": "banner_mobile_content",
+        "label": "Banner Mobile Content",
+        "default": "Eddie® was designed and developed by doctors to create an ED treatment based on actual physiology."
+      },
+      {
+        "type": "text",
+        "id": "banner_btn_label",
+        "label": "Banner Button Label",
+        "default": "ORDER NOW"
+      },
+      {
+        "type": "url",
+        "id": "banner_btn_url",
+        "label": "Banner Button URL"
+      },
+      {
+        "type": "text",
+        "id": "banner_bottom_content_heading",
+        "label": "Banner Bottom Content Heading",
+        "default": "An oval, not a circle"
+      },
+      {
+        "type": "textarea",
+        "id": "banner_bottom_content_description",
+        "label": "Banner Bottom Content Description",
+        "default": "The science of sexual health starts with the<br>insight that the penis isn’t perfectly round. While<br>sex toys are circular, our device is oval-shaped to<br>allow for more optimal blood flow."
+      }
+    ],
+    "presets": [{
+      "name": "Learn Banner Section",
+      "category": "Learn"
+    }]
+  }
+{% endschema %}

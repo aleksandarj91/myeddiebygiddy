@@ -1,0 +1,143 @@
+<header class="edy-header edy-header-7 {% unless template contains 'page.contact' or template contains 'page.Faq' 
+  or template contains 'product' or template contains 'cart' or template == 'page' 
+  or template == '404' or template contains 'collection' or template contains 'login' or template contains 'register' 
+  or template contains 'page.quiz' or template contains 'page.quiz1' or template contains 'account' 
+  or template contains 'address' %}edy-transparent-header{% endunless %}">
+  
+  <div class="edy-sticky-placeholder"></div>
+  
+  <div class="edy-header-wrapper color-white-variation {% if template contains 'page.contact' or template contains 'page.Faq' 
+     or template contains 'product' or template contains 'cart' or template == 'page' 
+     or template == '404' or template contains 'page.quiz' or template contains 'page.quiz1' 
+     or template contains 'collection' or template contains 'login' or template contains 'register'
+     or template contains 'account' or template contains 'address' %}bg-color-dark{% else %}bg-color-white{% endif %} header-sticky">
+      <div class="container">
+          <div class="mainbar-row edy-navigation-end">					
+              <div class="header-left">
+                  <div class="logo">
+                      <a href="/"> 
+                        <img src="{{ section.settings.desktop_logo | img_url: 'master' }}" height="60%" alt="Eddie Logo"> 
+                      </a>
+                  </div>
+              </div>
+              <div class="edy-main-navigation d-none d-xl-block">
+                  <nav class="mainmenu-nav">
+                      <ul class="mainmenu">
+                          {% for link in linklists[section.settings.main_menu].links %}
+                            <li class="has-menu-child-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                          {% endfor %}
+                      </ul>
+                  </nav>
+              </div>
+              <div class="header-right">
+                  <div class="edy-btn-wrapper d-block">
+                      <a class="edy-btn btn-sm radius-round replace-url" href="{{ section.settings.buy_link }}"> 
+                          <span data-text="BUY">{{ section.settings.buy_button_label }}</span> 
+                      </a>
+                      <a href="/account">
+                        <img src="https://cdn.shopify.com/s/files/1/0805/8208/2835/files/user-icon.png?v=1722496087" class="img-fluid" alt="user-icon">
+                      </a>
+                  </div>
+                  <!-- Start Mobile-Menu-Bar -->
+                  <div class="mobile-menu-bar d-block d-xl-none">
+                      <div class="hamberger">
+                          <button class="hamberger-button edy-round-btn">
+                              <i class="feather-menu"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <!-- Start Mobile-Menu-Bar -->
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- Mobile Menu Section -->
+<div class="popup-mobile-menu">
+  <div class="inner-wrapper">
+      <div class="inner-top">
+          <div class="content">
+              <div class="logo">
+                  <a href="/">
+                      <img src="{{ section.settings.mobile_logo | img_url: 'master' }}" height="40px" alt="Eddie Logo">
+                  </a>
+              </div>
+              <div class="edy-btn-close">
+                  <button class="close-button edy-round-btn"><i class="feather-x"></i></button>
+              </div>
+          </div>
+      </div>
+      <div class="d-grid gap-2 text-center mobile-bottom1">
+          <a class="edy-btn btn-border" href="{{ section.settings.quiz_link }}">TAKE THE QUIZ</a> 
+      </div>
+      <div class="d-grid gap-2 text-center mobile-bottom2">
+          <a class="edy-btn btn-primary" href="{{ section.settings.buy_link }}">BUY EDDIE NOW</a> 
+      </div>			
+      <div class="text-center text-bottom">
+          <img src="{{ section.settings.mobile_ED_img | img_url: 'master' }}" height="50%" width="50%" alt="Eddie Red">
+      </div>
+      <nav class="mainmenu-nav">
+          <ul class="mainmenu">
+              {% for link in linklists[section.settings.main_menu].links %}
+                <li class="has-menu-child-item position-static"><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {% endfor %}
+          </ul>
+      </nav>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+    {
+      "type": "header",
+      "content": "Header Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_logo",
+      "label": "Desktop Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_logo",
+      "label": "Mobile Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_ED_img",
+      "label": "Mobile ED Image"
+    },
+    {
+      "type": "text",
+      "id": "buy_button_label",
+      "label": "Buy Button Label",
+      "default": "BUY"
+    },
+    {
+      "type": "url",
+      "id": "buy_link",
+      "label": "Buy Button URL",
+    },
+    {
+      "type": "url",
+      "id": "quiz_link",
+      "label": "Quiz Button URL",
+    }, 
+    {
+      "type": "header",
+      "content": "Select Menu"
+    },
+    {
+       "type": "link_list",
+       "id": "main_menu",
+       "label": "Select Menu"
+    }
+    ],
+    "presets": [{
+      "name": "Header",
+      "category": "Header"
+    }]
+  }
+{% endschema %}

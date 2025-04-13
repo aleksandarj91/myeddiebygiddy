@@ -1,0 +1,13 @@
+{% if customer.id %}
+    {%- assign custid = '{{ customer.id }}'%}
+{% else %}
+	{%- assign custid = 'unknown'%}
+{% endif %}
+
+{% if customer.email %}
+    {%- assign hashed_email = '{{ customer.email }}' | sha1 -%}
+{% else %}
+	{%- assign hashed_email = 'unknown' | sha1 -%}
+{% endif %}
+
+<script type="text/javascript"> (function(a,b,c,d,e,f,g){e['ire_o']=c;e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};f=d.createElement(b);g=d.getElementsByTagName(b)[0];f.async=1;f.src=a;g.parentNode.insertBefore(f,g);})('https://utt.impactcdn.com/A6084857-2bfe-485c-ae17-1e208c8a64861.js','script','ire',document,window); ire('identify', {customerid: '{{ custid }}', customeremail: '{{hashed_email}}' }); </script>

@@ -1,0 +1,402 @@
+body {
+  letter-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+menu,
+ol,
+ul,
+table,
+hr {
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  letter-spacing: 0;
+}
+.rc_widget {    
+    color: var(--color-white) !important;
+    display: none;
+}
+.rc_popup__label {    
+    color: var(--color-white) !important;
+}
+.edy-banner-6 .inner .title {
+    margin-top: 0;
+}
+.edy-banner-6 .inner .title,
+.footer-widget .ft-title{
+    letter-spacing: 0;
+}
+.edy-accordion-style .card .card-header button.collapsed:before, 
+.edy-accordion-style .card .card-header button[aria-expanded=true]:before {
+    background-image: url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/faq-button.png?v=1722410650');
+}
+.bg-img-testimonialvid {
+  background-image: url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/testivid.jpg?v=1722427494');
+}
+.section-margin {
+  margin-bottom: 60px !important;
+}
+#play {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.para-24-book {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-heading);
+    font-weight: 100;
+    font-family: var(--font-primary);
+    padding-bottom: 5px;
+}
+.text-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.hero-mt {
+    margin-top: 40px !important;
+}
+.big-number-dark {
+    font-size: 238px;
+    line-height: 238px;
+    /* color: var(--color-heading); */
+    font-weight: 200;
+    font-family: var(--font-secondary);
+}
+.text-bottom-small {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.para-36-book-light {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 100;
+    font-family: var(--font-secondary);
+    padding-bottom: 5px;
+}
+.para-24-book-light {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 100;
+    font-family: var(--font-secondary);
+    padding-bottom: 5px;
+    margin-bottom: 30px !important;
+}
+.big-number-none {
+    font-size: 238px;
+    line-height: 238px;
+    font-weight: 200;
+    font-family: var(--font-secondary);
+}
+.edy-header .edy-header-wrapper.color-white-variation .mainmenu-nav .mainmenu > li > a {
+    color: #fff;
+}
+.my-faq .accordion-header::before {
+    content: url(https://cdn.shopify.com/s/files/1/0805/8208/2835/files/acco-1.png?v=1722495324);
+    transition: .4s all linear;
+    color: rebeccapurple;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    z-index: 50;
+}
+.my-faq .accordion-header.show-acco::before{
+    transform: rotate(180deg);
+    transition: .4s all linear;
+}
+.faq-subtitle .title {
+    margin-top: 0 !important;
+}
+.contact__button  button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    border-radius: 6px;
+    border: 0 none;
+    outline: none;
+}
+.contact__button  button {
+    background: transparent;
+    border: 0px solid var(--color-btn-outline-border);
+    color: var(--color-btn-outline-border);
+    background-color: var(--color-white);
+    line-height: 54px;
+}
+.contact__button .edy-btn.btn-border:hover button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+.contact__button .edy-btn.hover-icon-reverse .btn-text {
+    margin-inline-start: 0px;
+}
+.contact__button .edy-btn {
+    padding: 0 10px;
+}
+.field:before, .select:before, .customer .field:before, .customer select:before, .localization-form__select:before {
+    content: none;
+}
+.field:after, .select:after, .customer .field:after, .customer select:after, .localization-form__select:after {
+    content: none;
+}
+.contact .field--with-error {
+    margin-bottom: 0 !important;
+}
+*:focus-visible {
+    outline: none;
+    outline-offset: none;
+    box-shadow: none;
+}
+.whats-in-the-box, .box_card {
+    background-color: #dddddd;
+}
+#section-health-slider .slick-next:before, #section-health-slider .slick-prev:before {
+    content: url(https://cdn.shopify.com/s/files/1/0805/8208/2835/files/arrow-right.png?v=1722582742);
+}
+#section-health-slider .slick-prev:before {
+    content: url(https://cdn.shopify.com/s/files/1/0805/8208/2835/files/arrow-left.png?v=1722582801);
+}
+.product-form__input input[type=radio]:checked ~ label::before {
+    background: transparent;
+    border: none;
+}
+.product-form__input input[type=radio]:checked ~ label::after {
+    opacity: 0;
+}
+fieldset.product-form__input .form__label {
+    margin-bottom: 0.2rem;
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+}
+.product-form__input input[type=radio]+label {
+    width: 48%;
+}
+.product-form__buttons button {
+    background: #2f57ef;
+    border-radius: 50px;
+}
+.product-form__buttons .product-form__submit:after, .product-form__buttons:hover .product-form__submit:after {
+    box-shadow: none;
+}
+.product-form__buttons {
+    max-width: 52.5rem !important;
+}
+.product__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_price .price-item {
+    font-size: 40px;
+    font-weight: 700;
+}
+.product__text {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+}
+.custom_meta_renewal {
+    margin: 0 !important;
+    color: #161616;
+    font-weight: 600;
+    font-size: 20px;
+}
+.shipping_text_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    color: #161616;
+    font-weight: 600;
+}
+.shipping_div {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.pdp_title_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #161616;
+    font-weight: 700;
+    font-size: 32px;
+}
+.total_price_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #161616;
+    font-weight: 700;
+    font-size: 32px;
+}
+.total_price_div .price-item {
+    font-size: 20px;
+    font-weight: 700;
+}
+.product-form__input input[type=radio]+label{
+    padding: 1.5rem 2rem !important;
+}
+.grid__item .accordion summary .accordion__title {
+    color: #000 !important;
+}
+.collapsible-content summary:hover .accordion__title {
+    text-decoration: none !important;
+    text-underline-offset: 0 !important;
+}
+.accordion .accordion__content p {
+    color: #192335;
+}
+s.price-item.price-item--regular {
+    display: none;
+}
+.product_size_table td {
+    padding-left: 0;
+    font-size: 22px !important;
+}
+.product_size_table td:last-child {
+    text-align: right;
+    padding-right: 0;
+}
+.condom_size_table th, .penis_size_table th {
+    padding-left: 0 !important;
+}
+.penis_size_table th:last-child {
+    text-align: right;
+    padding-right: 0;
+}
+.popup-mobile-menu .inner-wrapper {
+    background-image: url(https://cdn.shopify.com/s/files/1/0805/8208/2835/files/mobile_background.jpg?v=1722840579);
+}
+.product-form__input input[type=radio]+label:before, .product-form__input input[type=radio] ~ label::after {
+    visibility: hidden;
+}
+.faq-menu-item.active span {
+    color: #2f57ef !important;
+}
+.quiz_thankyou_div {
+    display: none;
+}
+.quiz_thankyou_div {
+    padding-top: 36px;
+}
+.product__info-container .product__tax.caption, .product__info-container .installment .rc_container {
+    display: none;
+}
+#id_offer_conditions_none .edy-search-style-dk input {
+  width: 100%;
+}
+
+
+/* @media Query */
+@media only screen and (max-width: 991px) {
+#id_offer_conditions .edy-search-style-dk input {
+    min-width: 100%;
+}
+#id_offer_conditions .text-bottom-8-20 {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+#id_offer_conditions .text-bottom-8 {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 0;
+    padding-top: 30px
+}
+#id_offer_conditions p.edy-card-text.mt--60 {
+    margin-top: 0 !important;
+}
+#id_offer_conditions .edy-card {
+    margin-left: 0 !important;
+}  
+#id_offer_conditions_none .pt--10p {
+    padding-top: 0 !important;
+}
+#id_offer_conditions_none .pl--20p {
+    padding-left: 0 !important;
+}  
+}
+
+@media screen and (max-width:767px) {
+.product_size_table {
+    width: 100%;
+}
+.big-number-dark {
+    font-size: 155px;
+}
+  
+/* Quiz result page*/
+.id_offer_conditions_none .para-40-book {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+}
+.id_offer_conditions .edy-card {
+    margin-left: 0;
+}  
+}
+
+@media screen and (max-width:480px) {
+.product_price .price-item, .product__title h1 {
+    font-size: 32px;
+}
+}
+
+@media screen and (max-width:320px) {
+.product_price .price-item, .product__title h1, .total_price_div .price-item {
+    font-size: 28px;
+}
+}
+
+

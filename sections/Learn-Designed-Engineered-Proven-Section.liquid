@@ -1,0 +1,218 @@
+<section class="edy-about-area about-style-1 bg-color-gray-lightest edy-section-gap pb--0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="edy-about-area about-style-1 bg-color-gray-lightest edy-section-gap-small">
+                    <div class="container">
+                        <div class="row g-5 xalign-items-center">
+                            <div class="col-lg-6 order-1 order-lg-1">
+                                <div class="inner pr--50 pr_sm--0 pr_md--0 pr_lg--0">
+                                    <div class="section-title text-start mt--15p">
+                                        <h2 class="title-devices text-dark">{{ section.settings.designed_heading }}</h2>
+                                        <p class="description-devices text-dark mt--20"> {{ section.settings.designed_content }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-2 order-lg-2">
+                                <div class="content"> 
+                                    <img class="" src="{{ section.settings.designed_img | img_url: 'master' }}" alt="A geometric image illustrating flow">  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edy-about-area about-style-1 bg-color-gray-lightest edy-section-gap-small">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <img class="" src="{{ section.settings.engineered_img | img_url: 'master' }}" alt="A transparent Eddie device showing key features illustrating how the product is designed for pleasure">  
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="inner pr--50 pr_sm--0 pr_md--0 pr_lg--0">
+                                    <div class="section-title text-start ml--20">
+                                        <h2 class="title-devices text-dark d-none d-sm-block">{{ section.settings.engineered_desktop_heading }}</h2>											
+                                        <h2 class="title-devices text-dark d-block d-sm-none">{{ section.settings.engineered_mobile_heading }}</h2>											
+                                        <h3 class="health-p3 pt-4 mb-3 fw-bold text-dark">{{ section.settings.a_heading }}</h3>
+                                        <p class="text-dark ls-p mb-4">{{ section.settings.a_description }}</p>				
+                                        <h3 class="health-p3 mb-3 fw-bold text-dark">{{ section.settings.b_heading }}</h3>
+                                        <p class="text-dark ls-p mb-4">{{ section.settings.b_description }}</p>
+                                        <h3 class="health-p3 mb-3 fw-bold text-dark">{{ section.settings.c_heading }}</h3>
+                                        <p class="text-dark ls-p mb-4">{{ section.settings.c_description }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edy-about-area about-style-1 bg-color-gray-lightest edy-section-gap-small">
+                    <div class="container">
+                        <div class="row g-5 xalign-items-center">
+                            <div class="col-lg-6 order-1 order-lg-1">
+                                <div class="inner pr--50 pr_sm--0 pr_md--0 pr_lg--0">
+                                    <div class="section-title text-start mt--15p">
+                                        <h2 class="title-devices text-dark">{{ section.settings.proven_heading }}</h2>
+                                        <p class="description-devices text-dark mt--20"> {{ section.settings.proven_content }} </p>
+                                        <h4 class="big-number-none">{{ section.settings.number }}</h4>
+                                        <p class="description sal-animate text-dark mb-4" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300"> {{ section.settings.number_detail }} </p>
+                                        <div class="d-none d-sm-block">
+                                            <a class="edy-btn btn-border radius-round mt--20 mb--60" href="{{ section.settings.proven_btn_url }}">{{ section.settings.proven_btn_mobile_label }}</a> 
+                                        </div>
+                                        <div class="d-grid gap-2 text-center d-block d-sm-none">
+                                            <a class="edy-btn btn-border radius-round mt--20 mb--60" href="{{ section.settings.proven_btn_url }}">{{ section.settings.proven_btn_desktop_label }}</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-2 order-lg-2">
+                                <div class="content-center"> 
+                                    <img class="ximage-valign" src="{{ section.settings.proven_img | img_url : 'master' }}" alt="A geometric image illustrating flow">  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Designed Section",
+    "settings": [
+    {
+      "type": "header",
+      "content": "Designed Section Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "designed_img",
+      "label": "Designed Image"
+    },
+    {
+      "type": "text",
+      "id": "designed_heading",
+      "label": "Designed Heading",
+      "default": "Designed for Flow"
+    },
+    {
+      "type": "textarea",
+      "id": "designed_content",
+      "label": "Designed Content",
+      "default": "Eddie was researched by urologists based on actual physiology, including MRI scans of blood flow patterns, leading to its unique form and function."
+    },
+    {
+      "type": "header",
+      "content": "Engineered Section Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "engineered_img",
+      "label": "Engineered Image"
+    },
+    {
+      "type": "html",
+      "id": "engineered_desktop_heading",
+      "label": "Engineered Desktop Heading",
+      "default": "Engineered <br> for Pleasure"
+    },
+    {
+      "type": "html",
+      "id": "engineered_mobile_heading",
+      "label": "Engineered Mobile Heading",
+      "default": "Engineered for Pleasure"
+    },
+    {
+      "type": "text",
+      "id": "a_heading",
+      "label": "A Heading",
+      "default": "A: OVAL SHAPE"
+    },
+    {
+      "type": "html",
+      "id": "a_description",
+      "label": "A Description",
+      "default": "Unlike other devices, Eddie has a unique shape <br class='d-lg-block d-none'> that restricts the veins and leaves the arteries<br class='d-lg-block d-none'> unencumbered, encouraging optimal blood flow."
+    },
+    {
+      "type": "text",
+      "id": "b_heading",
+      "label": "B Heading",
+      "default": "B: SUBSTRATE & OVERMOLD"
+    },
+    {
+      "type": "html",
+      "id": "b_description",
+      "label": "B Description",
+      "default": "A flexible substrate allows for expansion and<br class='d-lg-block d-none'> contraction, and a seamless, high-grade over-mold<br class='d-lg-block d-none'> makes the device soft to the touch."
+    },
+    {
+      "type": "text",
+      "id": "c_heading",
+      "label": "C Heading",
+      "default": "C: TENSION BANDS"
+    },
+    {
+      "type": "html",
+      "id": "c_description",
+      "label": "C Description",
+      "default": "Multi-sized tension bands provide a<br class='d-lg-block d-none'> comfortable, snug fit, allowing for a more<br class='d-lg-block d-none'> pleasurable ejaculation."
+    },
+    {
+      "type": "header",
+      "content": "Proven Section Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "proven_img",
+      "label": "Proven Image"
+    },
+    {
+      "type": "text",
+      "id": "proven_heading",
+      "label": "Proven Heading",
+      "default": "Proven to Perform"
+    },
+    {
+      "type": "textarea",
+      "id": "proven_content",
+      "label": "Proven Content",
+      "default": "Clinically-proven to result in better sexual performance."
+    },
+    {
+      "type": "text",
+      "id": "number",
+      "label": "Number With %",
+      "default": "95%"
+    },
+    {
+      "type": "text",
+      "id": "number_detail",
+      "label": "number Description",
+      "default": "of men reported overall positive results."
+    },
+    {
+      "type": "text",
+      "id": "proven_btn_desktop_label",
+      "label": "Proven Desktop Button Label",
+      "default": "VIEW THE CLINICAL TRIAL"
+    },
+    {
+      "type": "text",
+      "id": "proven_btn_mobile_label",
+      "label": "Proven Mobile Button Label",
+      "default": "VIEW THE CLINICAL TRIAL"
+    },
+    {
+      "type": "url",
+      "id": "proven_btn_url",
+      "label": "Proven Button URL"
+    }
+    ],
+    "presets": [{
+      "name": "Learn Designed Section",
+      "category": "Learn"
+    }]
+  }
+{% endschema %}

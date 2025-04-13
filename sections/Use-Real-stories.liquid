@@ -1,0 +1,100 @@
+<section class="edy-banner-area edy-banner-8 variation-02 bg-color-white">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div>
+                  <div class="container">
+                      <div class="row g-5 align-items-center">
+                          <div class="col-lg-10 offset-lg-1">
+                              <div class="content">
+                                  <div class="inner text-center">
+                                      <h1 class="title-devices">{{ section.settings.real_stories_heading }}</h1>
+                                      <p class="description-howworks mb-5 pb-5">
+                                          {{ section.settings.real_stories_content }}
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row row--15 mt_dec--30">
+          {% for block in section.blocks %}
+          {% if block.type == 'stories' %}
+          <div class="col-lg-4 col-md-6 col-12 mt--30">
+              <div class="team team-style--bottom">
+                <a class="popup-video" href="{{ block.settings.youtube_video_url }}">
+                  <div class="thumbnail"><img src="{{ block.settings.story_img | img_url:'master'}}" alt="Click here to play a testimonial video from Chris">                                     
+                  </div>
+                  <div class="content">
+                      <h4 class="title">{{ block.settings.story_name }}</h4>
+                      <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="40px" width="40px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                          <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5"/>
+                          <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5"/>
+                          <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+                      </svg>
+                  </div>
+                 </a>
+              </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+      </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Real Stories Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Real Stories Content"
+      },
+      {
+        "type": "text",
+        "id": "real_stories_heading",
+        "label": "Real Stories Heading",
+        "default": "Real stories. Real change."
+      },
+      {
+        "type": "text",
+        "id": "real_stories_content",
+        "label": "Real Stories Content",
+        "default": "Learn how to use the unique, clinically-proven erectile dysfunction device that experts are talking about."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "stories",
+        "name": "Stories",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "story_img",
+            "label": "Story image"
+          },
+          {
+            "type": "text",
+			"id": "story_name",
+            "label": "Story Name"
+          },
+          {
+            "type": "video_url",
+            "id": "youtube_video_url",
+            "accept": ["youtube", "vimeo"],
+            "label": "Youtube video URL",
+            "default": "https://www.youtube.com/watch?v=ww1vF5Hc1KA",
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Use Real Stories Section",
+      "category": "Use page"
+    }]
+  }
+{% endschema %}

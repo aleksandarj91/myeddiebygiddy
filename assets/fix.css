@@ -1,0 +1,362 @@
+.header-right .edy-btn.btn-sm:focus{
+    color: #fff;
+}
+
+/* banner part start */
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 200px !important;
+    padding-bottom: 40px !important;
+    
+}
+.edy-splite-style .split-inner .cta_abovebtn,
+.edy-splite-style .split-inner .cta_belowbtn{
+    margin-top: 0;
+}
+/* banner part end */
+/* great sex part start */
+.single-great-box h3{
+    margin: 0;
+    color: #fff;
+    font-weight: 200;
+
+}
+.single-great-box p,
+.my-great-p{
+    color: #fff;
+    font-size: 13px;
+}
+.my-great-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+/* great sex part end */
+
+/* table part start */
+.table-logo{
+    width: 115px;
+}
+.table-responsive table th,
+.table-responsive table td{
+    color: #000 !important;
+}
+.logo-td{
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+
+#fact-table{
+    padding-top: 0 !important;
+}
+
+/* table part end */
+
+/* testimonial part start */
+.edy-testimonial-box .inner{
+    height: 391px;
+}
+
+.edy-dot-bottom-center .edy-swiper-pagination{
+    bottom: 10px;
+}
+/* testimonial part end */
+
+/* faq part start */
+.edy-accordion-style .card .card-header button.collapsed::before,
+.edy-accordion-style .card .card-header button[aria-expanded=true]::before{
+    content: "";
+    background-image: url("https://cdn.shopify.com/s/files/1/0805/8208/2835/files/faq-button.png?v=1722410650");
+    width: 20px;
+    height: 20px;
+    
+}
+.edy-accordion-style .card .card-header button[aria-expanded=true]::before{
+    background: transparent;
+    background-image: url("https://cdn.shopify.com/s/files/1/0805/8208/2835/files/faq-button.png?v=1722410650");
+    transform: rotate(180deg);
+}
+.edy-accordion-style .card .card-header button{
+    font-weight: 400;
+}
+/* faq part end */
+/* call to action start */
+.edy-call-to-action-area h2{
+    font-weight: 400;
+    margin-bottom: 5px !important;
+}
+.edy-call-to-action-area p{
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+/* call to action end */
+/* footer part start */
+.edy-footer,
+.footer-widget ul li a{
+    color: #fff !important;
+}
+/* footer part end */
+
+
+/* my slider part start */
+.my-slider{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.single-my-slider p{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+}
+.my-slider .swiper-wrapper{
+    justify-content: center;
+}
+#testimonials{
+    position: relative;
+    z-index: 10;
+    padding-top: 60px !important;
+}
+#testimonials::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 1;
+}
+.z-10{
+    position: relative;
+    z-index: 10;
+}
+.single-my-slider{
+    margin-bottom: 60px;
+}
+.slick-dots{
+    
+    bottom: -80px;
+}
+.slick-dots li button{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.slick-dots li.slick-active button,
+#section-health-slider .slick-dots li.slick-active button{
+    background-color: #307FE2;
+}
+/* my slider part end */
+
+/* health slider part start */
+#section-health-slider{
+    padding-bottom: 70px ;
+}
+#section-health-slider .slick-dots li button{
+    background-color: #d3d3d3;
+}
+.splash-layout-presentation-box{
+    padding-bottom: 40px !important;
+    border-radius: 10px !important;
+}
+#section-health-slider .slick-initialized .slick-slide{
+    margin-bottom: 0 !important;
+}
+
+#section-health-slider .slick-next,
+#section-health-slider .slick-prev{
+    top: auto;
+    bottom: -85px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    right: 0;
+}
+#section-health-slider .slick-prev{
+    top: auto;
+    left: auto;
+    right: 50px;
+}
+#section-health-slider .slick-next:before,
+#section-health-slider .slick-prev:before{
+    content: url("https://cdn.shopify.com/s/files/1/0805/8208/2835/files/arrow-right.png?v=1722582742");
+    border: 1px solid #000;
+    border-radius: 50%;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    
+}
+#section-health-slider .slick-prev:before{
+    content: url("https://cdn.shopify.com/s/files/1/0805/8208/2835/files/arrow-left.png?v=1722582801");
+}
+
+.my-slider-img img{
+    filter: brightness(0) invert(1);
+}
+.health-p2{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.splash-layout-presentation-box{
+    min-height: 752px;
+}
+.splash-layout-presentation-box .ls-p{
+    font-size: 20px;
+}
+/* health slider part end */
+
+/* client logo part start */
+.client-log{
+    background-color: #fff;
+}
+.client-logo-box{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 20px 50px;
+}
+.client-logo-box img{
+    max-width: 209px;
+    object-fit: contain;
+    cursor: pointer;
+    
+}
+.client-logo-box img:first-child{
+    filter: brightness(0%);
+    opacity: .5; 
+    
+}
+.client-logo-box img:first-child.active{
+    opacity: 1;
+}
+.client-logo-box img.active{
+    filter: brightness(0%);
+}
+/* client logo part end */
+
+.bsg-5 {
+    --bs-gutter-y: 1rem;
+}
+
+/* scrollbar fix start */
+#id_great_sex{
+    overflow-x: hidden;
+}
+/* scrollbar fix end */
+
+/* menubar fix start */
+.edy-header .edy-header-wrapper,
+.edy-header{
+    height: 72px;
+}
+.header-left,
+.edy-header .mainmenu-nav .mainmenu > li > a,
+.mainmenu-nav,
+.mainmenu,
+.edy-header .mainmenu-nav .mainmenu li{
+    height: 72px !important;
+}
+.header-right .edy-btn.btn-sm,
+.edy-header .logo a img{
+    margin-top: 0 !important;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-right .edy-btn-wrapper{
+    display: flex !important;
+    align-items: center;
+    gap: 20px;
+}
+/* menubar fix end */
+
+/* faq part start */
+.faq-title .title-contact{
+    font-size: 72px;
+    line-height: 93px;
+    font-weight: 300;
+}
+
+.faq-side-box .dashboard-mainmenu li a span{
+    font-size: 26px ;
+    line-height: 33px ;
+    color: #000 ;
+    font-weight: 300;
+}
+.faq-subtitle .title{
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 300;
+    color: #000;
+}
+.edy-accordion-style .card .card-header button{
+    font-size: 24px;
+    line-height: normal !important;
+    font-weight: 300;
+    
+}
+
+.accordion-header{
+    position: relative;
+}
+/* .my-faq .accordion-header::before{
+    content: url("https://cdn.shopify.com/s/files/1/0805/8208/2835/files/acco-1.png?v=1722495324");
+    transition: .4s all linear;
+    color: rebeccapurple;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    z-index: 50;
+} */
+.my-faq .accordion-header.show-acco::before{
+    transform: rotate(180deg);
+    transition: .4s all linear;
+}
+.my-faq .accordion-header.show-acco::after{
+    display: none;
+}
+.my-faq .edy-accordion-style.edy-accordion-04 .card .card-header{
+    padding: 0px;
+}
+.my-faq .edy-accordion-style .card .card-header button{
+    padding: 15px 20px;
+}
+.my-faq .edy-shadow-box{
+    overflow: inherit;
+    padding: 0;
+    background: #fff;
+    box-shadow: none;
+    min-height: 330px;
+    margin-bottom: 35px;
+}
+.my-faq .edy-accordion-style .card .card-header button[aria-expanded=true]{
+    color: #192335;
+}
+
+.my-faq .edy-shadow-box ul{
+    padding: 30px;
+    box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
+    border-radius: 6px;
+    background: #fff;
+}
+/* faq part end */
