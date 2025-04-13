@@ -11,70 +11,17 @@
                                     <div class="logo">
                                         <a href="/"><img src="{{ section.settings.footer_logo | img_url: 'master' }}" height="60%" alt="Eddie Logo"> </a>
                                     </div>
-                                    {% form 'customer', class: 'newsletter-form' %}
-                                    <p class="description mt--20"> {{ section.settings.newsletter_label }} </p>
-                                    {%- if form.errors -%}
-                                    <div id="ID_ERROR_MSGBOX" class="alert alert-danger" role="alert" style="display:block;">
-                                        <strong>ERROR: {{ form.errors.messages.email -}}</strong> 
-                                    </div>
-                                    {% endif %}  
-                                    {% if form.posted_successfully? %}
-                                    <div id="ID_OK_MSGBOX" class="alert alert-success" role="alert" style="display:block;">
-                                        <strong>SUCCESS: {{- 'newsletter.success' | t }}</strong> 
-                                    </div>
-                                    {% endif %}
-                                    <label id="email-error" class="error" for="email" style="display: none;"></label>
-                                    <div class="edy-search-style me-0" id="signup-form" name="signup-form">
-                                        <input type="hidden" name="contact[tags]" value="newsletter">
-                                        <input 
-                                          id="NewsletterForm--{{ section.id }}"
-                                          type="email"
-                                          name="contact[email]"
-                                          value="{{ form.email }}"
-                                          name="contact[email]"
-                                          aria-required="true"
-                                          autocorrect="off"
-                                          autocapitalize="off"
-                                          autocomplete="email"
-                                          {% if form.errors %}
-                                            autofocus
-                                            aria-invalid="true"
-                                            aria-describedby="Newsletter-error--{{ section.id }}"
-                                          {% elsif form.posted_successfully? %}
-                                            aria-describedby="Newsletter-success--{{ section.id }}"
-                                          {% endif %}
-                                          placeholder="Your Email"
-                                          required >
-                                        <button type="submit" class="edy-search-btn edy-round-btn"> <i class="feather-arrow-right"></i> </button>
-                                    </div>
-                                  {% endform %}
-                                  
-                                    <p class="description mt--20"> {{ section.settings.footer_info }}
-                                        <br>
-                                        <br> © {{  "now" | date: '%Y' }} {{ section.settings.copyright_text }} </p>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 col-12"> &nbsp; </div>
-                            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                                <div class="footer-widget">
-                                    <h5 class="ft-title text-white">{{ section.settings.link_label }}</h5>
-                                    <ul class="ft-link">
-                                       {% for link in linklists[section.settings.link_menu].links %}
-                                          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12"> &nbsp; </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="footer-widget">
-                                    <h5 class="ft-title text-white">{{ section.settings.support_label }}</h5>
-                                    <ul class="ft-link">
-                                    {% for link in linklists[section.settings.support_menu].links %}
-                                      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                                    {% endfor %}
-                                    </ul>
+                                  <p class="description mt--20"> {{ section.settings.footer_info }}
                                 </div>
                             </div>
+                        </div>
+                        <div class="row g-5">                          
+                          <p class="description mt--20">© {{  "now" | date: '%Y' }} {{ section.settings.copyright_text }} </p>
                         </div>
                     </div>
                 </div>
@@ -100,17 +47,7 @@
       "type": "image_picker",
       "id": "footer_logo",
       "label": "Footer Logo"
-    }, 
-    {
-      "type": "header",
-      "content": "Newsletter Form"
     },
-    {
-      "id": "newsletter_label",
-      "type": "text",
-      "label": "Newsletter Form Label",
-      "default": "Get the latest from Eddie."
-    }, 
     {
       "type": "header",
       "content": "Footer Info"
@@ -130,36 +67,6 @@
       "type": "textarea",
       "label": "Copyright Text",
       "default": "Copyright Giddy® | All Rights Reserved."
-    }, 
-    {
-      "type": "header",
-      "content": "Link Menu"
-    },
-    {
-      "id": "link_label",
-      "type": "text",
-      "label": "Link Label",
-      "default": "LINKS"
-    },
-    {
-       "type": "link_list",
-       "id": "link_menu",
-       "label": "Select Menu"
-    }, 
-    {
-      "type": "header",
-      "content": "Support Menu"
-    },
-    {
-      "id": "support_label",
-      "type": "text",
-      "label": "Support Label",
-      "default": "SUPPORT"
-    },
-    {
-       "type": "link_list",
-       "id": "support_menu",
-       "label": "Select Menu"
     }
     ],
   "presets": [{
