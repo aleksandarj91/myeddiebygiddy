@@ -204,9 +204,73 @@
         "testimonial_b4MJfi": {
           "type": "testimonial",
           "settings": {
-            "testimonial_heading": "",
-            "testimonial_content": "",
-            "testimonial_name": ""
+            "testimonial_heading": "Confidence Builder",
+            "testimonial_content": "I've had ED for 17 years and could not believe the difference that your product has made in my sex life. My confidence level is through the roof. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAmazing product and I am well satisfied.",
+            "testimonial_name": "M.L."
+          }
+        },
+        "testimonial_zGMmJq": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "Can't Believe It Works So Well",
+            "testimonial_content": "Long-time user of ED Medication. Now I just use Eddie. Without being too explicit, the finales are so much more like the old days from 20+ years ago.",
+            "testimonial_name": "R.D."
+          }
+        },
+        "testimonial_Wp9Eyh": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "Happy Wife",
+            "testimonial_content": "I got an Eddie for me and my husband. I thought it would get in the way, but I honestly don't give any thought to it anymore. I'm just happy we're being intimate again.",
+            "testimonial_name": "H.W."
+          }
+        },
+        "testimonial_TqJMUR": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "The Perfect Alternative to Pills",
+            "testimonial_content": "Eddie is incredible. I used to take the popular ED meds but half the time I would get too sick to have sex. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMy wife and I were blown away by Eddie. We LOVE it.",
+            "testimonial_name": "J.F."
+          }
+        },
+        "testimonial_nGhKLJ": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "Not Too Restrictive",
+            "testimonial_content": "I've tried cock rings before and I was skeptical that Eddie would be a better alternative. To my delight, it was great, and without the too-restrictive feel I got from rings.",
+            "testimonial_name": "B.R."
+          }
+        },
+        "testimonial_VfagiV": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "This Little Gem",
+            "testimonial_content": "Orgasms with Eddie feel better than cock ring. My wife barely noticed it was on. She actually loves it. I'm very satisfied with this purchase.",
+            "testimonial_name": "C.A."
+          }
+        },
+        "testimonial_nVddNX": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "Love the Design",
+            "testimonial_content": "Easy to clean and maintain. Low profile, too, so it doesn't get in the way. Best part is the excitement Eddie creates during our foreplay. Totally satisfied.",
+            "testimonial_name": "R.P."
+          }
+        },
+        "testimonial_mXn4Qb": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "Best Decision Ever",
+            "testimonial_content": "My husband decided to give Eddie a try. Wow! It's been so long since we've been intimate and it's changed our lives. We have one by the bed and one in a bag for when we travel.",
+            "testimonial_name": "N.P."
+          }
+        },
+        "testimonial_cVfLQG": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "Life-Changing Gift For My Partner",
+            "testimonial_content": "Eddie worked like a charm. My boyfriend and I are both super-excited about how well it works. No more awkward and disappointing endings for us!",
+            "testimonial_name": "J.O."
           }
         }
       },
@@ -221,7 +285,15 @@
         "brand_KUcWcK",
         "brand_VpEt7X",
         "brand_BGyziV",
-        "testimonial_b4MJfi"
+        "testimonial_b4MJfi",
+        "testimonial_zGMmJq",
+        "testimonial_Wp9Eyh",
+        "testimonial_TqJMUR",
+        "testimonial_nGhKLJ",
+        "testimonial_VfagiV",
+        "testimonial_nVddNX",
+        "testimonial_mXn4Qb",
+        "testimonial_cVfLQG"
       ],
       "name": "Home Testimonial",
       "settings": {
