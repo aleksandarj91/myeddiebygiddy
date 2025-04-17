@@ -114,12 +114,128 @@
         "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
         "section_btn_url": "shopify://products/eddie-by-giddy"
       }
+    },
+    "home_how_does_VLUrGy": {
+      "type": "Home-How-does",
+      "name": "Home How Does",
+      "settings": {
+        "section_image": "shopify://shop_images/how_it_works.webp",
+        "how_does_heading": "How does Eddie work",
+        "how_does_content": "Urologist Dr. Chris Kyle explains why Eddie is so effective.",
+        "how_does_video": "https://www.youtube.com/watch?v=cVh3SXImSdI"
+      }
+    },
+    "learn_eddie_stacks_up_table_TTKbUU": {
+      "type": "Learn-Eddie-Stacks-Up-Table",
+      "name": "Learn Eddie Stacks Up Table",
+      "settings": {
+        "table_heading": "See How Eddie Stacks Up.",
+        "table_description": "*per usage of medication"
+      }
+    },
+    "home_testimonial_Enhzih": {
+      "type": "Home-Testimonial",
+      "blocks": {
+        "logo_C7Ynke": {
+          "type": "logo",
+          "settings": {
+            "brand_logo": "shopify://shop_images/logo-1_png.png"
+          }
+        },
+        "logo_gM3b3z": {
+          "type": "logo",
+          "settings": {
+            "brand_logo": "shopify://shop_images/logo-2_png.png"
+          }
+        },
+        "logo_aEhFfa": {
+          "type": "logo",
+          "settings": {
+            "brand_logo": "shopify://shop_images/logo-3_png.png"
+          }
+        },
+        "logo_3eVkHa": {
+          "type": "logo",
+          "settings": {
+            "brand_logo": "shopify://shop_images/logo-4_png.png"
+          }
+        },
+        "logo_f7JXpX": {
+          "type": "logo",
+          "settings": {
+            "brand_logo": "shopify://shop_images/logo-5_png.png"
+          }
+        },
+        "brand_qppy7U": {
+          "type": "brand",
+          "settings": {
+            "brand_img": "shopify://shop_images/logo-1_png.png",
+            "brand_content": "“ED medications have a handful of potential side effects, but it’s <br class=\"d-lg-block d-none\"> unlikely you’ll experience any from Eddie by Giddy.”"
+          }
+        },
+        "brand_AkdH43": {
+          "type": "brand",
+          "settings": {
+            "brand_img": "shopify://shop_images/logo-2_png.png",
+            "brand_content": "\"For guys who are struggling with ED, or are looking for a<br class=\"d-lg-block d-none\"> recreational 'boost' in their sex lives, Eddie might be the perfect new<br class=\"d-lg-block d-none\"> tech product to bring into the bedroom.\""
+          }
+        },
+        "brand_KUcWcK": {
+          "type": "brand",
+          "settings": {
+            "brand_img": "shopify://shop_images/logo-3_png.png",
+            "brand_content": "\"ED medications can cause side effects, such as a headache and<br class=\"d-lg-block d-none\"> upset stomach... Eddie offers men with ED and their partners an<br class=\"d-lg-block d-none\"> alternative to medication.\""
+          }
+        },
+        "brand_VpEt7X": {
+          "type": "brand",
+          "settings": {
+            "brand_img": "shopify://shop_images/logo-4_png.png",
+            "brand_content": "\"Eddie by Giddy empowers men and their partners to live<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tmore fulfilling lives, starting with better sex.\""
+          }
+        },
+        "brand_BGyziV": {
+          "type": "brand",
+          "settings": {
+            "brand_img": "shopify://shop_images/logo-5_png.png",
+            "brand_content": "\"Its ergonomic design is a clear improvement on rings and<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tpumps and does not require the major surgery of an<br class=\"d-lg-block d-none\"> implantable penile prosthesis.\""
+          }
+        },
+        "testimonial_b4MJfi": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial_heading": "",
+            "testimonial_content": "",
+            "testimonial_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_C7Ynke",
+        "logo_gM3b3z",
+        "logo_aEhFfa",
+        "logo_3eVkHa",
+        "logo_f7JXpX",
+        "brand_qppy7U",
+        "brand_AkdH43",
+        "brand_KUcWcK",
+        "brand_VpEt7X",
+        "brand_BGyziV",
+        "testimonial_b4MJfi"
+      ],
+      "name": "Home Testimonial",
+      "settings": {
+        "testimonial_heading": "See what they are saying"
+      }
     }
   },
   "order": [
     "header_new_7GqAFB",
     "why_eddie_banner_eaeHtT",
     "use_about_section_8WPp9R",
-    "home_take_pleasure_XyPHLL"
+    "home_take_pleasure_XyPHLL",
+    "home_how_does_VLUrGy",
+    "learn_eddie_stacks_up_table_TTKbUU",
+    "home_testimonial_Enhzih"
   ]
 }
