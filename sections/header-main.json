@@ -115,16 +115,6 @@
         "section_btn_url": "shopify://products/eddie-by-giddy"
       }
     },
-    "home_take_pleasure_K7BJLm": {
-      "type": "Home-Take-Pleasure",
-      "name": "Home Take pleasure",
-      "settings": {
-        "section_heading": "Take pleasure in health",
-        "section_content": "Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.",
-        "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
-        "section_btn_url": "shopify://products/eddie-by-giddy"
-      }
-    },
     "home_how_does_VLUrGy": {
       "type": "Home-How-does",
       "name": "Home How Does",
@@ -307,7 +297,8 @@
       ],
       "name": "Home Testimonial",
       "settings": {
-        "testimonial_heading": "See what they are saying"
+        "testimonial_heading": "See what they are saying",
+        "testimonial_img": "shopify://shop_images/blue-swirlies.webp"
       }
     },
     "home_learning_faqs_yG4w7f": {
@@ -351,6 +342,16 @@
       "name": "Home Learning Faqs",
       "settings": {
         "faq_section_heading": "Learning about the basics of ED"
+      }
+    },
+    "home_take_pleasure_K7BJLm": {
+      "type": "Home-Take-Pleasure",
+      "name": "Home Take pleasure",
+      "settings": {
+        "section_heading": "Take pleasure in health",
+        "section_content": "Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.",
+        "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
+        "section_btn_url": "shopify://products/eddie-by-giddy"
       }
     }
   },
