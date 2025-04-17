@@ -12,7 +12,7 @@
   "name": "Group name",
   "sections": {
     "header_new_7GqAFB": {
-      "type": "header-new",
+      "type": "header-lander",
       "settings": {
         "buy_button_label": "BUY",
         "buy_link": "shopify://products/eddie-by-giddy",
