@@ -12,14 +12,10 @@
                                           <h2 class="title color-white mb--0">{{ section.settings.section_heading }}</h2>
                                           <p class="color-white">{{ section.settings.section_content }}</p>
                                           {% if section.settings.section_btn_url %}
-                                            <a id="btn-order" class="edy-btn hover-icon-reverse radius-round replace-url mt--10" href="{{ section.settings.section_btn_url }}">
-                                              <div class="icon-reverse-wrapper"> 
-                                                  <span class="btn-text">{{ section.settings.section_btn_label }}</span> 
-                                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
-                                                  <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
-                                              </div>
+                                            <a id="btn-order" class="edy-btn radius-round replace-url mt--10" href="{{ section.settings.section_btn_url }}">
+                                              <span class="btn-text">{{ section.settings.section_btn_label }}</span>
                                             </a>
-                                          {% endif %}
+                                          {% endif %}                                          
                                       </div>
                                   </div>
                               </div>
@@ -34,29 +30,29 @@
 
 {% schema %}
   {
-    "name": "Take pleasure",
+    "name": "Try Eddie risk-free",
     "settings": [
       {
         "type": "header",
-        "content": "Take pleasure Content"
+        "content": "Try Eddie Content"
       },
       {
           "type": "text",
           "id": "section_heading",
-          "label": "Take pleasure Heading",
-          "default": "Take pleasure in health"
+          "label": "Try Eddie Heading",
+          "default": "Try Eddie in health"
       },
       {
           "type": "textarea",
           "id": "section_content",
-          "label": "Take pleasure Content",
-          "default": "Eddie is the feel-good health device that works with your <br class='d-lg-block d-none'> natural physiology to treat erectile dysfunction."
+          "label": "Try Eddie Content",
+          "default": "Get free shipping, free resizes, and a 30-day money back guarantee"
       },
       {
           "type": "text",
           "id": "section_btn_label",
           "label": "Button Label",
-          "default": "SUBSCRIBE NOW"
+          "default": "TAKE THE QUIZ  & GET $20 OFF"
       },
       {
           "type": "url",
@@ -65,7 +61,7 @@
       }
     ],
     "presets": [{
-      "name": "Home Take pleasure",
+      "name": "Lander Try Eddie",
       "category": "Home"
     }]
   }

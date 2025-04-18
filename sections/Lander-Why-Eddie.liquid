@@ -1,0 +1,196 @@
+<div class="row color-{{ section.settings.color_scheme }}">
+
+    <div class="col-md-12 col-lg-6 order-2 order-lg-1">
+        <div class="left-column-content">
+            <!-- Stats -->
+            <div class="stats-wrapper">
+                <div class="d-flex justify-content-center align-items-center gap-5">
+                    <div class="d-flex justify-content-end align-items-center stat-box">
+                        <h4 class="stat-percentage">{{ section.settings.stat_1_percentage }}</h4>
+                        <div>
+                            <h6 class="stat-line">{{ section.settings.stat_1_line_1 }}</h6>
+                            <h6 class="stat-line">{{ section.settings.stat_1_line_2 }}</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center stat-box">
+                        <h4 class="stat-divider"> | </h4>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center stat-box">
+                        <h4 class="stat-percentage">{{ section.settings.stat_2_percentage }}</h4>
+                        <div>
+                            <h6 class="stat-line">{{ section.settings.stat_2_line_1 }}</h6>
+                            <h6 class="stat-line">{{ section.settings.stat_2_line_2 }}</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="headline-wrapper text-center">
+                    <h1 class="h1-56">{{ section.settings.headline }}</h1>
+                    <h4 class="h4-24">{{ section.settings.subheadline }}</h4>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-wrapper text-center">
+                <h3 class="h3-32">{{ section.settings.cta_title }}</h3>
+                <a id="btn-quiz" class="edy-btn radius-round button--full-width"
+                   href="{{ section.settings.cta_link }}">
+                    <span class="btn-text">{{ section.settings.cta_text }}</span>
+                </a>
+            </div>
+
+            <!-- Brand Images -->
+            <div class="row flex-row d-flex justify-content-center brand-logos">
+                {% for block in section.blocks %}
+                    {% if block.type == 'brand_logo' %}
+                        <div class="col-4 justify-content-center d-flex brand-logo">
+                            {% assign index = forloop.index %}
+                            <img
+                                    src="{{ block.settings.image | img_url: 'master' }}"
+                                    alt="{{ block.settings.alt | default: 'Brand logo' }}"
+                            />
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Right Banner -->
+    <div class="col-md-12 col-lg-6 order-1 order-lg-2">
+        <img
+                src="{{ section.settings.banner_img | img_url: 'master' }}"
+                class="right-banner-image img-fluid"
+                alt="Right banner Image"
+                loading="lazy"
+        >
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Why Eddie Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "stat_1_percentage",
+      "label": "Stat 1 - Percentage",
+      "default": "93%"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_line_1",
+      "label": "Stat 1 - Line 1",
+      "default": "improved"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_line_2",
+      "label": "Stat 1 - Line 2",
+      "default": "hardness"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_percentage",
+      "label": "Stat 2 - Percentage",
+      "default": "95%"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_line_1",
+      "label": "Stat 2 - Line 1",
+      "default": "report"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_line_2",
+      "label": "Stat 2 - Line 2",
+      "default": "effectiveness"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Main Headline",
+      "default": "Perform Better with Eddie"
+    },
+    {
+      "type": "text",
+      "id": "subheadline",
+      "label": "Subheadline",
+      "default": "The wearable FDA Class || medical device to treat ED."
+    },
+    {
+      "type": "text",
+      "id": "cta_title",
+      "label": "CTA Title",
+      "default": "See if Eddie is right for you"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "TAKE THE QUIZ & GET $20 OFF"
+    },
+    {
+      "type": "text",
+      "id": "cta_link",
+      "label": "CTA Button Link",
+      "default": "#"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_img",
+      "label": "Right Side Background Image"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand_logo",
+      "name": "Brand Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo Image"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt Text",
+          "default": "Brand logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why Eddie Banner",
+      "category": "Home",
+      "blocks": [
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        },
+        {
+          "type": "brand_logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

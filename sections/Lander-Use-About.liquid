@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="edy-about-area about-style-1 bg-color-black">
+                <div class="edy-about-area about-style-1 bg-color-black edy-section-gap2">
                     <div class="container">
                         <div class="row g-5 xalign-items-center">
                             <div class="col-lg-5">
@@ -70,25 +70,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="edy-course-card-area edy-section-gap2 bg-color-black">
-                    <div class="container">
-                        <div class="row g-5 mb--60 align-items-center">
-                            <div class="col-lg-12">
-                                <div class="section-title text-center">
-                                    <h2 class="title-devices text-white">{{ section.settings.try_heading }}</h2>
-                                    <p class="description-devices text-white mt--20"> {{ section.settings.try_content }} </p>									
-                                    <a class="edy-btn hover-icon-reverse radius-round replace-url" href="{{ section.settings.try_btn_url }}">
-                                        <div class="icon-reverse-wrapper"> 
-                                            <span class="btn-text">{{ section.settings.try_btn_label }}</span> 
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span> 
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -96,7 +77,7 @@
 
 {% schema %}
   {
-    "name": "Use About Section",
+    "name": "Lander's Use About",
     "settings": [
       {
         "type": "header",
@@ -106,7 +87,7 @@
         "type": "text",
         "id": "section_heading",
         "label": "Section Heading",
-        "default": "There's nothing easy about diminished performance. But using Eddie is a cinch."
+        "default": "Experiencing ED is difficult. Treating ED with Eddie is easy"
       },
       {
         "type": "header",
@@ -133,7 +114,7 @@
         "type": "textarea",
         "id": "use_content",
         "label": "EASY TO USE Content",
-        "default": "Putting on Eddie is simple. Place the device at the base of your penis, whether soft or hard, with the opening facing down."
+        "default": "Place Eddie at the base of your shaft with the opening facing down. Apply whether soft or hard."
       },
       {
         "type": "header",
@@ -160,65 +141,38 @@
         "type": "textarea",
         "id": "fit_content",
         "label": "BETTER FIT Content",
-        "default": "Apply a tension band to the ends of your device. Use the blue band for a gentle touch or the red band for a tighter fit."
+        "default": "Select the tension band that provides you the best fit. Use the blue band for standard tension or the red band for a tighter fit."
       },
       {
         "type": "header",
-        "content": "BETTER SEX Content"
+        "content": "MORE PLEASURE Content"
       },
       {
         "type": "image_picker",
         "id": "sex_image",
-        "label": "BETTER SEX image"
+        "label": "MORE PLEASURE image"
       },
       {
         "type": "text",
         "id": "sex_label",
-        "label": "BETTER SEX Label",
-        "default": "BETTER SEX"
+        "label": "MORE PLEASURE Label",
+        "default": "MORE PLEASURE"
       },
       {
         "type": "text",
         "id": "sex_heading",
-        "label": "BETTER SEX Heading",
+        "label": "MORE PLEASURE Heading",
         "default": "Enjoy"
       },
       {
         "type": "textarea",
         "id": "sex_content",
-        "label": "BETTER SEX Content",
-        "default": "Start whenever you're ready, during foreplay or intercourse. Eddie's unique, open-bottom shape leads to a more comfortable orgasm."
-      },
-      {
-        "type": "header",
-        "content": "Try Eddie Content"
-      },
-      {
-        "type": "text",
-        "id": "try_heading",
-        "label": "Try Eddie Heading",
-        "default": "Try Eddie risk-free."
-      },
-      {
-        "type": "textarea",
-        "id": "try_content",
-        "label": "Try Eddie Content",
-        "default": "Get free shipping, free resizes, and a 30-day money back guarantee"
-      },
-      {
-        "type": "text",
-        "id": "try_btn_label",
-        "label": "Button Label",
-        "default": "ORDER NOW."
-      },
-      {
-        "type": "url",
-        "id": "try_btn_url",
-        "label": "Button URL"
+        "label": "MORE PLEASURE Content",
+        "default": "Apply at any time prior to intercourse and wear throughout. Eddie's unique design allows for a pleasurable climax and finish."
       }
     ],
   "presets": [{
-    "name": "Use About Section",
+    "name": "Lander's Use About",
     "category": "Use page"
   }]
   }
