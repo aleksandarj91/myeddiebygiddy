@@ -11,15 +11,17 @@
   "type": "header",
   "name": "Group name",
   "sections": {
-    "footer_new_tbcjPL": {
-      "type": "footer-new",
+    "footer_lander_W8F4e6": {
+      "type": "footer-lander",
+      "name": "Lander's Footer",
       "settings": {
+        "footer_logo": "shopify://shop_images/eddie_logo.png",
         "footer_info": "This information does not constitute medical advice and it should not be relied upon as such. Consult with your doctor before modifying your regular medical regimen.",
         "copyright_text": "Copyright Giddy® | All Rights Reserved."
       }
     }
   },
   "order": [
-    "footer_new_tbcjPL"
+    "footer_lander_W8F4e6"
   ]
 }
