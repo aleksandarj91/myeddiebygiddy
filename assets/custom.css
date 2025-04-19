@@ -511,4 +511,47 @@ s.price-item.price-item--regular {
     .cta-wrapper {
         padding: 0px;
     }
+
+    #fact-table .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #fact-table table.edy-table {
+        min-width: 100%;
+        font-size: 12px; /* Adjust for better fit */
+        table-layout: fixed; /* Force even spacing */
+    }
+
+    #fact-table .edy-table th,
+    #fact-table .edy-table td {
+        padding: 8px 1px;
+        word-break: break-word;
+        font-size: 12px;
+    }
+
+    #fact-table .table-logo {
+        max-width: 80px;
+        height: auto;
+    }
+
+    #fact-table .section-title h2.title-devices {
+        font-size: 33px;
+    }
+
+    #fact-table .font-footnote {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #fact-table .row > * {
+        padding-left: 1px !important;
+        padding-right: 1px !important;
+    }
+
+    #fact-table tbody img:not(.table-logo) .logo-td {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+    }
 }
