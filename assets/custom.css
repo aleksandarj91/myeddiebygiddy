@@ -477,4 +477,38 @@ s.price-item.price-item--regular {
      display: block;
  }
 
+ @media screen and (max-width: 480px) {
+    .right-banner-image {
+        width: 120%;
+        height: 225px;
+        object-fit: cover;
+        display: block;
+    }
 
+    .stat-percentage {
+        font-size: 24px;
+    }
+
+    .stat-line {
+        font-size: 12px;
+    }
+    .stat-divider {
+        font-size: 28px;
+    }
+    .left-column-content {
+        padding: 25px 16px;
+        gap: 32px;
+    }
+    .h1-56{
+        font-size: 32px;
+    }
+    .h4-24{
+        font-size: 16px;
+    }
+    .h3-32{
+        font-size: 24px;
+    }
+    .cta-wrapper {
+        padding: 0px;
+    }
+}

@@ -32,18 +32,9 @@
                 <div class="header-right">
                     <div class="edy-btn-wrapper d-block">
                         <a class="edy-btn btn-sm radius-round replace-url" href="{{ section.settings.buy_link }}">
-                            <span data-text="BUY">{{ section.settings.buy_button_label }}</span>
+                            <span data-text="TAKE THE QUIZ">{{ section.settings.buy_button_label }}</span>
                         </a>
                     </div>
-                    <!-- Start Mobile-Menu-Bar -->
-                    <div class="mobile-menu-bar d-block d-xl-none">
-                        <div class="hamberger">
-                            <button class="hamberger-button edy-round-btn">
-                                <i class="feather-menu"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Start Mobile-Menu-Bar -->
                 </div>
             </div>
         </div>
@@ -66,9 +57,6 @@
         </div>
         <div class="d-grid gap-2 text-center mobile-bottom1">
             <a class="edy-btn btn-border" href="{{ section.settings.quiz_link }}">TAKE THE QUIZ</a>
-        </div>
-        <div class="d-grid gap-2 text-center mobile-bottom2">
-            <a class="edy-btn btn-primary" href="{{ section.settings.buy_link }}">BUY EDDIE NOW</a>
         </div>
         <div class="text-center text-bottom">
             <img src="{{ section.settings.mobile_ED_img | img_url: 'master' }}" height="50%" width="50%" alt="Eddie Red">
