@@ -1,1 +1,27 @@
-{"type":"header","name":"Group name","sections":{"header_lander_8HVawe":{"type":"header-lander","settings":{"desktop_logo":"shopify:\/\/shop_images\/eddie_logo.png","mobile_logo":"shopify:\/\/shop_images\/eddie_logo_dark.png","mobile_ED_img":"shopify:\/\/shop_images\/red_small_b4ba0d46-cb2f-44fb-9368-20bb907ac851.png","buy_button_label":"BUY","buy_link":"","quiz_link":"","main_menu":""}}},"order":["header_lander_8HVawe"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Group name",
+  "sections": {
+    "header_new_mae8BB": {
+      "type": "header-new",
+      "settings": {
+        "buy_button_label": "BUY",
+        "buy_link": "",
+        "quiz_link": "",
+        "main_menu": ""
+      }
+    }
+  },
+  "order": [
+    "header_new_mae8BB"
+  ]
+}
