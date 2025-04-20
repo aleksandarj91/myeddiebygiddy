@@ -11,9 +11,10 @@
   "type": "header",
   "name": "Group name",
   "sections": {
-    "header_new_mae8BB": {
-      "type": "header-new",
+    "header_lander_9irBqc": {
+      "type": "header-lander",
       "settings": {
+        "desktop_logo": "shopify://shop_images/eddie_logo.png",
         "buy_button_label": "BUY",
         "buy_link": "",
         "quiz_link": "",
@@ -22,6 +23,6 @@
     }
   },
   "order": [
-    "header_new_mae8BB"
+    "header_lander_9irBqc"
   ]
 }
