@@ -19,18 +19,18 @@
                                   <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-1 order-lg-2">
                                       <div class="section-title text-start mb--60 pl--100 pl-0">
                                           <h4 class="big-number-dark">{{ section.settings.right_section_heading }}</h4> 
-                                          <p class="description sal-animate text-dark mb-4" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300"> {{ section.settings.right_section_content }} </p>
+                                          <p class="description sal-animate text-white mb-4" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300"> {{ section.settings.right_section_content }} </p>
                                           <div class="my-great-box">
                                               {% for block in section.blocks %}
                                                 {% if block.type == 'text' %}  
                                                 <div class="single-great-box">
-                                                    <h3 class="med-number text-dark">{{ block.settings.imp_heading }}</h3>
-                                                    <p class="text-dark">{{ block.settings.imp_content }}</p>
+                                                    <h3 class="med-number text-white">{{ block.settings.imp_heading }}</h3>
+                                                    <p class="text-white">{{ block.settings.imp_content }}</p>
                                                 </div>
                                                 {% endif %}  
                                                 {% endfor %} 
                                           </div>
-                                          <p class="my-great-p text-dark">{{ section.settings.right_section_btm_content }}</p>
+                                          <p class="my-great-p text-white">{{ section.settings.right_section_btm_content }}</p>
                                       </div>
                                   </div>
                               </div>
