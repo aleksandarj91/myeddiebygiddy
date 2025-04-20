@@ -91,6 +91,34 @@
     },
     "lander_great_sex_nh4F8V": {
       "type": "Lander-Great-Sex",
+      "blocks": {
+        "text_UHJ6y9": {
+          "type": "text",
+          "settings": {
+            "imp_heading": "96%",
+            "imp_content": "Improved confidence <br> achieving an erection"
+          }
+        },
+        "text_LRbc4g": {
+          "type": "text",
+          "settings": {
+            "imp_heading": "93%",
+            "imp_content": "Improved quality <br> of erections"
+          }
+        },
+        "text_M4t7MX": {
+          "type": "text",
+          "settings": {
+            "imp_heading": "93%",
+            "imp_content": "Improved confidence <br> in sexual performance"
+          }
+        }
+      },
+      "block_order": [
+        "text_UHJ6y9",
+        "text_LRbc4g",
+        "text_M4t7MX"
+      ],
       "settings": {
         "left_section_heading": "Great Sex. No Rx.",
         "left_section_content": "Eddie is a wearable constriction device that’s shaped like an oval not circle, allowing it to safely restrict blood flow away from the penis while sustaining blood inflow, making it easier to get and stay hard.",
