@@ -89,6 +89,17 @@
         "color_scheme": "background-1"
       }
     },
+    "lander_great_sex_nh4F8V": {
+      "type": "Lander-Great-Sex",
+      "settings": {
+        "left_section_heading": "Great Sex. No Rx.",
+        "left_section_content": "Eddie is a wearable constriction device that’s shaped like an oval not circle, allowing it to safely restrict blood flow away from the penis while sustaining blood inflow, making it easier to get and stay hard.",
+        "left_section_points": "<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No prescription </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No side effects of ED pills </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No planning required </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No uncomfortable pumps </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No constriction devices </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark\"> <i class=\"feather-check\"></i> Yes to better sex today! </li>",
+        "right_section_heading": "95%",
+        "right_section_content": "of men reported overall positive <br class=\"d-lg-block d-none\"> results in a clinical trial¹",
+        "right_section_btm_content": "¹60 male adults participated in a clinical trial where researchers <br class=\"d-lg-block d-none\"> assessed the efficacy of Eddie over 12 weeks. Participants showed<br class=\"d-lg-block d-none\"> strong, significant improvement in erectile function."
+      }
+    },
     "lander_use_about_kGzEYD": {
       "type": "Lander-Use-About",
       "settings": {
@@ -356,6 +367,7 @@
     "main",
     "shogun-optimizer",
     "lander_why_eddie_Ndbr7j",
+    "lander_great_sex_nh4F8V",
     "lander_use_about_kGzEYD",
     "lander_try_eddie_bRrYwp",
     "home_how_does_ijxeLT",
