@@ -64,6 +64,12 @@
             "image": "shopify://shop_images/Medical_device.png",
             "alt": "Medical Device"
           }
+        },
+        "brand_logo_iBbLri": {
+          "type": "brand_logo",
+          "settings": {
+            "alt": "Brand logo"
+          }
         }
       },
       "block_order": [
@@ -71,7 +77,8 @@
         "brand_logo_AdhpG6",
         "brand_logo_wYA9Ep",
         "brand_logo_HMCCwb",
-        "brand_logo_qQRJqj"
+        "brand_logo_qQRJqj",
+        "brand_logo_iBbLri"
       ],
       "settings": {
         "stat_1_percentage": "93%",
