@@ -11,20 +11,17 @@
   "type": "header",
   "name": "Group name",
   "sections": {
-    "header_lander_9irBqc": {
-      "type": "header-lander",
+    "header_new_DdygqE": {
+      "type": "header-new",
       "settings": {
-        "desktop_logo": "shopify://shop_images/eddie_logo.png",
-        "mobile_logo": "shopify://shop_images/eddie_logo_dark.png",
-        "mobile_ED_img": "shopify://shop_images/red_small_b4ba0d46-cb2f-44fb-9368-20bb907ac851.png",
-        "buy_button_label": "TAKE THE QUIZ",
-        "buy_link": "shopify://pages/quiz1",
+        "buy_button_label": "BUY",
+        "buy_link": "",
         "quiz_link": "",
         "main_menu": ""
       }
     }
   },
   "order": [
-    "header_lander_9irBqc"
+    "header_new_DdygqE"
   ]
 }
