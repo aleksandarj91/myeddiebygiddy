@@ -213,45 +213,45 @@
         "faq_section_heading": "Learning about the basics of ED"
       }
     },
-    "home_testimonial_tz9DiD": {
-      "type": "Home-Testimonial",
+    "lander_testimonial_6a8gz7": {
+      "type": "Lander-Testimonial",
       "blocks": {
-        "brand_rh4QMD": {
+        "brand_C4PLUP": {
           "type": "brand",
           "settings": {
             "brand_img": "shopify://shop_images/Mens_Health.png",
             "brand_content": "“ED medications have a handful of potential side effects, but it’s <br class=\"d-lg-block d-none\"> unlikely you’ll experience any from Eddie by Giddy.”"
           }
         },
-        "brand_TYjg3Y": {
+        "brand_q7Pjpb": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/Askmen_Light_98f9d782-ca1f-4d5e-85eb-8da88b555099.svg",
+            "brand_img": "shopify://shop_images/Askmen.png",
             "brand_content": "\"For guys who are struggling with ED, or are looking for a<br class=\"d-lg-block d-none\"> recreational 'boost' in their sex lives, Eddie might be the perfect new<br class=\"d-lg-block d-none\"> tech product to bring into the bedroom.\""
           }
         },
-        "brand_XnDtFC": {
+        "brand_JnEJqt": {
           "type": "brand",
           "settings": {
             "brand_img": "shopify://shop_images/Forbes.png",
             "brand_content": "\"ED medications can cause side effects, such as a headache and<br class=\"d-lg-block d-none\"> upset stomach... Eddie offers men with ED and their partners an<br class=\"d-lg-block d-none\"> alternative to medication.\""
           }
         },
-        "brand_RtaWHH": {
+        "brand_YMe7Bx": {
           "type": "brand",
           "settings": {
             "brand_img": "shopify://shop_images/Yahoo.png",
             "brand_content": "\"Eddie by Giddy empowers men and their partners to live<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tmore fulfilling lives, starting with better sex.\""
           }
         },
-        "brand_TPyHTD": {
+        "brand_AVLgqE": {
           "type": "brand",
           "settings": {
             "brand_img": "shopify://shop_images/Medical_device.png",
             "brand_content": "\"Its ergonomic design is a clear improvement on rings and<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tpumps and does not require the major surgery of an<br class=\"d-lg-block d-none\"> implantable penile prosthesis.\""
           }
         },
-        "testimonial_L7TiRz": {
+        "testimonial_37DbGt": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Confidence Builder",
@@ -259,7 +259,7 @@
             "testimonial_name": "M.L."
           }
         },
-        "testimonial_JrGhpj": {
+        "testimonial_QK3rFq": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Can't Believe It Works So Well",
@@ -267,7 +267,7 @@
             "testimonial_name": "R.D."
           }
         },
-        "testimonial_f9JPie": {
+        "testimonial_V8Bqi4": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Happy Wife",
@@ -275,7 +275,7 @@
             "testimonial_name": "H.W."
           }
         },
-        "testimonial_en8Xhg": {
+        "testimonial_4WYzFT": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "The Perfect Alternative to Pills",
@@ -283,7 +283,7 @@
             "testimonial_name": "J.F."
           }
         },
-        "testimonial_KXxEJ4": {
+        "testimonial_iEnVKW": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Not Too Restrictive",
@@ -291,7 +291,7 @@
             "testimonial_name": "B.R."
           }
         },
-        "testimonial_4d3AWW": {
+        "testimonial_BjUpz7": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "This Little Gem",
@@ -299,7 +299,7 @@
             "testimonial_name": "C.A."
           }
         },
-        "testimonial_cdWtcP": {
+        "testimonial_yJp7Br": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Love the Design",
@@ -307,7 +307,7 @@
             "testimonial_name": "R.P."
           }
         },
-        "testimonial_9EAChh": {
+        "testimonial_4kH8aV": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Best Decision Ever",
@@ -315,7 +315,7 @@
             "testimonial_name": "N.P."
           }
         },
-        "testimonial_MddBMA": {
+        "testimonial_tqWYmL": {
           "type": "testimonial",
           "settings": {
             "testimonial_heading": "Life-Changing Gift For My Partner",
@@ -325,20 +325,20 @@
         }
       },
       "block_order": [
-        "brand_rh4QMD",
-        "brand_TYjg3Y",
-        "brand_XnDtFC",
-        "brand_RtaWHH",
-        "brand_TPyHTD",
-        "testimonial_L7TiRz",
-        "testimonial_JrGhpj",
-        "testimonial_f9JPie",
-        "testimonial_en8Xhg",
-        "testimonial_KXxEJ4",
-        "testimonial_4d3AWW",
-        "testimonial_cdWtcP",
-        "testimonial_9EAChh",
-        "testimonial_MddBMA"
+        "brand_C4PLUP",
+        "brand_q7Pjpb",
+        "brand_JnEJqt",
+        "brand_YMe7Bx",
+        "brand_AVLgqE",
+        "testimonial_37DbGt",
+        "testimonial_QK3rFq",
+        "testimonial_V8Bqi4",
+        "testimonial_4WYzFT",
+        "testimonial_iEnVKW",
+        "testimonial_BjUpz7",
+        "testimonial_yJp7Br",
+        "testimonial_4kH8aV",
+        "testimonial_tqWYmL"
       ],
       "settings": {
         "testimonial_heading": "See what they are saying"
@@ -365,7 +365,7 @@
     "home_how_does_ijxeLT",
     "learn_eddie_stacks_up_table_wibRCe",
     "home_learning_faqs_EWqWyM",
-    "home_testimonial_tz9DiD",
+    "lander_testimonial_6a8gz7",
     "lander_try_eddie_RP6t38"
   ]
 }
