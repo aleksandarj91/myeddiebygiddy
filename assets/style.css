@@ -1219,6 +1219,10 @@ ul.edy-dropdown-menu li .sub-menu li a, ul.edy-dropdown-menu li a .right-icon, u
   background-color: var(--color-tanwhite) !important;
 }
 
+.bg-color-darkblue {
+  background-color: #192335;
+}
+
 .bg-color-testimonialbg {
   background-color: var(--color-testimonialbg) !important;
 
