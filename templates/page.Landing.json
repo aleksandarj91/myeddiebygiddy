@@ -24,7 +24,6 @@
     },
     "shogun-optimizer": {
       "type": "shogun-optimizer",
-      "disabled": true,
       "settings": {}
     },
     "lander_why_eddie_Ndbr7j": {
