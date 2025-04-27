@@ -19,21 +19,13 @@
                   </div>
                 </div>
                 <div class="row bsg-5">
-                  <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
+                  <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
                     <ul class="plan-offer-list edy-list-white-border">
                       {{ section.settings.left_section_points }}
                     </ul>
                   </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-1 order-lg-2">
-                    <div class="section-title text-start mb--60 pl--100 pl-0">
-                      <h4 class="big-number-dark text-white">{{ section.settings.right_section_heading }}</h4>
-                      <p
-                        class="description sal-animate text-white mb-4"
-                        data-sal="slide-up"
-                        data-sal-duration="400"
-                        data-sal-delay="300">
-                        {{ section.settings.right_section_content }}
-                      </p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 col-12 order-1 order-lg-2 d-flex align-items-center">
+                    <div class="section-title text-start mb--60 pl--100 pl-0 w-100">
                       <div class="my-great-box">
                         {% for block in section.blocks %}
                           {% if block.type == 'text' %}
@@ -84,16 +76,6 @@
       }, {
         "type": "header",
         "content": "Right Section Content"
-      }, {
-        "type": "text",
-        "id": "right_section_heading",
-        "label": "Right Section Heading",
-        "default": "95%"
-      }, {
-        "type": "html",
-        "id": "right_section_content",
-        "label": "Right Section Content",
-        "default": "of men reported overall positive <br class='d-lg-block d-none'> results in a clinical trial¹ "
       }, {
         "type": "html",
         "id": "right_section_btm_content",
