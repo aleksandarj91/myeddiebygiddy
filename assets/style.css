@@ -29986,6 +29986,10 @@ a.bg-video-button-pause{
   color: var(--color-primary);
 }
 
+.small-text {
+  font-size: 0.5em !important;
+}
+
 
 
 
