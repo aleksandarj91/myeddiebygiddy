@@ -22660,6 +22660,12 @@ body.modal-open {
   color: var(--color-white) !important;
 }
 
+.plan-offer-list.edy-list-white-border li i {
+  background-color: #2F57EF21 !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-white) !important;
+}
+
 /*-------------------------------
  Modern Course Features  
 -------------------------------*/
