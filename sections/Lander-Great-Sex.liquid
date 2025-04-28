@@ -29,14 +29,14 @@
                       <div class="my-lander-great-box">
                         {% for block in section.blocks %}
                           {% if block.type == 'text' %}
-                            <div class="lander-single-great-box">
+                            <div class="lander-single-great-box align-items-center">
                               <h3 class="med-number text-white">{{ block.settings.imp_heading }}</h3>
                               <p class="text-white">{{ block.settings.imp_content }}</p>
                             </div>
                           {% endif %}
                         {% endfor %}
                       </div>
-                      <p class="my-great-p text-white">{{ section.settings.right_section_btm_content }}</p>
+                      <p class="my-lander-great-p text-white">{{ section.settings.right_section_btm_content }}</p>
                     </div>
                   </div>
                 </div>

@@ -129,6 +129,11 @@
     .my-great-p{
         font-size: 14px;
     }
+    
+    .my-lander-great-p{
+        margin-top: 15px;
+        font-size:12px;
+    }
     .plan-offer-list li{
         font-size: 22px;
         line-height: 24px;
@@ -167,6 +172,7 @@
         font-weight: 350;
         line-height: 100%;
         vertical-align: middle;
+        margin-bottom: 15px;
     }
 
     .lander-font-adjustment .plan-offer-list li {
