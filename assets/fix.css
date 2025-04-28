@@ -17,7 +17,7 @@
     margin-top: 0;
 }
 /* banner part end */
-/* great sex part start */
+/* Home great sex part start */
 .single-great-box h3{
     margin: 0;
     color: #fff;
@@ -37,7 +37,41 @@
     margin-bottom: 40px;
     margin-top: 40px;
 }
-/* great sex part end */
+/* Home great sex part end */
+
+/* Lander great sex part start */
+.my-lander-great-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.lander-single-great-box {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .lander-single-great-box {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Add some gap between h3 and p */
+    }
+
+    .slander-single-great-box h3 {
+        margin-bottom: 0;
+        white-space: nowrap; /* So h3 text doesn't wrap awkwardly */
+    }
+
+    .lander-single-great-box p {
+        margin: 0;
+        font-size: 13px;
+    }
+}
+/* Lander great sex part end */
 
 /* table part start */
 .table-logo{

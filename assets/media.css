@@ -154,6 +154,30 @@
 
     /* great sex part end */
 
+    /* lander great sex part start */
+    .lander-font-adjustment .section-title .title-sex {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: 500;
+        vertical-align: middle;
+    }
+
+    .lander-font-adjustment .para-devices {
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 100%;
+        vertical-align: middle;
+    }
+
+    .lander-font-adjustment .plan-offer-list li {
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 100%;
+        vertical-align: middle;
+    }
+
+    /* lander great sex part end */
+
     /* banner part start */
     .banner-content{
         padding-top: 40px !important;
