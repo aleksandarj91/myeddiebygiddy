@@ -1219,6 +1219,10 @@ ul.edy-dropdown-menu li .sub-menu li a, ul.edy-dropdown-menu li a .right-icon, u
   background-color: var(--color-tanwhite) !important;
 }
 
+.bg-color-darkblue {
+  background-color: #192335;
+}
+
 .bg-color-testimonialbg {
   background-color: var(--color-testimonialbg) !important;
 
@@ -22656,6 +22660,12 @@ body.modal-open {
   color: var(--color-white) !important;
 }
 
+.plan-offer-list.edy-list-white-border li i {
+  background-color: #2F57EF21 !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-white) !important;
+}
+
 /*-------------------------------
  Modern Course Features  
 -------------------------------*/
@@ -29974,6 +29984,10 @@ a.bg-video-button-pause{
   text-decoration: underline;
   outline: none;
   color: var(--color-primary);
+}
+
+.small-text {
+  font-size: 0.5em !important;
 }
 
 

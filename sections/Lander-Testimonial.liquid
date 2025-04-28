@@ -1,0 +1,172 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" crossorigin/>
+
+<style>
+.bg-color-testimonialbg {
+    background-image: url({{ section.settings.testimonial_img | img_url: 'master' }});
+    background-attachment: fixed;
+    background-size: cover;
+}  
+</style>
+<section id="testimonials" class="bg-color-testimonialbg">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div >
+                  <div class="container testi-z">
+                      <div class="row g-5 align-items-center mb--60">
+                          <div class="col-lg-12">
+                              <div class="section-title text-center">
+                                  <h2 class="title-devices text-white z-10">{{ section.settings.testimonial_heading }}</h2> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row row--15">
+                          <div class="col-lg-12">
+                              <div class="swiper team-slide-activation-4 edy-arrow-between edy-dot-bottom-center">								
+                                  <div class="swiper-wrapper">
+                                    {% for block in section.blocks %}
+                                    {% if block.type == 'testimonial' %}  
+                                    <div class="swiper-slide" style="margin-right: 600px;">
+                                          <div class="edy-testimonial-box text-center">
+                                              <div class="inner" style="border: 0px solid #ff0000;">
+                                                  <h5 class="testimonial-title">{{ block.settings.testimonial_heading }}</h5>												
+                                                  <div class="description">
+                                                      <p class="testimonial-description">
+                                                          {{ block.settings.testimonial_content }}												
+                                                      </p>
+                                                      <p id="bottom-initials" class="testimonial-initials">
+                                                          {{ block.settings.testimonial_name }}												
+                                                      </p>
+                                                      <div id="bottom" class="rating mt--20">
+                                                          <a href="javascript:void(0)"><i class="fa fa-star"></i></a>
+                                                          <a href="javascript:void(0)"><i class="fa fa-star"></i></a>
+                                                          <a href="javascript:void(0)"><i class="fa fa-star"></i></a>
+                                                          <a href="javascript:void(0)"><i class="fa fa-star"></i></a>
+                                                          <a href="javascript:void(0)"><i class="fa fa-star"></i></a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      {% endif %}
+                                      {% endfor %}								
+                                  </div>			
+                                  <div class="edy-swiper-pagination"></div>
+                              </div>
+                               <div class="my-slider text-center">
+                                  <div class="my-slider-box z-10" id="my-slider-box">
+                                      {% for block in section.blocks %}
+                                      {% if block.type == 'brand' %} 
+                                      <div class="single-my-slider text-center" >
+                                          <div class="my-slider-img mb-lg-5 mb-4 text-center">
+                                              <img src="{{ block.settings.brand_img | img_url:'master'}}" class="img-fluid m-auto z-10" alt="logo">
+                                          </div>
+                                          <p>{{ block.settings.brand_content }}</p>
+                                       </div>
+                                      {% endif %}
+                                      {% endfor %}
+                                  </div>
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="client-log py-5">
+  <div class="container py-4">
+      <div class="row">
+          <div class="col-12">
+              <div class="client-logo-box">
+                  {% assign logoNum = 1 %}
+                  {% for block in section.blocks %}
+                  {% if block.type == 'logo' %} 
+                  <img src="{{ block.settings.brand_logo | img_url:'master'}}" class="img-fluid logo-img {% if forloop.first == true %} active{% endif %}" id="single-img-{{ logoNum }}" alt="client-logo">
+                  {% endif %}
+                  {% assign logoNum = logoNum | plus: 1 %}  
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Lander Testimonial",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Testimonial Content"
+      },
+      {
+          "type": "text",
+          "id": "testimonial_heading",
+          "label": "Testimonial Heading",
+          "default": "See what they are saying"
+      },
+      {
+        "type": "image_picker",
+        "id": "testimonial_img",
+        "label": "Testimonial Background Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Testimonial",
+        "settings": [
+          {
+            "type": "text",
+			"id": "testimonial_heading",
+            "label": "Testimonial Heading"
+          },
+          {
+            "type": "textarea",
+			"id": "testimonial_content",
+            "label": "Testimonial Content"
+          },
+          {
+            "type": "text",
+			"id": "testimonial_name",
+            "label": "Testimonial Name"
+          }
+        ]
+      },
+      {
+        "type": "brand",
+        "name": "Testimonial Brand",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "brand_img",
+            "label": "Brand Image"
+          },
+          {
+            "type": "html",
+			"id": "brand_content",
+            "label": "Brand Content"
+          }
+        ]
+      },
+      {
+        "type": "logo",
+        "name": "Brand Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "brand_logo",
+            "label": "Brand Logo"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Lander Testimonial",
+      "category": "Home"
+    }]
+  }
+{% endschema %}

@@ -1,0 +1,110 @@
+<section id="id_great_sex" class="edy-events-area edy-section-gap bg-color-darkblue">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <div class="container">
+            <div class="row g-5 align-items-center mb--60">
+              <div class="col-lg-12">
+                <div class="row bsg-5">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
+                    <div class="section-title text-center mb--5">
+                      <h4 class="title-sex text-white mb--5">{{ section.settings.left_section_heading }}</h4>
+                    </div>
+                    <p
+                      class="para-devices sal-animate text-white text-center"
+                      data-sal="slide-up"
+                      data-sal-duration="400"
+                      data-sal-delay="300">{{ section.settings.left_section_content }}</p>
+                  </div>
+                </div>
+                <div class="row bsg-5">
+                  <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
+                    <ul class="plan-offer-list edy-list-white-border">
+                      {{ section.settings.left_section_points }}
+                    </ul>
+                  </div>
+                  <div class="col-lg-8 col-md-12 col-sm-12 col-12 order-1 order-lg-2 d-flex align-items-center">
+                    <div class="section-title text-start mb--60 pl--100 pl-0 w-100">
+                      <div class="my-great-box">
+                        {% for block in section.blocks %}
+                          {% if block.type == 'text' %}
+                            <div class="single-great-box">
+                              <h3 class="med-number text-white">{{ block.settings.imp_heading }}</h3>
+                              <p class="text-white">{{ block.settings.imp_content }}</p>
+                            </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                      <p class="my-great-p text-white">{{ section.settings.right_section_btm_content }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Lander Great Sex",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Left Section Content"
+      },
+      {
+        "type": "text",
+        "id": "left_section_heading",
+        "label": "Left Section Heading",
+        "default": "Great Sex. No Rx."
+      },
+      {
+        "type": "textarea",
+        "id": "left_section_content",
+        "label": "Left Section Content",
+        "default": "Eddie is a wearable constriction device that’s shaped like an oval not circle, allowing it to safely restrict blood flow away from the penis while sustaining blood inflow, making it easier to get and stay hard."
+      },
+      {
+        "type": "html",
+        "id": "left_section_points",
+        "label": "Left Section Points"
+      }, {
+        "type": "header",
+        "content": "Right Section Content"
+      }, {
+        "type": "html",
+        "id": "right_section_btm_content",
+        "label": "Right Section Bottom",
+        "default": "¹60 male adults participated in a clinical trial where researchers <br class='d-lg-block d-none'> assessed the efficacy of Eddie over 12 weeks. Participants showed<br class='d-lg-block d-none'> strong, significant improvement in erectile function."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Improved Content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "imp_heading",
+            "label": "Improved Heading"
+          }, {
+            "type": "textarea",
+            "id": "imp_content",
+            "label": "Improved Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Lander Great Sex",
+        "category": "Landing"
+      }
+    ]
+  }
+{% endschema %}

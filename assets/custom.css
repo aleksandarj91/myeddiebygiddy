@@ -400,3 +400,158 @@ s.price-item.price-item--regular {
 }
 
 
+/* css for Home-Meet-Eddie-Banner */
+ .left-column-content {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 60px 45px;
+     gap: 64px;
+ }
+ 
+ .stat-percentage {
+     font-size: 40px;
+     padding: 0px;
+     margin: 0px;
+     color: var(--color-primary); /* Solid button color from the scheme */
+ 
+ }
+
+  .stat-divider {
+       font-size: 40px;
+       padding: 0px;
+       margin: 0px;
+       color: var(--color-black); /* Solid button color from the scheme */
+  }
+ 
+ .stat-line {
+     font-size: 16px;
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ .h1-56 {
+     font-size: 56px;
+ }
+ 
+ .h4-24 {
+     font-size: 24px;
+ 
+ }
+ 
+ .h3-32 {
+     font-size: 32px;
+ }
+ 
+ .stats-wrapper {
+     gap: 16px;
+ }
+ 
+ .stat-box {
+     gap: 8px;
+ }
+ 
+ .headline-wrapper {
+     padding: 0 5.34px;
+ }
+ 
+ .cta-wrapper {
+     padding: 13px 88px;
+ }
+ 
+ .brand-logos {
+     row-gap: 16px;
+ }
+ 
+ .brand-logo img {
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ /* Right Banner Styling */
+ .right-banner-image {
+     width: 100%;
+     height: 110%;
+     object-fit: cover;
+     display: block;
+ }
+
+ @media screen and (max-width: 480px) {
+    .right-banner-image {
+        width: 120%;
+        height: 225px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .stat-percentage {
+        font-size: 24px;
+    }
+
+    .stat-line {
+        font-size: 12px;
+    }
+    .stat-divider {
+        font-size: 28px;
+    }
+    .left-column-content {
+        padding: 25px 16px;
+        gap: 32px;
+    }
+    .h1-56{
+        font-size: 32px;
+    }
+    .h4-24{
+        font-size: 16px;
+    }
+    .h3-32{
+        font-size: 24px;
+    }
+    .cta-wrapper {
+        padding: 0px;
+    }
+
+    #fact-table .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #fact-table table.edy-table {
+        min-width: 100%;
+        font-size: 12px; /* Adjust for better fit */
+        table-layout: fixed; /* Force even spacing */
+    }
+
+    #fact-table .edy-table th,
+    #fact-table .edy-table td {
+        padding: 8px 1px;
+        word-break: break-word;
+        font-size: 12px;
+    }
+
+    #fact-table .table-logo {
+        max-width: 80px;
+        height: auto;
+    }
+
+    #fact-table .section-title h2.title-devices {
+        font-size: 33px;
+    }
+
+    #fact-table .font-footnote {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #fact-table .row > * {
+        padding-left: 1px !important;
+        padding-right: 1px !important;
+    }
+
+    #fact-table tbody img:not(.table-logo) .logo-td {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+    }
+}
