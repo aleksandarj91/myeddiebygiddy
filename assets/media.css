@@ -129,6 +129,11 @@
     .my-great-p{
         font-size: 14px;
     }
+    
+    .my-lander-great-p{
+        margin-top: 15px;
+        font-size:12px;
+    }
     .plan-offer-list li{
         font-size: 22px;
         line-height: 24px;
@@ -153,6 +158,62 @@
 
 
     /* great sex part end */
+
+    /* lander great sex part start */
+
+    
+    .lander-single-great-box {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Add some gap between h3 and p */
+    }
+
+    .lander-single-great-box h3 {
+        margin-bottom: 0;
+        white-space: nowrap; /* So h3 text doesn't wrap awkwardly */
+    }
+
+    .lander-single-great-box p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .my-lander-great-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px 10px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .my-lander-great-box h3 {
+        margin-bottom: 0px !important;
+    } 
+    .lander-font-adjustment .section-title .title-sex {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: 500;
+        vertical-align: middle;
+    }
+
+    .lander-font-adjustment .para-devices {
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 100%;
+        vertical-align: middle;
+        margin-bottom: 15px;
+    }
+
+    .lander-font-adjustment .plan-offer-list li {
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 100%;
+        vertical-align: middle;
+    }
+    
+
+    /* lander great sex part end */
 
     /* banner part start */
     .banner-content{
@@ -303,6 +364,41 @@
         min-height: 1247px;
     }
     /* great sex part end */
+
+    /* lander great sex part start*/
+    .para-devices {
+        font-size: 22px;
+        line-height: 24px;
+        color: var(--color-heading);
+        font-weight: 100;
+        font-family: var(--font-primary);
+    }
+
+    .lander-font-adjustment .para-devices {
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 100%;
+        vertical-align: middle;
+        margin-bottom: 15px;
+    }
+
+    .lander-font-adjustment .section-title .title-sex {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: 500;
+        vertical-align: middle;
+    }
+    
+    .my-lander-great-p{
+        margin-top: 15px;
+        font-size:12px;
+    }
+    
+    .plan-offer-list li{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    /* lander great sex part end */
 
     /* banner part start */
     .banner-content{

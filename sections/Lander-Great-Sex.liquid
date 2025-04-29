@@ -1,4 +1,4 @@
-<section id="id_great_sex" class="edy-events-area edy-section-gap bg-color-darkblue">
+<section id="id_great_sex" class="edy-events-area edy-section-gap bg-color-darkblue lander-font-adjustment">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -7,36 +7,36 @@
             <div class="row g-5 align-items-center mb--60">
               <div class="col-lg-12">
                 <div class="row bsg-5">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
-                    <div class="section-title text-center mb--5">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt_md--30">
+                    <div class="section-title text-start text-lg-center mb--5">
                       <h4 class="title-sex text-white mb--5">{{ section.settings.left_section_heading }}</h4>
                     </div>
                     <p
-                      class="para-devices sal-animate text-white text-center"
+                      class="para-devices sal-animate text-white text-start text-lg-center"
                       data-sal="slide-up"
                       data-sal-duration="400"
                       data-sal-delay="300">{{ section.settings.left_section_content }}</p>
                   </div>
                 </div>
                 <div class="row bsg-5">
-                  <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30">
+                  <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30">
                     <ul class="plan-offer-list edy-list-white-border">
                       {{ section.settings.left_section_points }}
                     </ul>
                   </div>
                   <div class="col-lg-8 col-md-12 col-sm-12 col-12 order-1 order-lg-2 d-flex align-items-center">
                     <div class="section-title text-start mb--60 pl--100 pl-0 w-100">
-                      <div class="my-great-box">
+                      <div class="my-lander-great-box">
                         {% for block in section.blocks %}
                           {% if block.type == 'text' %}
-                            <div class="single-great-box">
+                            <div class="lander-single-great-box align-items-center">
                               <h3 class="med-number text-white">{{ block.settings.imp_heading }}</h3>
                               <p class="text-white">{{ block.settings.imp_content }}</p>
                             </div>
                           {% endif %}
                         {% endfor %}
                       </div>
-                      <p class="my-great-p text-white">{{ section.settings.right_section_btm_content }}</p>
+                      <p class="my-lander-great-p text-white">{{ section.settings.right_section_btm_content }}</p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@
         "type": "textarea",
         "id": "left_section_content",
         "label": "Left Section Content",
-        "default": "Eddie is a wearable constriction device that’s shaped like an oval not circle, allowing it to safely restrict blood flow away from the penis while sustaining blood inflow, making it easier to get and stay hard."
+        "default": "Eddie is a wearable construction device that is designed to restrict the veins and leave the arteries unencumbered, allowing you to get and stay hard longer."
       },
       {
         "type": "html",

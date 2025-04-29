@@ -22581,6 +22581,10 @@ body.modal-open {
   .edy-list-style-2 li {
     text-align: left;
   }
+
+  .plan-offer-list {
+    margin-top: 0px !important;
+  }
 }
 .edy-list-style-2 li i {
   width: 30px;
