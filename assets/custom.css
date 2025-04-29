@@ -556,8 +556,7 @@ s.price-item.price-item--regular {
         font-size: 24px;
     }
     .cta-wrapper {
-        margin: 0px;
-        margin-bottom: 8px;
+        margin: 0px 16px;
     }
     .brand-logos {
         row-gap: 12px;
