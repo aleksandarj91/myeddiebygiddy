@@ -512,7 +512,7 @@ s.price-item.price-item--regular {
         top:11px;
     }
     .right-banner-image {
-        width: 120%;
+        width: 150%;
         height: 225px;
         object-fit: cover;
         display: block;
