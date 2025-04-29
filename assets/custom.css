@@ -561,7 +561,7 @@ s.price-item.price-item--regular {
     }
     .brand-logos {
         row-gap: 12px;
-        padding: 0px;
+        margin: 0px;
     }
     .brand-logo img {
         max-width: 100%;
