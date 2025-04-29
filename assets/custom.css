@@ -427,6 +427,7 @@ s.price-item.price-item--regular {
 }
 
 .stat-divider {
+    font-weight: 600;
     font-size: 40px;
     padding: 0px;
     margin: 0px;
@@ -531,6 +532,7 @@ s.price-item.price-item--regular {
     }
     .stat-divider {
         font-size: 22px;
+        font-weight: 400;
     }
     .h1-64{
         font-size: 32px;
