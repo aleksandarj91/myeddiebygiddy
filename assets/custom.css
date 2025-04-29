@@ -533,6 +533,9 @@ s.price-item.price-item--regular {
         padding-right: 34px;
         gap: 14px;
     }
+    .stat-box {
+        gap: 4px;
+    }
     .stat-percentage {
         font-size: 24px;
     }
