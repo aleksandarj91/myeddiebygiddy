@@ -61,7 +61,7 @@
         gap: 10px; /* Add some gap between h3 and p */
     }
 
-    .slander-single-great-box h3 {
+    .lander-single-great-box h3 {
         margin-bottom: 0;
         white-space: nowrap; /* So h3 text doesn't wrap awkwardly */
     }
@@ -86,6 +86,10 @@
 }
 /* Lander great sex part end */
 
+
+/* Lander use about section start */
+
+/* Lander use about section end */
 /* table part start */
 .table-logo{
     width: 115px;
