@@ -558,6 +558,7 @@ s.price-item.price-item--regular {
     .cta-wrapper {
         margin: 0px;
         padding: 16px 14.5px;
+        gap: 12px;
     }
     .brand-logos {
         row-gap: 12px;
