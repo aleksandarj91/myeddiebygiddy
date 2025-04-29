@@ -418,6 +418,10 @@ s.price-item.price-item--regular {
     gap: 48px;
 }
 
+.percentage-wrapper{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .stat-percentage {
     font-size: 40px;
     padding: 0px;
@@ -427,8 +431,8 @@ s.price-item.price-item--regular {
 }
 
 .stat-divider {
-    font-weight: 600;
     font-size: 40px;
+    font-weight: 400;
     padding: 0px;
     margin: 0px;
     color: var(--color-black); /* Solid button color from the scheme */
@@ -523,6 +527,10 @@ s.price-item.price-item--regular {
     }
     .headline-wrapper{
         padding: 0px;
+    }
+    .percentage-wrapper{
+        padding-left: 34px;
+        padding-right: 34px;
     }
     .stat-percentage {
         font-size: 24px;
