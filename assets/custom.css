@@ -504,6 +504,13 @@ s.price-item.price-item--regular {
 }
 
 @media screen and (max-width: 480px) {
+    .main-logo-image{
+        width: 76px;
+        height: 23px;
+        position: absolute;
+        left: 89px;
+        top:11px;
+    }
     .right-banner-image {
         width: 120%;
         height: 225px;
