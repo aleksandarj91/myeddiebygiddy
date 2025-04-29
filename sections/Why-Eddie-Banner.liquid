@@ -1,9 +1,16 @@
 <div class="row color-{{ section.settings.color_scheme }}">
-
-    <div class="col-md-12 col-lg-6 order-2 order-lg-1">
+    <a href="{{ section.settings.main_logo_link }}">
+        <img
+                src="{{ section.settings.main_logo_img | img_url: 'master' }}"
+                class="main-logo-image img-fluid"
+                alt="Main Logo Image"
+                loading="lazy"
+        >
+    </a>
+    <div class="col-md-12 col-lg-7 order-2 order-lg-1">
         <div class="left-column-content">
             <!-- Stats -->
-            <div class="stats-wrapper">
+            <div class="stats-wrapper d-flex flex-column">
                 <div class="d-flex justify-content-center align-items-center gap-5">
                     <div class="d-flex justify-content-end align-items-center stat-box">
                         <h4 class="stat-percentage">{{ section.settings.stat_1_percentage }}</h4>
@@ -25,40 +32,44 @@
                 </div>
 
                 <div class="headline-wrapper text-center">
-                    <h1 class="h1-56">{{ section.settings.headline }}</h1>
-                    <h4 class="h4-24">{{ section.settings.subheadline }}</h4>
+                    <h1 class="h1-64">{{ section.settings.headline }}</h1>
+                    <h6 class="h6-24 m-0">{{ section.settings.subheadline }}</h6>
                 </div>
             </div>
 
             <!-- CTA -->
-            <div class="cta-wrapper text-center">
+            <div class="cta-wrapper d-flex flex-column text-center">
                 <h3 class="h3-32">{{ section.settings.cta_title }}</h3>
                 <a id="btn-quiz" class="edy-btn radius-round button--full-width"
                    href="{{ section.settings.cta_link }}">
                     <span class="btn-text">{{ section.settings.cta_text }}</span>
                 </a>
+                <h6 class="h6-16">{{ section.settings.cta_subtext }}</h6>
             </div>
 
             <!-- Brand Images -->
-            <div class="row flex-row d-flex justify-content-center brand-logos">
-                {% for block in section.blocks %}
-                    {% if block.type == 'brand_logo' %}
-                        <div class="col-4 justify-content-center d-flex brand-logo">
-                            {% assign index = forloop.index %}
-                            <img
-                                    src="{{ block.settings.image | img_url: 'master' }}"
-                                    alt="{{ block.settings.alt | default: 'Brand logo' }}"
-                            />
-                        </div>
-                    {% endif %}
-                {% endfor %}
+            <div class="d-flex flex-column brands-wrapper justify-content-center text-center">
+                <h6 class="h6-24">{{ section.settings.cta_featuretext }}</h6>
+                <div class="row flex-row d-flex justify-content-center brand-logos">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'brand_logo' %}
+                            <div class="col-2 justify-content-center d-flex brand-logo">
+                                {% assign index = forloop.index %}
+                                <img
+                                        src="{{ block.settings.image | img_url: 'master' }}"
+                                        alt="{{ block.settings.alt | default: 'Brand logo' }}"
+                                />
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
 
         </div>
     </div>
 
     <!-- Right Banner -->
-    <div class="col-md-12 col-lg-6 order-1 order-lg-2">
+    <div class="col-md-12 col-lg-5 order-1 order-lg-2">
         <img
                 src="{{ section.settings.banner_img | img_url: 'master' }}"
                 class="right-banner-image img-fluid"
@@ -72,6 +83,17 @@
 {
   "name": "Why Eddie Banner",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_logo_img",
+      "label": "Main logo Image"
+    },
+    {
+      "type": "text",
+      "id": "main_logo_link",
+      "label": "Main Logo Link",
+      "default": "#"
+    },
     {
       "type": "text",
       "id": "stat_1_percentage",
@@ -137,6 +159,18 @@
       "id": "cta_link",
       "label": "CTA Button Link",
       "default": "#"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtext",
+      "label": "CTA Subtext (below button)",
+      "default": "2 minutes to complete"
+    },
+    {
+      "type": "text",
+      "id": "cta_featuretext",
+      "label": "CTA Feature Text (above logos)",
+      "default": "Featured in"
     },
     {
       "type": "image_picker",
