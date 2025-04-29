@@ -563,8 +563,9 @@ s.price-item.price-item--regular {
         row-gap: 12px;
         padding: 0px;
     }
-    .brand-logo{
-        width: max-content;
+    .brand-logo img {
+        max-width: 100%;
+        height: auto;
     }
     #fact-table .table-responsive {
         overflow-x: auto;
