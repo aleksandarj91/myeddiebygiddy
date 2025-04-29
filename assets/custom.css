@@ -421,6 +421,7 @@ s.price-item.price-item--regular {
 .percentage-wrapper{
     padding-left: 100px;
     padding-right: 100px;
+    gap: 11px;
 }
 .stat-percentage {
     font-size: 40px;
