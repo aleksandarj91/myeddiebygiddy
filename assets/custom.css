@@ -508,7 +508,7 @@ s.price-item.price-item--regular {
     display: block;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575.98px) {
     .main-logo-image{
         width: 76px;
         height: 23px;
@@ -592,10 +592,6 @@ s.price-item.price-item--regular {
         height: auto;
     }
 
-    #fact-table .section-title h2.title-devices {
-        font-size: 33px;
-    }
-
     #fact-table .font-footnote {
         font-size: 16px;
         text-align: center;
@@ -610,6 +606,208 @@ s.price-item.price-item--regular {
         width: 16px;
         height: 16px;
         object-fit: contain;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .main-logo-image{
+        width: 76px;
+        height: 23px;
+        position: absolute;
+        left: 16px;
+        top:11px;
+    }
+    .right-banner-image {
+        height: 225px;
+        object-fit: cover;
+        display: block;
+    }
+    .left-column-content {
+        padding: 34px 16px;
+        gap: 24px;
+    }
+    .headline-wrapper{
+        padding: 0px;
+    }
+    .percentage-wrapper{
+        padding-left: 34px;
+        padding-right: 34px;
+        gap: 14px;
+    }
+    .stat-box {
+        gap: 4px;
+    }
+    .stat-percentage {
+        font-size: 22px;
+        padding: 6px 0px;
+    }
+    .stat-line {
+        font-size: 16px;
+    }
+    .stat-divider {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .h1-64{
+        font-size: 32px;
+    }
+    .h6-24 {
+        font-size: 16px;
+    }
+    .h3-32{
+        font-size: 24px;
+    }
+    .cta-wrapper {
+        margin: 0px;
+        padding: 16px 14.5px;
+        gap: 12px;
+    }
+    .brand-logos {
+        row-gap: 12px;
+        margin: 0px;
+    }
+    .brand-logo img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .main-logo-image{
+        width: 118.3px;
+        height: 34.28px;
+        position: absolute;
+        left: 32px;
+        top:24px;
+    }
+    .left-column-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 97px 60px;
+        padding-bottom: 54px;
+        gap: 48px;
+    }
+    .percentage-wrapper{
+        padding-left: 34px;
+        padding-right: 34px;
+        gap: 11px;
+    }
+    .stat-percentage{
+        font-size: 36px;
+    }
+    .h1-64{
+        font-size: 64px;
+    }
+    .h6-24{
+        font-size: 20px;
+    }
+    .cta-wrapper{
+        margin-right: 60px;
+        margin-left: 60px;
+        padding: 16px 14.5px;
+        gap: 12px;
+    }
+    .right-banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .main-logo-image{
+        width: 118.3px;
+        height: 34.28px;
+        position: absolute;
+        left: 32px;
+        top:24px;
+    }
+    .left-column-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 97px 60px;
+        padding-bottom: 54px;
+        gap: 48px;
+    }
+    .percentage-wrapper{
+        padding-left: 34px;
+        padding-right: 34px;
+        gap: 11px;
+    }
+    .stat-percentage{
+        font-size: 36px;
+    }
+    .h1-64{
+        font-size: 44px;
+    }
+    .h6-24{
+        font-size: 20px;
+    }
+    .cta-wrapper{
+        margin-right: 60px;
+        margin-left: 60px;
+        padding: 16px 14.5px;
+        gap: 12px;
+    }
+    .stat-percentage{
+        font-size: 28px;
+    }
+    .stat-line{
+        font-size: 18px;
+    }
+    .right-banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1519.98px){
+    .main-logo-image{
+        width: 118.3px;
+        height: 34.28px;
+        position: absolute;
+        left: 32px;
+        top:24px;
+    }
+    .left-column-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 97px 60px;
+        padding-bottom: 54px;
+        gap: 48px;
+    }
+    .percentage-wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 11px;
+    }
+    .h1-64{
+        font-size: 56px;
+    }
+    .h6-24{
+        font-size: 24px;
+    }
+    .cta-wrapper{
+        margin-right: 97.5px;
+        margin-left: 97.5px;
+        padding: 16px 14.5px;
+        gap: 12px;
+    }
+    .right-banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 }
 
