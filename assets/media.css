@@ -300,6 +300,11 @@
     #testimonials{
         padding-top: 40px !important;
     }
+
+    #lander_testimonials{
+        padding-top: 40px !important;
+    }
+    
     .edy-testimonial-box .inner{
         height: 310px;
     }
@@ -307,6 +312,15 @@
         padding: 12px 0;
     }
     .single-my-slider p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    
+    .lander-single-my-slider{
+        padding: 12px 0;
+    }
+    .lander-single-my-slider p{
         font-size: 22px;
         line-height: 32px;
     }
@@ -415,6 +429,10 @@
         height: 300px;
     }
     .single-my-slider{
+        padding: 12px 0;
+    }
+    
+    .lander-single-my-slider{
         padding: 12px 0;
     }
     /* testimonial part end */

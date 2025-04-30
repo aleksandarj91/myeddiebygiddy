@@ -180,6 +180,12 @@
     color: #fff;
     font-weight: 300;
 }
+
+.lander-single-my-slider p{
+    font-size: 30px;
+    color: #000;
+    font-weight: 300;
+}
 .my-slider .swiper-wrapper{
     justify-content: center;
 }
@@ -199,11 +205,31 @@
     opacity: .5;
     z-index: 1;
 }
+
+
+#lander_testimonials{
+    position: relative;
+    z-index: 10;
+    padding-top: 60px !important;
+}
+#lander_testimonials::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .z-10{
     position: relative;
     z-index: 10;
 }
 .single-my-slider{
+    margin-bottom: 60px;
+}
+.lander-single-my-slider{
     margin-bottom: 60px;
 }
 .slick-dots{
