@@ -10,20 +10,33 @@
                             </div>
                         </div>
                         <div class="row g-5 xalign-items-center">
-                            <div class="col-lg-5">
-                                <div class="content animate__animated animate__slideInLeft"> 
-                                    <img class="w-100 radius-10" src="{{ section.settings.use_image | img_url: 'master' }}" alt="Easy to Use - How to Wear" style="border: 2px solid #fff;"> 
+                            <div class="col-12 ">
+                                <p class="description-devices text-black d-block d-lg-none"> {{ section.settings.use_label }} </p>
+                            </div>
+                            <div class="col-5">
+                                <div class="content animate__animated animate__slideInLeft">
+                                    <img class="w-100-lg radius-10" src="{{ section.settings.use_image | img_url: 'master' }}" alt="Easy to Use - How to Wear" style="border: 2px solid #fff;">
                                 </div>
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-7 ">
                                 <div class="inner pl--50 pl_sm--0 pl_md--0 pl_lg--0">
-                                    <hr class="edy-separator m-0"></hr>
-                                    <p class="description-devices text-black mt-2"> {{ section.settings.use_label }} </p>
-                                    <div class="section-title text-start mt--15p">
+                                    <hr class="edy-separator d-none d-lg-block"></hr>
+                                    <p class="description-devices text-black mt-2 d-none d-lg-block"> {{ section.settings.use_label }} </p>
+                                    <!-- Desktop version with mt--15p -->
+                                    <div class="section-title text-start mt--15p d-none d-lg-block">
                                         <h2 class="title-devices text-black">{{ section.settings.use_heading }}</h2>
-                                        <p class="description-devices text-black mt--20"> {{ section.settings.use_content }} </p>
+                                        <p class="description-devices text-black mt--20">{{ section.settings.use_content }}</p>
+                                    </div>
+
+                                    <!-- Mobile version without mt--15p -->
+                                    <div class="section-title text-start d-block d-lg-none">
+                                        <h2 class="title-devices text-black">{{ section.settings.use_heading }}</h2>
+                                        <p class="description-devices" style="margin-top: 12px">{{ section.settings.use_content }}</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-12 mb-0">
+                                <hr class="edy-separator d-block d-lg-none"></hr>
                             </div>
                         </div>
                     </div>
@@ -31,41 +44,65 @@
                 <div class="edy-about-area about-style-1 bg-color-white edy-section-gap">
                     <div class="container">
                         <div class="row g-5 xalign-items-center">
-                            <div class="col-lg-7 order-2 order-lg-1">
+                            <div class="col-12 mt-0">
+                                <p class="description-devices text-black d-block d-lg-none" style="margin-top: 2rem"> {{ section.settings.fit_label }} </p>
+                            </div>
+                            <div class="col-7 order-2 order-lg-1">
                                 <div class="inner pr--50 pr_sm--0 pr_md--0 pr_lg--0">
-                                    <hr class="edy-separator m-0"></hr>
-                                    <p class="description-devices text-black mt-2"> {{ section.settings.fit_label }} </p>
-                                    <div class="section-title text-start mt--15p">
+                                    <hr class="edy-separator m-0 d-none d-lg-block"></hr>
+                                    <p class="description-devices text-black mt-2 d-none d-lg-block"> {{ section.settings.fit_label }} </p>
+                                    <!-- Desktop version with mt--15p -->
+                                    <div class="section-title text-start mt--15p d-none d-lg-block">
                                         <h2 class="title-devices text-black">{{ section.settings.fit_heading }}</h2>
                                         <p class="description-devices text-black mt--20"> {{ section.settings.fit_content }} </p>
                                     </div>
+                                    <!-- Mobile version without mt--15p -->
+                                    <div class="section-title text-start d-block d-lg-none">
+                                        <h2 class="title-devices text-black">{{ section.settings.fit_heading }}</h2>
+                                        <p class="description-devices mt--20"> {{ section.settings.fit_content }} </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 order-1 order-lg-2">
-                                <div class="content"> 
-                                    <img class="w-100 radius-10" src="{{ section.settings.fit_image | img_url: 'master' }}" alt="Eddie with Band Applied" style="border: 2px solid #fff;">  
+                            <div class="col-5 order-1 order-lg-2">
+                                <div class="content">
+                                    <img class="w-100 radius-10" src="{{ section.settings.fit_image | img_url: 'master' }}" alt="Eddie with Band Applied" style="border: 2px solid #fff;">
                                 </div>
+                            </div>
+                            <div class="col-12 order-3 mb-0">
+                                <hr class="edy-separator d-block d-lg-none"></hr>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="edy-about-area about-style-1 bg-color-white edy-section-gap2">
+                <div class="edy-about-area about-style-1 bg-color-white edy-section-gap">
                     <div class="container">
                         <div class="row g-5 xalign-items-center">
-                            <div class="col-lg-5">
-                                <div class="content"> 
-                                    <img class="w-100 radius-10" src="{{ section.settings.sex_image | img_url: 'master' }}" alt="Enjoy Better Sex" style="border: 2px solid #fff;"> 
+                            <div class="col-12 mt-0">
+                                <p class="description-devices text-black d-block d-lg-none"> {{ section.settings.sex_label }} </p>
+                            </div>
+                            <div class="col-5">
+                                <div class="content">
+                                    <img class="w-100 radius-10" src="{{ section.settings.sex_image | img_url: 'master' }}" alt="Enjoy Better Sex" style="border: 2px solid #fff;">
                                 </div>
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-7">
                                 <div class="inner pl--50 pl_sm--0 pl_md--0 pl_lg--0">
-                                    <hr class="edy-separator m-0"></hr>
-                                    <p class="description-devices text-black mt-2"> {{ section.settings.sex_label }} </p>
-                                    <div class="section-title text-start mt--15p">
+                                    <hr class="edy-separator m-0 d-none d-lg-block"></hr>
+                                    <p class="description-devices text-black mt-2 d-none d-lg-block"> {{ section.settings.sex_label }} </p>
+                                    <!-- Desktop version with mt--15p -->
+                                    <div class="section-title text-start mt--15p d-none d-lg-block">
                                         <h2 class="title-devices text-black">{{ section.settings.sex_heading }}</h2>
                                         <p class="description-devices text-black mt--20"> {{ section.settings.sex_content }} </p>
                                     </div>
+                                    <!-- Mobile version without mt--15p -->
+                                    <div class="section-title text-start d-block d-lg-none">
+                                        <h2 class="title-devices text-black">{{ section.settings.sex_heading }}</h2>
+                                        <p class="description-devices mt--20"> {{ section.settings.sex_content }} </p>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-12">
+                                <hr class="edy-separator d-block d-lg-none"></hr>
                             </div>
                         </div>
                     </div>
