@@ -46,18 +46,21 @@
         "brand_logo_aCziNP": {
           "type": "brand_logo",
           "settings": {
+            "image": "shopify://shop_images/Forbes.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_7JVbMb": {
           "type": "brand_logo",
           "settings": {
+            "image": "shopify://shop_images/Yahoo.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_eVF3Yi": {
           "type": "brand_logo",
           "settings": {
+            "image": "shopify://shop_images/Medical_device.png",
             "alt": "Brand logo"
           }
         }
