@@ -32,12 +32,14 @@
         "brand_logo_EqUpXY": {
           "type": "brand_logo",
           "settings": {
+            "image": "shopify://shop_images/Mens_Health.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_PxNpe8": {
           "type": "brand_logo",
           "settings": {
+            "image": "shopify://shop_images/logo-2.png",
             "alt": "Brand logo"
           }
         },
