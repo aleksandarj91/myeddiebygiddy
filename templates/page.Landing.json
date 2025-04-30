@@ -168,21 +168,6 @@
         "how_does_video": "https://www.youtube.com/watch?v=cVh3SXImSdI"
       }
     },
-    "video_yrVnp8": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "lander_stacks_up_table_jqEnDa": {
       "type": "Lander-Stacks-Up-Table",
       "name": "Lander Stacks Up Table",
@@ -384,7 +369,6 @@
     "lander_use_about_kGzEYD",
     "lander_try_eddie_bRrYwp",
     "lander_how_does_4mBjNq",
-    "video_yrVnp8",
     "lander_stacks_up_table_jqEnDa",
     "home_learning_faqs_EWqWyM",
     "lander_testimonial_6a8gz7",
