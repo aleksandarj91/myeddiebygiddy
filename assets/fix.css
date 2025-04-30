@@ -240,7 +240,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #eaeaea;
 }
 .slick-dots li.slick-active button,
 #section-health-slider .slick-dots li.slick-active button{
@@ -298,6 +298,13 @@
 
 .my-slider-img img{
     filter: brightness(0) invert(1);
+}
+
+.slick-dots li button:before {
+    content: '';
+}
+.lander-slider-img img{
+    filter: brightness(1) invert(0);
 }
 .health-p2{
     font-size: 30px;
