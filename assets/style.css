@@ -1231,10 +1231,16 @@ ul.edy-dropdown-menu li .sub-menu li a, ul.edy-dropdown-menu li a .right-icon, u
   /*background-repeat: repeat;*/
   background-attachment: fixed;
   background-size: cover;
+}
 
+.bg-color-lander-testimonialbg {
+  background-color: var(--color-white) !important;
 
-
-
+  /*background-image: url('../images/bg-dkblue.jpg');*/
+  background-image: url('../images/blue-swirlies.jpg');
+  /*background-repeat: repeat;*/
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
