@@ -224,30 +224,35 @@
         "brand_C4PLUP": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Mens_Health.png",
             "brand_content": "“ED medications have a handful of potential side effects, but it’s <br class=\"d-lg-block d-none\"> unlikely you’ll experience any from Eddie by Giddy.”"
           }
         },
         "brand_q7Pjpb": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/logo-2.png",
             "brand_content": "\"For guys who are struggling with ED, or are looking for a<br class=\"d-lg-block d-none\"> recreational 'boost' in their sex lives, Eddie might be the perfect new<br class=\"d-lg-block d-none\"> tech product to bring into the bedroom.\""
           }
         },
         "brand_JnEJqt": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Forbes.png",
             "brand_content": "\"ED medications can cause side effects, such as a headache and<br class=\"d-lg-block d-none\"> upset stomach... Eddie offers men with ED and their partners an<br class=\"d-lg-block d-none\"> alternative to medication.\""
           }
         },
         "brand_YMe7Bx": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Yahoo.png",
             "brand_content": "\"Eddie by Giddy empowers men and their partners to live<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tmore fulfilling lives, starting with better sex.\""
           }
         },
         "brand_AVLgqE": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Medical_device.png",
             "brand_content": "\"Its ergonomic design is a clear improvement on rings and<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tpumps and does not require the major surgery of an<br class=\"d-lg-block d-none\"> implantable penile prosthesis.\""
           }
         },
