@@ -32,35 +32,30 @@
         "brand_logo_EqUpXY": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-1_png.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_PxNpe8": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-2_png.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_aCziNP": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-3_png.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_7JVbMb": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-4_png.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_eVF3Yi": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-5_png.png",
             "alt": "Brand logo"
           }
         }
@@ -157,8 +152,9 @@
         "section_small_text": "2 minutes to complete"
       }
     },
-    "home_how_does_ijxeLT": {
-      "type": "Home-How-does",
+    "lander_how_does_4mBjNq": {
+      "type": "Lander-How-does",
+      "name": "Lander Video",
       "settings": {
         "section_image": "shopify://shop_images/how_it_works.webp",
         "how_does_heading": "How does Eddie work",
@@ -166,8 +162,9 @@
         "how_does_video": "https://www.youtube.com/watch?v=cVh3SXImSdI"
       }
     },
-    "learn_eddie_stacks_up_table_wibRCe": {
-      "type": "Learn-Eddie-Stacks-Up-Table",
+    "lander_stacks_up_table_jqEnDa": {
+      "type": "Lander-Stacks-Up-Table",
+      "name": "Lander Stacks Up Table",
       "settings": {
         "table_heading": "See How Eddie Stacks Up.",
         "table_description": "*per usage of medication"
@@ -360,8 +357,8 @@
     "lander_great_sex_nh4F8V",
     "lander_use_about_kGzEYD",
     "lander_try_eddie_bRrYwp",
-    "home_how_does_ijxeLT",
-    "learn_eddie_stacks_up_table_wibRCe",
+    "lander_how_does_4mBjNq",
+    "lander_stacks_up_table_jqEnDa",
     "home_learning_faqs_EWqWyM",
     "lander_testimonial_6a8gz7",
     "lander_try_eddie_RP6t38"
