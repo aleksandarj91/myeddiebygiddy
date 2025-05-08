@@ -54,6 +54,10 @@
     flex-direction: column;
 }
 
+.lander-single-great-box p {
+    font-size: 24px;
+}
+
 @media screen and (max-width: 767px) {
     .lander-single-great-box {
         flex-direction: row;
@@ -150,8 +154,8 @@
 }
 
 .edy-lander-cta-area h2 {
-    font-weight: 400;
-    margin-bottom: 5px !important;
+    font-size: 40px;
+    font-weight: 600;
 }
 .edy-lander-cta-area p {
     font-family: var(--font-secondary);
@@ -182,9 +186,9 @@
 }
 
 .lander-single-my-slider p{
-    font-size: 30px;
-    color: #000;
-    font-weight: 300;
+    font-size: 32px;
+    color: #192335;
+    font-weight: 100;
 }
 .my-slider .swiper-wrapper{
     justify-content: center;
@@ -405,6 +409,14 @@
     line-height: 46px;
     font-weight: 300;
     color: #000;
+}
+
+.lander-faq 
+.edy-accordion-style .card .card-header button{
+    font-size: 32px;
+    line-height: normal !important;
+    font-weight: 300;
+    
 }
 .edy-accordion-style .card .card-header button{
     font-size: 24px;

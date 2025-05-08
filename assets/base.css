@@ -1362,6 +1362,15 @@ button.shopify-payment-button__button--unbranded {
   width: 100%;
 }
 
+.button--half-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .button.loading {
   color: transparent;
   position: relative;
