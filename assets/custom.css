@@ -457,7 +457,6 @@ s.price-item.price-item--regular {
 .h6-24-bold {
     font-size: 24px;
     color: #19233599;
-    font-weight: 900;
 }
 
 .h6-16{
@@ -843,6 +842,10 @@ s.price-item.price-item--regular {
         font-size: 20px;
         color: #19233599
     }
+
+    .h6-24-bold {
+        font-weight: 900;
+    }
     .cta-wrapper{
         margin-right: 60px;
         margin-left: 60px;
@@ -893,7 +896,9 @@ s.price-item.price-item--regular {
     .h6-24{
         font-size: 24px;
         color: #19233599
-        font-weight
+    }
+    .h6-24-bold {
+        font-weight: 900;
     }
     .cta-wrapper{
         margin-right: 97.5px;
