@@ -15,23 +15,23 @@
                               <div class="col-xxl-8 col-xl-8 col-lg-6">
                                   <div class="edy-accordion-style edy-accordion-02 accordion">
                                       <div class="accordion" id="accordionExampleb2">
-                                          {% assign faqNum = 1 %}
+                                          {% assign fag_num = 1 %}
                                           {% for block in section.blocks %}
                                           {% if block.type == 'faq' %}
                                         <div class="accordion-item card">
-                                              <h2 class="accordion-header card-header" id="headingTwo{{ faqNum }}">
-                                                  <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo{{ faqNum }}" aria-expanded="false" aria-controls="collapseTwo{{ faqNum }}">
+                                              <h2 class="accordion-header card-header" id="headingTwo{{ fag_num }}">
+                                                  <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo{{ fag_num }}" aria-expanded="false" aria-controls="collapseTwo{{ fag_num }}">
                                                       {{ block.settings.faq_heading}}
                                                   </button>
                                               </h2>
-                                              <div id="collapseTwo{{ faqNum }}" class="accordion-collapse collapse" aria-labelledby="headingTwo{{ faqNum }}" data-bs-parent="#accordionExampleb2">
+                                              <div id="collapseTwo{{ fag_num }}" class="accordion-collapse collapse" aria-labelledby="headingTwo{{ fag_num }}" data-bs-parent="#accordionExampleb2">
                                                   <div class="accordion-body card-body text-white"> 											
                                                       {{ block.settings.faq_content }}
                                                   </div>
                                               </div>
                                           </div>
                                           {% endif %}
-                                          {% assign faqNum = faqNum | plus: 1 %}  
+                                          {% assign fag_num = fag_num | plus: 1 %}  
                                           {% endfor %}
                                       </div>
                                   </div>
