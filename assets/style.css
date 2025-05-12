@@ -15,10 +15,15 @@
 /* Secondary Font */
 @font-face {
   font-family: "Slate Pro Light";
-  src: url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate_Pro_Light.eot?v=1722232179') format('embedded-opentype'),
-       url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate_Pro_Light.woff2?v=1722232208') format('woff2'),
-       url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate_Pro_Light.woff?v=1722232231') format('woff'),
-       url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate-Pro-Light.ttf?v=1722232261') format('truetype');
+  src: url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate_Pro_Light.eot?v=1723081917') format('embedded-opentype'),
+       url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate_Pro_Light.woff2?v=1723081917') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate_Pro_Light.woff?v=1723081917') format('woff'),
+       url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate-Pro-Light.ttf?v=1723081917') format('truetype');
+}
+
+@font-face {
+  font-family: "Slate Pro Bold";
+  src:  url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Monotype-Slate-Pro-Bold.ttf?v=1718138234') format('truetype');
 }
 
 /**************************************
@@ -127,6 +132,7 @@
   --transition-3: transform .85s cubic-bezier(.23,1,.32,1),background .3s,border .3s,border-radius .3s,box-shadow .3s;
   --transition-4: all .25s cubic-bezier(.645,.045,.355,1);
   --font-primary: "Slate Pro Book";
+  --font-slate-bold: "Slate Pro Bold"
   --font-secondary: "Slate Pro Light";
   --font-alt: "Source Serif Pro", serif;
   --font-footnote: "Inter";
