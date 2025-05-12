@@ -85,7 +85,7 @@
         "subheadline": "A wearable FDA Class II medical device to treat ED.",
         "cta_title": "See if Eddie is right for you",
         "cta_text": "TAKE THE QUIZ & GET $20 OFF",
-        "cta_link": "",
+        "cta_link": "shopify://pages/quiz1",
         "cta_subtext": "2 minutes to complete",
         "cta_featuretext": "Featured in",
         "banner_img": "shopify://shop_images/why_eddie_happy_couple.webp",
@@ -153,7 +153,7 @@
         "section_heading": "Try Eddie risk-free.",
         "section_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
         "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
-        "section_btn_url": "shopify://products/eddie-by-giddy",
+        "section_btn_url": "shopify://pages/quiz1",
         "section_small_text": "2 minutes to complete"
       }
     },
@@ -354,7 +354,7 @@
         "section_heading": "Try Eddie risk-free.",
         "section_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
         "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
-        "section_btn_url": "shopify://products/eddie-by-giddy",
+        "section_btn_url": "shopify://pages/quiz1",
         "section_small_text": "2 minutes to complete"
       }
     }
