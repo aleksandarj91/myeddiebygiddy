@@ -40,7 +40,7 @@
             <!-- CTA -->
             <div class="cta-wrapper d-flex flex-column text-center">
                 <h3 class="h3-32">{{ section.settings.cta_title }}</h3>
-                <a id="btn-quiz" class="edy-btn radius-round button--full-width"
+                <a id="btn-quiz" class="edy-btn radius-round replace-url button--full-width"
                    href="{{ section.settings.cta_link }}">
                     <span class="btn-text">{{ section.settings.cta_text }}</span>
                 </a>
@@ -155,10 +155,9 @@
       "default": "TAKE THE QUIZ & GET $20 OFF"
     },
     {
-      "type": "text",
+      "type": "url",
       "id": "cta_link",
-      "label": "CTA Button Link",
-      "default": "#"
+      "label": "CTA Button Link"
     },
     {
       "type": "text",
