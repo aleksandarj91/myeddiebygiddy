@@ -22,11 +22,8 @@
                   <div class="container">
                       <div class="row">
                           <div class="col-lg-12">
-                              <div class="video-popup-wrapper">
-                                  <video class="w-100 edy-radius" controls poster="{{ section.settings.section_image | img_url: 'master' }}">
-                                    <source src="{{ section.settings.how_does_video }}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                  </video>
+                              <div class="video-popup-wrapper"> <img class="w-100 edy-radius" src="{{ section.settings.section_image | img_url: 'master' }}" alt="Click to view the How it Works Video">
+                                  <a class="edy-btn rounded-player-2 popup-video position-to-top with-animation" href="{{ section.settings.how_does_video }}"> <span class="play-icon"></span> </a>
                               </div>
                           </div>
                       </div>
@@ -64,14 +61,16 @@
           "default": "Hear about the ins and outs of Eddie from Dr. Chris Kyle of the Oregon Urology Institute."
       },
       {
-          "type": "url",
+          "type": "video_url",
           "id": "how_does_video",
-          "label": "Video File URL",
+          "accept": ["youtube", "vimeo"],
+          "label": "Youtube video URL",
+          "default": "https://www.youtube.com/watch?v=cVh3SXImSdI",
       }
     ],
     "presets": [{
       "name": "Lander Video",
-      "category": "Landing"
+      "category": "Home"
     }]
   }
 {% endschema %}
