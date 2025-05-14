@@ -14,8 +14,7 @@ $(window).on("load", function (e)
   setTimeout(function (params) 
   {
       //$("#ProductSubmitButton-template--23234327085378__main").removeAttr("disabled");
-      // $("#ProductSubmitButton-template--23234327085378__main").show();
-    $("#ProductSubmitButton-{{ section.id }}").show();
+      $("#ProductSubmitButton-template--24908125503857__main").show();
       $(".rc_widget").hide();
       $(".rc_popup").hide();
   }, 1000);        
