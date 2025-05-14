@@ -11,7 +11,7 @@
   "type": "header",
   "name": "Group name",
   "sections": {
-    "footer_lander_Qn9TQi": {
+    "footer_lander_eAQRJj": {
       "type": "footer-lander",
       "name": "Lander's Footer",
       "settings": {
@@ -21,6 +21,6 @@
     }
   },
   "order": [
-    "footer_lander_Qn9TQi"
+    "footer_lander_eAQRJj"
   ]
 }

@@ -277,31 +277,31 @@
         "testimonial_img": "shopify://shop_images/blue-swirlies.jpg"
       }
     },
-    "home_learning_faqs_FM3E8e": {
-      "type": "Home-Learning-Faqs",
+    "lander_learning_faqs_fHU4Te": {
+      "type": "Lander-Learning-Faqs",
       "blocks": {
-        "faq_pEgVRH": {
+        "faq_tdUA79": {
           "type": "faq",
           "settings": {
             "faq_heading": "How do I know if I have ED",
             "faq_content": "If you're not able to consistently get and maintain an erection when you want to have sex, you may have ED, a condition that can be caused by a number of physical or \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tpsychological issues, even medication and lifestyle choices. Here are some of the most common symptoms:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br> - Having trouble getting an erection<br>- Having trouble maintaining an erection<br>- Getting erections that aren't as full as you need them to be\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br> If you're wondering whether or not you have ED, we recommend that you take our Quiz."
           }
         },
-        "faq_ahcqmJ": {
+        "faq_TerWiV": {
           "type": "faq",
           "settings": {
             "faq_heading": "How common is ED?",
             "faq_content": "More than 45 million men in the United States experience ED every year due to a wide variety of factors. ED is more prevalent for older men, although age alone is not necessarily responsible for the condition. Many older men maintain healthy erectile function, while some younger men may experience ED due to factors such as stress, lifestyle choices, or underlying health conditions."
           }
         },
-        "faq_khAXea": {
+        "faq_TRcWea": {
           "type": "faq",
           "settings": {
             "faq_heading": "What is the science behind erections?",
             "faq_content": "Sexual arousal causes the brain to send chemical signals to the blood vessels in the penis, causing them to relax and allow more blood to flow in. This increased blood flow fills the twin chambers called corpora cavernosa, making the penis rigid and erect."
           }
         },
-        "faq_yjLYty": {
+        "faq_cPqkeD": {
           "type": "faq",
           "settings": {
             "faq_heading": "Can Eddie help improve sexual performance?",
@@ -310,11 +310,12 @@
         }
       },
       "block_order": [
-        "faq_pEgVRH",
-        "faq_ahcqmJ",
-        "faq_khAXea",
-        "faq_yjLYty"
+        "faq_tdUA79",
+        "faq_TerWiV",
+        "faq_TRcWea",
+        "faq_cPqkeD"
       ],
+      "name": "Lander Learning Faqs",
       "settings": {
         "faq_section_heading": "Learning about the basics of ED"
       }
@@ -335,7 +336,7 @@
     "home_how_does_4rhLq4",
     "home_order_renew_V4H7HT",
     "home_testimonial_NLEyaV",
-    "home_learning_faqs_FM3E8e",
+    "lander_learning_faqs_fHU4Te",
     "home_take_pleasure_9KTzqA"
   ]
 }
