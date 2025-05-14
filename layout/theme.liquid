@@ -447,13 +447,13 @@ function prqQuizCallback(quizResponse){
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% if template contains 'page.landing' %}
+    {% if template contains 'page.Landing' %}
       {% sections 'header-landing' %}
     {% else %}
       {% sections 'header-main' %}
     {% endif %}
      {{ content_for_layout }}
-    {% if template contains 'page.landing' %}
+    {% if template contains 'page.Landing' %}
       {% sections 'footer-landing' %}
     {% else %}
       {% sections 'footer-main' %}
