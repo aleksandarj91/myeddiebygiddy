@@ -9,20 +9,20 @@
  */
 {
   "type": "header",
-  "name": "Group name",
+  "name": "Default Footer",
   "sections": {
-    "header_new_3zy7hr": {
-      "type": "header-new",
-      "name": "Header",
+    "header_lander_rYATBp": {
+      "type": "header-lander",
+      "name": "Lander's Header",
       "settings": {
         "buy_button_label": "BUY",
         "buy_link": "",
         "quiz_link": "",
-        "main_menu": "main-menu"
+        "main_menu": ""
       }
     }
   },
   "order": [
-    "header_new_3zy7hr"
+    "header_lander_rYATBp"
   ]
 }
