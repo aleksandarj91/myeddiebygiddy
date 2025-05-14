@@ -10,6 +10,18 @@
 {
   "type": "header",
   "name": "Landing footer",
-  "sections": {},
-  "order": []
+  "sections": {
+    "footer_lander_7T8nUX": {
+      "type": "footer-lander",
+      "name": "Lander's Footer",
+      "settings": {
+        "footer_logo": "shopify://shop_images/eddie_logo.png",
+        "footer_info": "This information does not constitute medical advice and it should not be relied upon as such. Consult with your doctor before modifying your regular medical regimen.",
+        "copyright_text": "Copyright Giddy® | All Rights Reserved."
+      }
+    }
+  },
+  "order": [
+    "footer_lander_7T8nUX"
+  ]
 }
