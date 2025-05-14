@@ -54,6 +54,10 @@
     flex-direction: column;
 }
 
+.lander-single-great-box p {
+    font-size: 24px;
+}
+
 @media screen and (max-width: 767px) {
     .lander-single-great-box {
         flex-direction: row;
@@ -150,8 +154,8 @@
 }
 
 .edy-lander-cta-area h2 {
-    font-weight: 400;
-    margin-bottom: 5px !important;
+    font-size: 40px;
+    font-weight: 600;
 }
 .edy-lander-cta-area p {
     font-family: var(--font-secondary);
@@ -180,6 +184,12 @@
     color: #fff;
     font-weight: 300;
 }
+
+.lander-single-my-slider p{
+    font-size: 32px;
+    color: #192335;
+    font-weight: 100;
+}
 .my-slider .swiper-wrapper{
     justify-content: center;
 }
@@ -199,11 +209,31 @@
     opacity: .5;
     z-index: 1;
 }
+
+
+#lander_testimonials{
+    position: relative;
+    z-index: 10;
+    padding-top: 60px !important;
+}
+#lander_testimonials::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .z-10{
     position: relative;
     z-index: 10;
 }
 .single-my-slider{
+    margin-bottom: 60px;
+}
+.lander-single-my-slider{
     margin-bottom: 60px;
 }
 .slick-dots{
@@ -214,7 +244,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #eaeaea;
 }
 .slick-dots li.slick-active button,
 #section-health-slider .slick-dots li.slick-active button{
@@ -272,6 +302,13 @@
 
 .my-slider-img img{
     filter: brightness(0) invert(1);
+}
+
+.slick-dots li button:before {
+    content: '';
+}
+.lander-slider-img img{
+    filter: brightness(1) invert(0);
 }
 .health-p2{
     font-size: 30px;
@@ -372,6 +409,14 @@
     line-height: 46px;
     font-weight: 300;
     color: #000;
+}
+
+.lander-faq 
+.edy-accordion-style .card .card-header button{
+    font-size: 32px;
+    line-height: normal !important;
+    font-weight: 300;
+    
 }
 .edy-accordion-style .card .card-header button{
     font-size: 24px;

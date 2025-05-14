@@ -1,0 +1,76 @@
+<section class="bg-color-white lander-how-does-font-adjustment edy-section-gapTop">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div >
+                  <div class="container">
+                      <div class="row g-5 align-items-center">
+                          <div class="col-lg-10 offset-lg-1">
+                              <div class="content">
+                                  <div class="inner text-center">
+                                      <h1 class="title-devices">{{ section.settings.how_does_heading }}</h1>
+                                      <p class="description-howworks mb-5 pb-5">{{ section.settings.how_does_content }} </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End Banner Area -->
+              <!-- Start Video Area  -->
+              <div class="edy-video-area bg-color-white pb--8p">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <div class="video-popup-wrapper"> <img class="w-100 edy-radius" src="{{ section.settings.section_image | img_url: 'master' }}" alt="Click to view the How it Works Video">
+                                  <a class="edy-btn rounded-player-2 popup-video position-to-top with-animation" href="{{ section.settings.how_does_video }}"> <span class="play-icon"></span> </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End Video Area  -->
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Lander Video",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Lander Video"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image",
+        "label": "Section Background Image"
+      },
+      {
+          "type": "text",
+          "id": "how_does_heading",
+          "label": "Section Heading",
+          "default": "How does Eddie work?"
+      },
+      {
+          "type": "textarea",
+          "id": "how_does_content",
+          "label": "Section Content",
+          "default": "Hear about the ins and outs of Eddie from Dr. Chris Kyle of the Oregon Urology Institute."
+      },
+      {
+          "type": "video_url",
+          "id": "how_does_video",
+          "accept": ["youtube", "vimeo"],
+          "label": "Youtube video URL",
+          "default": "https://www.youtube.com/watch?v=cVh3SXImSdI",
+      }
+    ],
+    "presets": [{
+      "name": "Lander Video",
+      "category": "Home"
+    }]
+  }
+{% endschema %}

@@ -3,6 +3,10 @@
     .mb--60{
         margin-bottom: 10px !important;
     }
+
+    .edy-section-gapTopHalf {
+        padding-top: 40px;
+    }
     /* header part start */
     .edy-header .logo a img{
         margin-top: 0;
@@ -193,14 +197,14 @@
     .lander-font-adjustment .section-title .title-sex {
         font-size: 24px;
         line-height: 100%;
-        font-weight: 500;
+        font-weight: 600;
         vertical-align: middle;
     }
 
     .lander-font-adjustment .para-devices {
         font-size: 18px;
-        font-weight: 350;
-        line-height: 100%;
+        font-weight: 100;
+        line-height: 22px;
         vertical-align: middle;
         margin-bottom: 15px;
     }
@@ -211,6 +215,23 @@
         line-height: 100%;
         vertical-align: middle;
     }
+
+    .lander-how-does-font-adjustment .description-howworks {
+        font-size: 24px;
+        line-height: 24px;
+        color: var(--color-heading);
+        font-weight: 100;
+        font-family: var(--font-primary);
+        margin-bottom: 0px !important;
+    }
+
+    .lander-how-does-font-adjustment .title-devices {
+        margin-bottom: 5px !important;
+    }
+
+    .lander-stacks-up-font-adjustment .title-devices {
+        font-size: 24px;
+        font-weight: 600;    }
     
 
     /* lander great sex part end */
@@ -249,6 +270,62 @@
         /*text-align: center;*/
     }
 
+    .lander-use-about-font-adjustment .title-devices {
+        font-size: 24px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 600;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-use-about-font-adjustment .description-devices {
+        font-size: 18px;
+        line-height: 100%;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-stacks-up-font-adjustment .description-title {
+        font-size: 42px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 600;
+        font-family: var(--font-secondary);  
+      }    
+
+    .lander-use-about-font-adjustment .description-devices-head1 {
+        font-size: 24px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 600;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-use-about-font-adjustment .description-devices-head2 {
+        font-size: 24px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 100;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-use-about-font-adjustment .description-title {
+        font-size: 24px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 100;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-use-about-font-adjustment .use-content {
+        font-size: 18px;
+        line-height: 100%;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-how-does-font-adjustment .title-devices {
+        font-size: 24px;
+        font-weight: 600;
+    }
 
     .title-devices
     {
@@ -264,7 +341,7 @@
     
 
     .edy-section-gap{
-        padding: 20px 0 !important;
+        padding: 40px 0 !important;
     }
     .edy-call-to-action-area h2{
         font-size: 33px;
@@ -272,8 +349,19 @@
     }
 
     .edy-lander-cta-area h2 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 600;
+    }    
+
+    .edy-lander-cta-area p {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 100;
+    }
+
+    .button--half-width {
+        max-width: 365px;
     }
 
     .section-title .title-pleasure{
@@ -300,6 +388,11 @@
     #testimonials{
         padding-top: 40px !important;
     }
+
+    #lander_testimonials{
+        padding-top: 40px !important;
+    }
+    
     .edy-testimonial-box .inner{
         height: 310px;
     }
@@ -310,10 +403,41 @@
         font-size: 22px;
         line-height: 32px;
     }
+    #lander_testimonials .title-devices  {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #lander_testimonials .testimonial-title {
+        font-size: 24px;
+        color: #192335;
+    }
+    #lander_testimonials .testimonial-description {
+        font-size: 18px;
+        color: #192335;
+    }
+
+    
+    .lander-single-my-slider{
+        padding: 12px 0;
+    }
+    .lander-single-my-slider p{
+        font-size: 24px;
+        line-height: 24px;
+        color: #192335;
+    }
     .my-slider-img img{
         width: 150px;
     }
+
+    .lander-faq .title-devices {
+        font-size: 24px;
+        font-weight: 600;
+    }
     
+    .lander-slider-img img{
+        width: 150px;
+    }
     /* testimonial part end */
 
     /* faq part start */
@@ -335,6 +459,10 @@
     .my-faq .edy-accordion-style .card .card-header button{
         padding: 15px 20px;
     }
+
+    .lander-faq .edy-accordion-style .card .card-header button {
+        font-size: 18px;
+    }
     
     /* faq part end */
 
@@ -342,6 +470,10 @@
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .edy-section-gapTopHalf {
+        padding-top: 40px;
+      }
     /* header part start */
     .edy-header .logo a img{
         margin-top: 0;
@@ -353,6 +485,10 @@
     }
     .edy-btn.btn-sm {
         padding: 0 20px;
+    }    
+
+    .button--half-width {
+        max-width: 365px;
     }
     /* header part end */
 
@@ -386,10 +522,54 @@
     .lander-font-adjustment .section-title .title-sex {
         font-size: 24px;
         line-height: 100%;
-        font-weight: 500;
+        font-weight: 600;
         vertical-align: middle;
+    }    
+
+    .lander-use-about-font-adjustment .title-devices {
+        font-size: 24px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 600;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-use-about-font-adjustment .description-devices {
+        font-size: 24px;
+        line-height: 100%;
+        font-family: var(--font-secondary);
+    }
+
+    .lander-stacks-up-font-adjustment .description-title {
+        font-size: 42px;
+        line-height: 100%;
+        color: #000;
+        font-weight: 600;
+        font-family: var(--font-secondary);  
+      }
+
+    .lander-use-about-font-adjustment .description-devices-head1 {
+        font-size: 24px;
+        line-height: 100%;
+        font-family: var(--font-secondary);
+    }
+    .lander-use-about-font-adjustment .description-devices-head2 {
+        font-size: 24px;
+        line-height: 100%;
+        font-family: var(--font-secondary);
     }
     
+    .lander-how-does-font-adjustment .title-devices {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .lander-how-does-font-adjustment .description-howworks {
+        font-size: 24px;
+        line-height: 24px;
+        color: var(--color-heading);
+        font-weight: 100;
+        font-family: var(--font-primary);
+    }
     .my-lander-great-p{
         margin-top: 15px;
         font-size:12px;
@@ -417,6 +597,10 @@
     .single-my-slider{
         padding: 12px 0;
     }
+    
+    .lander-single-my-slider{
+        padding: 12px 0;
+    }
     /* testimonial part end */
 
     /* faq part start */
@@ -428,6 +612,10 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
+
+    .edy-section-gapTopHalf {
+        padding-top: 40px;
+      }
     /* header part start */
     .edy-header .logo a img{
         margin-top: 0;
@@ -438,6 +626,7 @@
     .splash-layout-presentation-box{
         min-height: 852px;
     }
+    
     /* header part end */
 
     /* great sex part start */
@@ -462,6 +651,10 @@
     .edy-header .logo a img{
         margin-top: 0;
     }
+
+    .mb-lg--40 {
+        margin-bottom: 40px !important;
+      }
     .edy-header .edy-header-wrapper{
         height: auto;
     }
@@ -489,8 +682,16 @@
     .edy-testimonial-box .inner{
         height: 430px;
     }
+
+    .mb-lg--40 {
+        margin-bottom: 40px !important;
+      }
     /* testimonial part end */
  }
 
 /*Extra large devices (Extra Extra large desktops, 1400px and up)*/
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) { 
+    .mb-lg--40 {
+    margin-bottom: 40px !important;
+  }
+ }

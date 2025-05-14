@@ -428,7 +428,6 @@ s.price-item.price-item--regular {
     padding: 0px;
     margin: 0px;
     color: var(--color-primary); /* Solid button color from the scheme */
-
 }
 
 .stat-divider {
@@ -443,6 +442,7 @@ s.price-item.price-item--regular {
     font-size: 24px;
     padding: 0px;
     margin: 0px;
+    color: #19233599
 }
 
 .h1-64 {
@@ -451,16 +451,24 @@ s.price-item.price-item--regular {
 
 .h6-24 {
     font-size: 24px;
+    color: #19233599
+}
+
+.h6-24-bold {
+    font-size: 24px;
+    color: #19233599;
 }
 
 .h6-16{
     font-size: 16px;
     margin-bottom: 0px;
+    color: #19233599
 }
 
 .h3-32 {
     font-size: 32px;
     margin-bottom: 4px;
+    color: #192335;
 }
 
 .stats-wrapper {
@@ -469,6 +477,13 @@ s.price-item.price-item--regular {
 
 .stat-box {
     gap: 8px;
+}
+
+.cta-wrapper .edy-btn {
+    font-size: 18px;
+    height: 71px;
+    line-height: 71px;
+    font-weight: 600;
 }
 
 .headline-wrapper {
@@ -485,6 +500,11 @@ s.price-item.price-item--regular {
     gap: 12px;
 }
 
+.more-pleasure {
+    border: 2px solid #000 !important;
+    box-shadow: inset 0 0 0 2px #192335;
+}
+
 .brands-wrapper{
     gap: 12px;
 }
@@ -497,7 +517,7 @@ s.price-item.price-item--regular {
 
 .brand-logo img {
     max-width: 100%;
-    height: auto;
+    height: 38px;
 }
 
 /* Right Banner Styling */
@@ -537,7 +557,7 @@ s.price-item.price-item--regular {
         gap: 4px;
     }
     .stat-percentage {
-        font-size: 22px;
+        font-size: 24px;
         padding: 6px 0px;
     }
     .stat-line {
@@ -549,25 +569,47 @@ s.price-item.price-item--regular {
     }
     .h1-64{
         font-size: 32px;
+        color: #000;
     }
     .h6-24 {
-        font-size: 16px;
+        font-size: 18px;
+        color: #19233599
     }
+
+    .h6-24-bold {
+        font-size: 18px;
+        color: #19233599
+    }
+
+    .h6-16{
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: #19233599
+    }
+
     .h3-32{
         font-size: 24px;
+        color: #000;
     }
     .cta-wrapper {
         margin: 0px;
         padding: 16px 14.5px;
         gap: 12px;
     }
+
+    .cta-wrapper .edy-btn {
+        font-size: 16px;
+        height: 60px;
+        line-height: 60px;
+    }
+
     .brand-logos {
         row-gap: 12px;
         margin: 0px;
     }
     .brand-logo img {
         max-width: 100%;
-        height: auto;
+        height: 34px;
     }
     #fact-table .table-responsive {
         overflow-x: auto;
@@ -638,7 +680,7 @@ s.price-item.price-item--regular {
         gap: 4px;
     }
     .stat-percentage {
-        font-size: 22px;
+        font-size: 24px;
         padding: 6px 0px;
     }
     .stat-line {
@@ -650,25 +692,47 @@ s.price-item.price-item--regular {
     }
     .h1-64{
         font-size: 32px;
+        color: #000;
     }
-    .h6-24 {
+
+    .h6-16{
         font-size: 16px;
+        margin-bottom: 0px;
+        color: #19233599
+    }
+
+    .h6-24 {
+        font-size: 18px;
+        color: #19233599
+    }
+
+    .h6-24-bold {
+        font-size: 18px;
+        color: #19233599
     }
     .h3-32{
         font-size: 24px;
+        color: #000;
     }
     .cta-wrapper {
         margin: 0px;
         padding: 16px 14.5px;
         gap: 12px;
     }
+
+    .cta-wrapper .edy-btn {
+        font-size: 16px;
+        height: 60px;
+        line-height: 60px;
+    }
+
     .brand-logos {
         row-gap: 12px;
         margin: 0px;
     }
     .brand-logo img {
         max-width: 100%;
-        height: auto;
+        height: 34px;
     }
 }
 
@@ -699,9 +763,23 @@ s.price-item.price-item--regular {
     }
     .h1-64{
         font-size: 64px;
+        color: #000;
     }
+
+    .h6-16{
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: #19233599
+    }
+
     .h6-24{
         font-size: 20px;
+        color: #19233599
+    }
+
+    .h6-24-bold {
+        font-size: 18px;
+        color: #19233599
     }
     .cta-wrapper{
         margin-right: 60px;
@@ -709,6 +787,13 @@ s.price-item.price-item--regular {
         padding: 16px 14.5px;
         gap: 12px;
     }
+
+    .cta-wrapper .edy-btn {
+        font-size: 16px;
+        height: 60px;
+        line-height: 60px;
+    }
+    
     .right-banner-image {
         width: 100%;
         height: 100%;
@@ -744,9 +829,22 @@ s.price-item.price-item--regular {
     }
     .h1-64{
         font-size: 44px;
+        color: #000;
     }
+
+    .h6-16{
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: #19233599
+    }
+
     .h6-24{
         font-size: 20px;
+        color: #19233599
+    }
+
+    .h6-24-bold {
+        font-weight: 900;
     }
     .cta-wrapper{
         margin-right: 60px;
@@ -793,9 +891,14 @@ s.price-item.price-item--regular {
     }
     .h1-64{
         font-size: 56px;
+        color: #192335;
     }
     .h6-24{
         font-size: 24px;
+        color: #19233599
+    }
+    .h6-24-bold {
+        font-weight: 900;
     }
     .cta-wrapper{
         margin-right: 97.5px;

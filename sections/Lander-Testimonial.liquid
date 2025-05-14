@@ -4,14 +4,13 @@
   crossorigin />
 
 <style>
-  .bg-color-testimonialbg {
-    background-color: #ffffff !important;
-    background-image: none !important;
+  .bg-color-lander-testimonialbg {
+    background-image: none;
     background-attachment: fixed;
     background-size: cover;
   }
 </style>
-<section id="testimonials">
+<section id="lander_testimonials" class="bg-color-lander-testimonialbg">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -20,7 +19,7 @@
             <div class="row g-5 align-items-center mb--60">
               <div class="col-lg-12">
                 <div class="section-title text-center">
-                  <h2 class="title-devices text-white z-10">{{ section.settings.testimonial_heading }}</h2>
+                  <h2 class="title-devices text-black z-10">{{ section.settings.testimonial_heading }}</h2>
                 </div>
               </div>
             </div>
@@ -71,8 +70,8 @@
                   <div class="my-slider-box z-10" id="my-slider-box">
                     {% for block in section.blocks %}
                       {% if block.type == 'brand' %}
-                        <div class="single-my-slider text-center">
-                          <div class="my-slider-img mb-lg-5 mb-4 text-center">
+                        <div class="lander-single-my-slider text-center">
+                          <div class="lander-slider-img mb-lg-5 mb-4 text-center">
                             <img
                               src="{{ block.settings.brand_img | img_url:'master'}}"
                               class="img-fluid m-auto z-10"
@@ -93,35 +92,13 @@
   </div>
 </section>
 
-<section class="client-log py-5">
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-12">
-        <div class="client-logo-box">
-          {% assign logoNum = 1 %}
-          {% for block in section.blocks %}
-            {% if block.type == 'logo' %}
-              <img
-                src="{{ block.settings.brand_logo | img_url:'master'}}"
-                class="img-fluid logo-img {% if forloop.first == true %} active{% endif %}"
-                id="single-img-{{ logoNum }}"
-                alt="client-logo">
-            {% endif %}
-            {% assign logoNum = logoNum | plus: 1 %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 {% schema %}
   {
     "name": "Lander Testimonial",
     "settings": [
       {
         "type": "header",
-        "content": "Testimonial Content"
+        "content": "Lander Testimonial"
       }, {
         "type": "text",
         "id": "testimonial_heading",
@@ -181,7 +158,7 @@
     "presets": [
       {
         "name": "Lander Testimonial",
-        "category": "Home"
+        "category": "Landing"
       }
     ]
   }

@@ -32,35 +32,35 @@
         "brand_logo_EqUpXY": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-1_png.png",
+            "image": "shopify://shop_images/Mens_Health.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_PxNpe8": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-2_png.png",
+            "image": "shopify://shop_images/logo-2.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_aCziNP": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-3_png.png",
+            "image": "shopify://shop_images/Forbes.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_7JVbMb": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-4_png.png",
+            "image": "shopify://shop_images/Yahoo.png",
             "alt": "Brand logo"
           }
         },
         "brand_logo_eVF3Yi": {
           "type": "brand_logo",
           "settings": {
-            "image": "shopify://shop_images/logo-5_png.png",
+            "image": "shopify://shop_images/Medical_device.png",
             "alt": "Brand logo"
           }
         }
@@ -74,7 +74,6 @@
       ],
       "name": "Why Eddie Banner",
       "settings": {
-        "main_logo_img": "shopify://shop_images/eddie_logo_dark.png",
         "main_logo_link": "#",
         "stat_1_percentage": "93%",
         "stat_1_line_1": "improved",
@@ -86,7 +85,7 @@
         "subheadline": "A wearable FDA Class II medical device to treat ED.",
         "cta_title": "See if Eddie is right for you",
         "cta_text": "TAKE THE QUIZ & GET $20 OFF",
-        "cta_link": "#",
+        "cta_link": "shopify://pages/quiz1",
         "cta_subtext": "2 minutes to complete",
         "cta_featuretext": "Featured in",
         "banner_img": "shopify://shop_images/why_eddie_happy_couple.webp",
@@ -100,21 +99,21 @@
           "type": "text",
           "settings": {
             "imp_heading": "96%",
-            "imp_content": "Improved confidence <br> achieving an erection"
+            "imp_content": "improved confidence in <br>getting hard"
           }
         },
         "text_LRbc4g": {
           "type": "text",
           "settings": {
-            "imp_heading": "93%",
-            "imp_content": "Improved quality <br> of erections"
+            "imp_heading": "95%",
+            "imp_content": "of men had positive results <br>in a clinical trial.¹"
           }
         },
         "text_M4t7MX": {
           "type": "text",
           "settings": {
             "imp_heading": "93%",
-            "imp_content": "Improved confidence <br> in sexual performance"
+            "imp_content": "improved confidence in <br>male performance"
           }
         }
       },
@@ -125,9 +124,9 @@
       ],
       "settings": {
         "left_section_heading": "Great Sex. No Rx.",
-        "left_section_content": "Eddie is a wearable constriction device that’s shaped like an oval not circle, allowing it to safely restrict blood flow away from the penis while sustaining blood inflow, making it easier to get and stay hard.",
+        "left_section_content": "Eddie is a wearable construction device that is designed to restrict the veins and leave the arteries unencumbered, allowing you to get and stay hard longer.",
         "left_section_points": "<li class=\"text-white mb--10\"> <i class=\"feather-x text-white\"></i> No prescription </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-white mb--10\"> <i class=\"feather-x text-white\"></i> No side effects of ED pills </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-white mb--10\"> <i class=\"feather-x text-white\"></i> No planning required </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-white mb--10\"> <i class=\"feather-x text-white\"></i> No uncomfortable pumps </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-white mb--10\"> <i class=\"feather-x text-white\"></i> No constriction devices </li>",
-        "right_section_btm_content": "¹60 male adults participated in a clinical trial where researchers <br class=\"d-lg-block d-none\"> assessed the efficacy of Eddie over 12 weeks. Participants showed<br class=\"d-lg-block d-none\"> strong, significant improvement in erectile function."
+        "right_section_btm_content": "¹60 male adults participated in a clinical trial where researcher sassessed the efficacy of Eddie over 12 weeks. Participants showed strong, significant improvement in function."
       }
     },
     "lander_use_about_kGzEYD": {
@@ -142,6 +141,7 @@
         "fit_label": "BETTER FIT",
         "fit_heading": "Secure",
         "fit_content": "Select the tension band that provides you the best fit. Use the blue band for standard tension or the red band for a tighter fit.",
+        "sex_image": "shopify://shop_images/use_about_happy_couple.webp",
         "sex_label": "MORE PLEASURE",
         "sex_heading": "Enjoy",
         "sex_content": "Apply at any time prior to intercourse and wear throughout. Eddie's unique design allows for a pleasurable climax and finish."
@@ -153,12 +153,13 @@
         "section_heading": "Try Eddie risk-free.",
         "section_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
         "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
-        "section_btn_url": "shopify://collections/all",
+        "section_btn_url": "shopify://pages/quiz1",
         "section_small_text": "2 minutes to complete"
       }
     },
-    "home_how_does_ijxeLT": {
-      "type": "Home-How-does",
+    "lander_how_does_4mBjNq": {
+      "type": "Lander-How-does",
+      "name": "Lander Video",
       "settings": {
         "section_image": "shopify://shop_images/how_it_works.webp",
         "how_does_heading": "How does Eddie work",
@@ -166,8 +167,9 @@
         "how_does_video": "https://www.youtube.com/watch?v=cVh3SXImSdI"
       }
     },
-    "learn_eddie_stacks_up_table_wibRCe": {
-      "type": "Learn-Eddie-Stacks-Up-Table",
+    "lander_stacks_up_table_jqEnDa": {
+      "type": "Lander-Stacks-Up-Table",
+      "name": "Lander Stacks Up Table",
       "settings": {
         "table_heading": "See How Eddie Stacks Up.",
         "table_description": "*per usage of medication"
@@ -221,30 +223,35 @@
         "brand_C4PLUP": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Mens_Health.png",
             "brand_content": "“ED medications have a handful of potential side effects, but it’s <br class=\"d-lg-block d-none\"> unlikely you’ll experience any from Eddie by Giddy.”"
           }
         },
         "brand_q7Pjpb": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/logo-2.png",
             "brand_content": "\"For guys who are struggling with ED, or are looking for a<br class=\"d-lg-block d-none\"> recreational 'boost' in their sex lives, Eddie might be the perfect new<br class=\"d-lg-block d-none\"> tech product to bring into the bedroom.\""
           }
         },
         "brand_JnEJqt": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Forbes.png",
             "brand_content": "\"ED medications can cause side effects, such as a headache and<br class=\"d-lg-block d-none\"> upset stomach... Eddie offers men with ED and their partners an<br class=\"d-lg-block d-none\"> alternative to medication.\""
           }
         },
         "brand_YMe7Bx": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Yahoo.png",
             "brand_content": "\"Eddie by Giddy empowers men and their partners to live<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tmore fulfilling lives, starting with better sex.\""
           }
         },
         "brand_AVLgqE": {
           "type": "brand",
           "settings": {
+            "brand_img": "shopify://shop_images/Medical_device.png",
             "brand_content": "\"Its ergonomic design is a clear improvement on rings and<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tpumps and does not require the major surgery of an<br class=\"d-lg-block d-none\"> implantable penile prosthesis.\""
           }
         },
@@ -347,7 +354,7 @@
         "section_heading": "Try Eddie risk-free.",
         "section_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
         "section_btn_label": "TAKE THE QUIZ  & GET $20 OFF",
-        "section_btn_url": "shopify://collections/all",
+        "section_btn_url": "shopify://pages/quiz1",
         "section_small_text": "2 minutes to complete"
       }
     }
@@ -360,8 +367,8 @@
     "lander_great_sex_nh4F8V",
     "lander_use_about_kGzEYD",
     "lander_try_eddie_bRrYwp",
-    "home_how_does_ijxeLT",
-    "learn_eddie_stacks_up_table_wibRCe",
+    "lander_how_does_4mBjNq",
+    "lander_stacks_up_table_jqEnDa",
     "home_learning_faqs_EWqWyM",
     "lander_testimonial_6a8gz7",
     "lander_try_eddie_RP6t38"
