@@ -12,9 +12,10 @@ $(window).on("load", function (e)
 {
   //console.log ("window is ready")
   setTimeout(function (params) 
-  {         
+  {
       //$("#ProductSubmitButton-template--23234327085378__main").removeAttr("disabled");
-      $("#ProductSubmitButton-template--23234327085378__main").show();
+      // $("#ProductSubmitButton-template--23234327085378__main").show();
+    $("#ProductSubmitButton-{{ section.id }}").show();
       $(".rc_widget").hide();
       $(".rc_popup").hide();
   }, 1000);        
