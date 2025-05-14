@@ -10,14 +10,53 @@
 {
   "order": [
     "home_meet_eddie_banner_nk4VH7",
-    "use_about_section_Yrmc9k",
+    "home_great_sex_e68RrV",
     "home_how_does_4rhLq4",
-    "learn_eddie_stacks_up_table_YWGDgJ",
+    "home_order_renew_V4H7HT",
     "home_testimonial_NLEyaV",
     "home_learning_faqs_FM3E8e",
     "home_take_pleasure_9KTzqA"
   ],
   "sections": {
+    "home_great_sex_e68RrV": {
+      "block_order": [
+        "text_hQUAKk",
+        "text_rYN4tD",
+        "text_qaD9FP"
+      ],
+      "blocks": {
+        "text_hQUAKk": {
+          "settings": {
+            "imp_content": "Improved confidence <br> achieving an erection",
+            "imp_heading": "96%"
+          },
+          "type": "text"
+        },
+        "text_qaD9FP": {
+          "settings": {
+            "imp_content": "Improved confidence <br> in sexual performance",
+            "imp_heading": "93%"
+          },
+          "type": "text"
+        },
+        "text_rYN4tD": {
+          "settings": {
+            "imp_content": "Improved quality <br> of erections",
+            "imp_heading": "93%"
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "left_section_content": "Eddie restricts the veins leaving the arteries unencumbered, allowing you to get and maintain an erection.",
+        "left_section_heading": "Great Sex. No Rx.",
+        "left_section_points": "<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No prescription </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No side effects of ED pills </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No planning required </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No uncomfortable pumps </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No constriction devices </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark\"> <i class=\"feather-check\"></i> Yes to better sex today! </li>",
+        "right_section_btm_content": "¹60 male adults participated in a clinical trial where researchers <br class=\"d-lg-block d-none\"> assessed the efficacy of Eddie over 12 weeks. Participants showed<br class=\"d-lg-block d-none\"> strong, significant improvement in erectile function.",
+        "right_section_content": "of men reported overall positive <br class=\"d-lg-block d-none\"> results in a clinical trial¹",
+        "right_section_heading": "95%"
+      },
+      "type": "Home-Great-Sex"
+    },
     "home_how_does_4rhLq4": {
       "settings": {
         "how_does_content": "Urologist Dr. Chris Kyle explains why Eddie is so effective in the treatment of ED.",
@@ -71,7 +110,7 @@
     },
     "home_meet_eddie_banner_nk4VH7": {
       "settings": {
-        "banner_btn_label": "GET EDDIE TODAY",
+        "banner_btn_label": "SHOP EDDIE NOW",
         "banner_btn_url": "shopify://products/eddie-by-giddy",
         "banner_heading": "40% of Men Suffer from ED",
         "banner_img": "shopify://shop_images/home_hero.jpg",
@@ -80,12 +119,54 @@
       },
       "type": "Home-Meet-Eddie-Banner"
     },
+    "home_order_renew_V4H7HT": {
+      "block_order": [
+        "text_LMee6h",
+        "text_H6RMyH",
+        "text_jkhxkN",
+        "text_nfYfNb"
+      ],
+      "blocks": {
+        "text_H6RMyH": {
+          "settings": {
+            "info_heading": ""
+          },
+          "type": "text"
+        },
+        "text_LMee6h": {
+          "settings": {
+            "info_heading": ""
+          },
+          "type": "text"
+        },
+        "text_jkhxkN": {
+          "settings": {
+            "info_heading": ""
+          },
+          "type": "text"
+        },
+        "text_nfYfNb": {
+          "settings": {
+            "info_heading": ""
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "btn_label": "SHOP EDDIE NOW",
+        "btn_url": "shopify://products/eddie-by-giddy",
+        "order_renew_content": "<p class=\"para-40-book d-none d-sm-block\"> </p>\n <p class=\"para-40-book\"><strong>Size</strong> - if you select the wrong size we will send you a replacement for free. </p>\n <p class=\"para-40-book\"><strong>Performance</strong> - if Eddie doesn't work for you we will give you a full refund.  </p>\n <p class=\"para-40-book\"><strong>Hygiene</strong> - it is important to keep Eddie clean, so we offer a \"cancel anytime\" subscription plan that ships you a new Eddie every 4 months. </p>",
+        "order_renew_heading": "The Eddie Guarantee",
+        "section_image": "shopify://shop_images/eddie_box2.png"
+      },
+      "type": "Home-Order-Renew"
+    },
     "home_take_pleasure_9KTzqA": {
       "settings": {
-        "section_btn_label": "TAKE THE QUIZ & GET $20 OFF",
+        "section_btn_label": "SHOP EDDIE NOW",
         "section_btn_url": "shopify://products/eddie-by-giddy",
-        "section_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
-        "section_heading": "Try Eddie risk-free."
+        "section_content": "Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.",
+        "section_heading": "Take pleasure in health"
       },
       "type": "Home-Take-Pleasure"
     },
@@ -255,32 +336,6 @@
         "testimonial_img": "shopify://shop_images/blue-swirlies.jpg"
       },
       "type": "Home-Testimonial"
-    },
-    "learn_eddie_stacks_up_table_YWGDgJ": {
-      "settings": {
-        "table_description": "*per usage of medication",
-        "table_heading": "See How Eddie Stacks Up."
-      },
-      "type": "Learn-Eddie-Stacks-Up-Table"
-    },
-    "use_about_section_Yrmc9k": {
-      "settings": {
-        "fit_content": "Select the tension band that provides you the best fit. Use the blue band for standard tension or the red band for a tighter fit.",
-        "fit_heading": "Secure",
-        "fit_label": "BETTER FIT",
-        "section_heading": "Experiencing ED is difficult. Treating ED with Eddie is easy",
-        "sex_content": "Apply at any time prior to intercourse and wear throughout. Eddie's unique design allows for a pleasurable climax and finish.",
-        "sex_heading": "Enjoy",
-        "sex_label": "MORE PLEASURE",
-        "try_btn_label": "TAKE THE QUIZ",
-        "try_btn_url": "",
-        "try_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
-        "try_heading": "Try Eddie risk-free.",
-        "use_content": "Place Eddie at the base of your shaft with the opening facing down. Apply whether soft or hard.",
-        "use_heading": "Wear",
-        "use_label": "EASY-TO-USE"
-      },
-      "type": "Use-About-Section"
     }
   }
 }
