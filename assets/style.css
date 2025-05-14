@@ -15,10 +15,15 @@
 /* Secondary Font */
 @font-face {
   font-family: "Slate Pro Light";
-  src: url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate_Pro_Light.eot?v=1722232179') format('embedded-opentype'),
-       url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate_Pro_Light.woff2?v=1722232208') format('woff2'),
-       url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate_Pro_Light.woff?v=1722232231') format('woff'),
-       url('https://cdn.shopify.com/s/files/1/0805/8208/2835/files/Slate-Pro-Light.ttf?v=1722232261') format('truetype');
+  src: url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate_Pro_Light.eot?v=1723081917') format('embedded-opentype'),
+       url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate_Pro_Light.woff2?v=1723081917') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate_Pro_Light.woff?v=1723081917') format('woff'),
+       url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Slate-Pro-Light.ttf?v=1723081917') format('truetype');
+}
+
+@font-face {
+  font-family: "Slate Pro Bold";
+  src:  url('https://cdn.shopify.com/s/files/1/0834/1926/7394/files/Monotype-Slate-Pro-Bold.ttf?v=1718138234') format('truetype');
 }
 
 /**************************************
@@ -127,6 +132,7 @@
   --transition-3: transform .85s cubic-bezier(.23,1,.32,1),background .3s,border .3s,border-radius .3s,box-shadow .3s;
   --transition-4: all .25s cubic-bezier(.645,.045,.355,1);
   --font-primary: "Slate Pro Book";
+  --font-slate-bold: "Slate Pro Bold"
   --font-secondary: "Slate Pro Light";
   --font-alt: "Source Serif Pro", serif;
   --font-footnote: "Inter";
@@ -1219,6 +1225,10 @@ ul.edy-dropdown-menu li .sub-menu li a, ul.edy-dropdown-menu li a .right-icon, u
   background-color: var(--color-tanwhite) !important;
 }
 
+.bg-color-darkblue {
+  background-color: #192335;
+}
+
 .bg-color-testimonialbg {
   background-color: var(--color-testimonialbg) !important;
 
@@ -1227,10 +1237,16 @@ ul.edy-dropdown-menu li .sub-menu li a, ul.edy-dropdown-menu li a .right-icon, u
   /*background-repeat: repeat;*/
   background-attachment: fixed;
   background-size: cover;
+}
 
+.bg-color-lander-testimonialbg {
+  background-color: var(--color-white) !important;
 
-
-
+  /*background-image: url('../images/bg-dkblue.jpg');*/
+  background-image: url('../images/blue-swirlies.jpg');
+  /*background-repeat: repeat;*/
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -2437,12 +2453,12 @@ textarea:-ms-input-placeholder {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .edy-section-gap2Bottom {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
   .edy-section-gap2Bottom {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 
@@ -2451,18 +2467,19 @@ textarea:-ms-input-placeholder {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .edy-section-gapTop {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
   .edy-section-gapTop {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 
 .edy-section-gapTopHalf {
   padding-top: 60px;
 }
+
 
 .edy-section-gap2Top {
   padding-top: 80px;
@@ -14532,6 +14549,14 @@ span.transparent-button:hover i {
   font-family: var(--font-secondary);
 }
 
+.lander-font-adjustment .section-title .title-sex {
+  font-size: 40px;
+  line-height: 80px;
+  /*color: var(--color-heading);*/
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
 .section-title .title-contact {
   font-size: 30px;
   line-height: 34px;
@@ -14566,6 +14591,22 @@ span.transparent-button:hover i {
   font-family: var(--font-secondary);
 }
 
+.lander-how-does-font-adjustment .title-devices {
+  font-size: 42px;
+  line-height: 100%;
+  color: #000;
+  font-weight: 600;
+  font-family: var(--font-secondary);  
+}
+
+.lander-stacks-up-font-adjustment .title-devices {
+  font-size: 42px;
+  line-height: 100%;
+  color: #000;
+  font-weight: 600;
+  font-family: var(--font-secondary);  
+}
+
 .description-devices {
   font-size: 36px;
   line-height: 40px;
@@ -14573,6 +14614,54 @@ span.transparent-button:hover i {
   font-weight: 100;
   font-family: var(--font-primary);
 
+}
+
+.lander-use-about-font-adjustment .title-devices {
+  font-size: 40px;
+  line-height: 100%;
+  color: #192335;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+.lander-use-about-font-adjustment .description-devices {
+  font-size: 32px;
+  line-height: 100%;
+  color: #19233599;
+  font-weight: 100;
+  font-family: var(--font-primary);
+}
+
+.lander-use-about-font-adjustment .description-devices-head1 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #192335;
+  font-weight: 100;
+  font-family: var(--font-primary);
+}
+
+.lander-use-about-font-adjustment .description-devices-head2 {
+  font-size: 40px;
+  line-height: 40px;
+  color: #192335;
+  font-weight: 100;
+  font-family: var(--font-primary);
+}
+
+.lander-use-about-font-adjustment .description-title {
+  font-size: 56px;
+  line-height: 100%;
+  color: #000000;
+  font-weight: 100;
+  font-family: var(--font-primary);
+}
+
+.lander-how-does-font-adjustment .description-howworks {
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--color-heading);
+  font-weight: 100;
+  font-family: var(--font-primary);
 }
 
 .description-howworks {
@@ -14583,6 +14672,21 @@ span.transparent-button:hover i {
   font-family: var(--font-primary);
 }
 
+.lander-faq .title-devices {
+  font-size: 42px;
+  line-height: 100%;
+  color: #000;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+#lander_testimonials .title-devices {
+  font-size: 42px;
+  line-height: 100%;
+  color: #000;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
 
 .para-40-book {
   font-size: 40px;
@@ -14633,6 +14737,15 @@ span.transparent-button:hover i {
 
 .para-devices {
   font-size: 24px;
+  line-height: 32px;
+  color: var(--color-heading);
+  font-weight: 100;
+  font-family: var(--font-primary);
+  padding-bottom: 5px;
+}
+
+.lander-font-adjustment .para-devices {
+  font-size: 32px;
   line-height: 32px;
   color: var(--color-heading);
   font-weight: 100;
@@ -17357,9 +17470,25 @@ span.transparent-button:hover i {
   font-size: 26px;
   font-weight: 100;
   font-family: var(--font-primary);
+}
 
+.lander-stacks-up-font-adjustment .edy-table tbody tr th,
+.edy-table tbody tr td {
+/*  font-weight: 400;*/
+  color: var(--color-body);
+  font-size: 24px;
+  font-weight: 100;
+  font-family: var(--font-primary);
+}
 
-
+.lander-stacks-up-font-adjustment
+.edy-table thead tr th,
+.edy-table thead tr td,
+.edy-table tfoot tr th,
+.edy-table tfoot tr td {
+  color: var(--color-heading);
+  font-weight: 200;
+  font-size: 16px;
 }
 
 .table-eddie {
@@ -20646,7 +20775,18 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   z-index: 2;
   background: var(--color-white);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-9);
+  /* box-shadow: var(--shadow-9); */
+
+}
+
+#lander_testimonials
+.edy-testimonial-box .inner {
+  position: relative;
+  padding: 50px 10px;
+  z-index: 2;
+  background: #FAFAFA;
+  border-radius: var(--radius);
+  /* box-shadow: var(--shadow-9); */
 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -22577,6 +22717,10 @@ body.modal-open {
   .edy-list-style-2 li {
     text-align: left;
   }
+
+  .plan-offer-list {
+    margin-top: 0px !important;
+  }
 }
 .edy-list-style-2 li i {
   width: 30px;
@@ -22654,6 +22798,12 @@ body.modal-open {
 .plan-offer-list.edy-list-white-opacity li i {
   background: var(--white-opacity) !important;
   color: var(--color-white) !important;
+}
+
+.plan-offer-list.edy-list-white-border li i {
+  background-color: #2F57EF21 !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-white) !important;
 }
 
 /*-------------------------------
@@ -25010,6 +25160,9 @@ blockquote.has-text-align-right cite,
   padding-top: 100px;
 }
 
+#fact-table .edy-banner-area {
+  padding-top: 600px;
+}
 
 .edy-banner-area {
   padding-top: 600px;
@@ -29975,6 +30128,13 @@ a.bg-video-button-pause{
   outline: none;
   color: var(--color-primary);
 }
+
+.small-text {
+  font-size: 16px !important;
+  color: #FFFFFF99 !important;
+}
+
+
 
 
 

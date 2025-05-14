@@ -17,7 +17,7 @@
     margin-top: 0;
 }
 /* banner part end */
-/* great sex part start */
+/* Home great sex part start */
 .single-great-box h3{
     margin: 0;
     color: #fff;
@@ -37,8 +37,63 @@
     margin-bottom: 40px;
     margin-top: 40px;
 }
-/* great sex part end */
+/* Home great sex part end */
 
+/* Lander great sex part start */
+.my-lander-great-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.lander-single-great-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.lander-single-great-box p {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .lander-single-great-box {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Add some gap between h3 and p */
+    }
+
+    .lander-single-great-box h3 {
+        margin-bottom: 0;
+        white-space: nowrap; /* So h3 text doesn't wrap awkwardly */
+    }
+
+    .lander-single-great-box p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .my-lander-great-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px 10px;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .my-lander-great-box h3 {
+        margin-bottom: 0px !important;
+    }
+}
+/* Lander great sex part end */
+
+
+/* Lander use about section start */
+
+/* Lander use about section end */
 /* table part start */
 .table-logo{
     width: 115px;
@@ -97,6 +152,19 @@
     font-weight: 300;
     line-height: 30px;
 }
+
+.edy-lander-cta-area h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.edy-lander-cta-area p {
+    font-family: var(--font-secondary);
+    font-size: 32px;
+    font-weight: 350;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
 /* call to action end */
 /* footer part start */
 .edy-footer,
@@ -115,6 +183,12 @@
     font-size: 30px;
     color: #fff;
     font-weight: 300;
+}
+
+.lander-single-my-slider p{
+    font-size: 32px;
+    color: #192335;
+    font-weight: 100;
 }
 .my-slider .swiper-wrapper{
     justify-content: center;
@@ -135,11 +209,31 @@
     opacity: .5;
     z-index: 1;
 }
+
+
+#lander_testimonials{
+    position: relative;
+    z-index: 10;
+    padding-top: 60px !important;
+}
+#lander_testimonials::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .z-10{
     position: relative;
     z-index: 10;
 }
 .single-my-slider{
+    margin-bottom: 60px;
+}
+.lander-single-my-slider{
     margin-bottom: 60px;
 }
 .slick-dots{
@@ -150,7 +244,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #eaeaea;
 }
 .slick-dots li.slick-active button,
 #section-health-slider .slick-dots li.slick-active button{
@@ -208,6 +302,13 @@
 
 .my-slider-img img{
     filter: brightness(0) invert(1);
+}
+
+.slick-dots li button:before {
+    content: '';
+}
+.lander-slider-img img{
+    filter: brightness(1) invert(0);
 }
 .health-p2{
     font-size: 30px;
@@ -308,6 +409,14 @@
     line-height: 46px;
     font-weight: 300;
     color: #000;
+}
+
+.lander-faq 
+.edy-accordion-style .card .card-header button{
+    font-size: 32px;
+    line-height: normal !important;
+    font-weight: 300;
+    
 }
 .edy-accordion-style .card .card-header button{
     font-size: 24px;

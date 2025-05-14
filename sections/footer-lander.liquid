@@ -1,0 +1,77 @@
+<!-- Start Footer aera -->
+<footer class="edy-footer footer-style-1 bg-color-darkblue overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <div class="logo">
+                                        <a href="/"><img src="{{ section.settings.footer_logo | img_url: 'master' }}" height="60%" alt="Eddie Logo"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12"> &nbsp; </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                  <p class="description mt--20"> {{ section.settings.footer_info }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-5">                          
+                          <p class="description mt--20">© {{  "now" | date: '%Y' }} {{ section.settings.copyright_text }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Area -->
+<div class="edy-progress-parent">
+    <svg class="edy-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /> </svg>
+</div>
+              
+{% schema %}
+  {
+    "name": "Lander's Footer",
+    "settings": [
+      {
+      "type": "header",
+      "content": "Footer Logo"
+    },
+	  {
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Footer Logo"
+    },
+    {
+      "type": "header",
+      "content": "Footer Info"
+    },
+    {
+      "id": "footer_info",
+      "type": "textarea",
+      "label": "Footer short info",
+      "default": "This information does not constitute medical advice and it should not be relied upon as such. Consult with your doctor before modifying your regular medical regimen."
+    }, 
+    {
+      "type": "header",
+      "content": "Copyright Info"
+    },
+    {
+      "id": "copyright_text",
+      "type": "textarea",
+      "label": "Copyright Text",
+      "default": "Copyright Giddy® | All Rights Reserved."
+    }
+    ],
+  "presets": [{
+    "name": "Lander's Footer",
+    "category": "Footer"
+  }]
+  }
+{% endschema %}

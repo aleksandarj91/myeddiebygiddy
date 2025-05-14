@@ -1,23 +1,23 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "home_meet_eddie_banner_nk4VH7": {
       "type": "Home-Meet-Eddie-Banner",
       "settings": {
-        "banner_img": "shopify://shop_images/home_hero.jpg",
+        "banner_img": "shopify:\/\/shop_images\/home_hero.jpg",
         "banner_heading": "40% of Men Suffer from ED",
         "banner_sub_heading": "Eddie® is the wearable FDA Class II <br class=\"d-none d-sm-block\">medical device for ED that works!",
         "banner_small_label": "",
         "banner_btn_label": "GET EDDIE TODAY",
-        "banner_btn_url": "shopify://products/eddie-by-giddy"
+        "banner_btn_url": "shopify:\/\/products\/eddie-by-giddy"
       }
     },
     "home_great_sex_e68RrV": {
@@ -45,11 +45,15 @@
           }
         }
       },
-      "block_order": ["text_hQUAKk", "text_rYN4tD", "text_qaD9FP"],
+      "block_order": [
+        "text_hQUAKk",
+        "text_rYN4tD",
+        "text_qaD9FP"
+      ],
       "settings": {
         "left_section_heading": "Great Sex. No Rx.",
         "left_section_content": "Eddie restricts the veins leaving the arteries unencumbered, allowing you to get and maintain an erection.",
-        "left_section_points": "<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No prescription </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No side effects of ED pills </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No planning required </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No uncomfortable pumps </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"></i> No constriction devices </li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark\"> <i class=\"feather-check\"></i> Yes to better sex today! </li>",
+        "left_section_points": "<li class=\"text-dark mb--10\"> <i class=\"feather-x\"><\/i> No prescription <\/li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"><\/i> No side effects of ED pills <\/li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"><\/i> No planning required <\/li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"><\/i> No uncomfortable pumps <\/li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark mb--10\"> <i class=\"feather-x\"><\/i> No constriction devices <\/li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"text-dark\"> <i class=\"feather-check\"><\/i> Yes to better sex today! <\/li>",
         "right_section_heading": "95%",
         "right_section_content": "of men reported overall positive <br class=\"d-lg-block d-none\"> results in a clinical trial¹",
         "right_section_btm_content": "¹60 male adults participated in a clinical trial where researchers <br class=\"d-lg-block d-none\"> assessed the efficacy of Eddie over 12 weeks. Participants showed<br class=\"d-lg-block d-none\"> strong, significant improvement in erectile function."
@@ -58,10 +62,10 @@
     "home_how_does_4rhLq4": {
       "type": "Home-How-does",
       "settings": {
-        "section_image": "shopify://shop_images/how_it_works2.jpg",
+        "section_image": "shopify:\/\/shop_images\/how_it_works2.jpg",
         "how_does_heading": "How Eddie Works",
         "how_does_content": "Urologist Dr. Chris Kyle explains why Eddie is so effective in the treatment of ED.",
-        "how_does_video": "https://www.youtube.com/watch?v=cVh3SXImSdI"
+        "how_does_video": "https:\/\/www.youtube.com\/watch?v=cVh3SXImSdI"
       }
     },
     "home_order_renew_V4H7HT": {
@@ -69,19 +73,27 @@
       "blocks": {
         "text_LMee6h": {
           "type": "text",
-          "settings": { "info_heading": "" }
+          "settings": {
+            "info_heading": ""
+          }
         },
         "text_H6RMyH": {
           "type": "text",
-          "settings": { "info_heading": "" }
+          "settings": {
+            "info_heading": ""
+          }
         },
         "text_jkhxkN": {
           "type": "text",
-          "settings": { "info_heading": "" }
+          "settings": {
+            "info_heading": ""
+          }
         },
         "text_nfYfNb": {
           "type": "text",
-          "settings": { "info_heading": "" }
+          "settings": {
+            "info_heading": ""
+          }
         }
       },
       "block_order": [
@@ -91,11 +103,11 @@
         "text_nfYfNb"
       ],
       "settings": {
-        "section_image": "shopify://shop_images/eddie_box2.png",
+        "section_image": "shopify:\/\/shop_images\/eddie_box2.png",
         "order_renew_heading": "The Eddie Guarantee",
-        "order_renew_content": "<p class=\"para-40-book d-none d-sm-block\">&nbsp;</p>\n <p class=\"para-40-book\"><strong>Size</strong> - if you select the wrong size we will send you a replacement for free. </p>\n <p class=\"para-40-book\"><strong>Performance</strong> - if Eddie doesn't work for you we will give you a full refund.  </p>\n <p class=\"para-40-book\"><strong>Hygiene</strong> - it is important to keep Eddie clean, so we offer a \"cancel anytime\" subscription plan that ships you a new Eddie every 4 months. </p>",
+        "order_renew_content": "<p class=\"para-40-book d-none d-sm-block\">&nbsp;<\/p>\n <p class=\"para-40-book\"><strong>Size<\/strong> - if you select the wrong size we will send you a replacement for free. <\/p>\n <p class=\"para-40-book\"><strong>Performance<\/strong> - if Eddie doesn't work for you we will give you a full refund.  <\/p>\n <p class=\"para-40-book\"><strong>Hygiene<\/strong> - it is important to keep Eddie clean, so we offer a \"cancel anytime\" subscription plan that ships you a new Eddie every 4 months. <\/p>",
         "btn_label": "SUBSCRIBE NOW",
-        "btn_url": "shopify://products/eddie-by-giddy"
+        "btn_url": "shopify:\/\/products\/eddie-by-giddy"
       }
     },
     "home_testimonial_NLEyaV": {
@@ -103,56 +115,66 @@
       "blocks": {
         "logo_8GCFVd": {
           "type": "logo",
-          "settings": { "brand_logo": "shopify://shop_images/logo-1.png" }
+          "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/logo-1.png"
+          }
         },
         "logo_n9XkNp": {
           "type": "logo",
-          "settings": { "brand_logo": "shopify://shop_images/logo-2.png" }
+          "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/logo-2.png"
+          }
         },
         "logo_kwYEtm": {
           "type": "logo",
-          "settings": { "brand_logo": "shopify://shop_images/logo-3.png" }
+          "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/logo-3.png"
+          }
         },
         "logo_XrX6be": {
           "type": "logo",
-          "settings": { "brand_logo": "shopify://shop_images/logo-4.png" }
+          "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/logo-4.png"
+          }
         },
         "logo_mzXwG4": {
           "type": "logo",
-          "settings": { "brand_logo": "shopify://shop_images/logo-5.png" }
+          "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/logo-5.png"
+          }
         },
         "brand_kygnex": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-1.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-1.png",
             "brand_content": "“ED medications have a handful of potential side effects, but it’s <br class=\"d-lg-block d-none\"> unlikely you’ll experience any from Eddie by Giddy.”"
           }
         },
         "brand_bYEjYV": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-2.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-2.png",
             "brand_content": "\"For guys who are struggling with ED, or are looking for a<br class=\"d-lg-block d-none\"> recreational 'boost' in their sex lives, Eddie might be the perfect new<br class=\"d-lg-block d-none\"> tech product to bring into the bedroom.\""
           }
         },
         "brand_mUg46Q": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-3.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-3.png",
             "brand_content": "\"ED medications can cause side effects, such as a headache and<br class=\"d-lg-block d-none\"> upset stomach... Eddie offers men with ED and their partners an<br class=\"d-lg-block d-none\"> alternative to medication.\""
           }
         },
         "brand_tA9ywN": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-4.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-4.png",
             "brand_content": "\"Eddie by Giddy empowers men and their partners to live<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tmore fulfilling lives, starting with better sex.\""
           }
         },
         "brand_pqkYAF": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-5.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-5.png",
             "brand_content": "\"Its ergonomic design is a clear improvement on rings and<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tpumps and does not require the major surgery of an<br class=\"d-lg-block d-none\"> implantable penile prosthesis.\""
           }
         },
@@ -252,7 +274,7 @@
       ],
       "settings": {
         "testimonial_heading": "See what they are saying",
-        "testimonial_img": "shopify://shop_images/blue-swirlies.jpg"
+        "testimonial_img": "shopify:\/\/shop_images\/blue-swirlies.jpg"
       }
     },
     "home_learning_faqs_FM3E8e": {
@@ -287,8 +309,15 @@
           }
         }
       },
-      "block_order": ["faq_pEgVRH", "faq_ahcqmJ", "faq_khAXea", "faq_yjLYty"],
-      "settings": { "faq_section_heading": "Learning about the basics of ED" }
+      "block_order": [
+        "faq_pEgVRH",
+        "faq_ahcqmJ",
+        "faq_khAXea",
+        "faq_yjLYty"
+      ],
+      "settings": {
+        "faq_section_heading": "Learning about the basics of ED"
+      }
     },
     "home_take_pleasure_9KTzqA": {
       "type": "Home-Take-Pleasure",
@@ -296,7 +325,7 @@
         "section_heading": "Take pleasure in health",
         "section_content": "Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.",
         "section_btn_label": "SUBSCRIBE NOW",
-        "section_btn_url": "shopify://products/eddie-by-giddy"
+        "section_btn_url": "shopify:\/\/products\/eddie-by-giddy"
       }
     }
   },
