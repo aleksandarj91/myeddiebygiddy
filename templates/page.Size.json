@@ -1,1 +1,152 @@
-{"sections":{"shogun-helper":{"type":"shogun-helper","settings":{}},"size_banner_section_WdXUGt":{"type":"Size-Banner-Section","settings":{"banner_img":"shopify:\/\/shop_images\/eddie_flat.jpg","banner_heading":"It's All About the Fit","banner_desktop_content":"To effectively use Eddie®, it is important to choose the right size.\n<h1><\/h1>","banner_mobile_content":"To effectively use Eddie®, it is important to choose the right size.","button_label":"ORDER NOW","button_url":"shopify:\/\/products\/eddie-by-giddy"}},"size_width_section_aqLFtk":{"type":"Size-Width-Section","blocks":{"table_YfV8pz":{"type":"table","settings":{"circumference":"0 - 3⁵⁄₈\"","circumference_cm":"0 - 9.2 cm","size":"S","fit":"A - NARROW WIDTH"}},"table_kTtQgw":{"type":"table","settings":{"circumference":"3¹¹⁄₁₆ - 3⁷⁄₈\"","circumference_cm":"9.3 - 9.8 cm","size":"M","fit":"B - REGULAR WIDTH"}},"table_jbhbzb":{"type":"table","settings":{"circumference":"3¹⁵⁄₁₆ - 4³⁄₁₆\"","circumference_cm":"9.9 - 10.4 cm","size":"L\/XL","fit":"C - WIDE WIDTH"}},"table_dG7YEC":{"type":"table","settings":{"circumference":"4¹⁄₄\" +","circumference_cm":"10.5 cm +","size":"XXL","fit":"D - EXTRA WIDE WIDTH"}}},"block_order":["table_YfV8pz","table_kTtQgw","table_jbhbzb","table_dG7YEC"],"settings":{"section_heading":"Finding Your Size","section_content":"Eddie should feel tight but not painful. If you choose a size that is too big it will not work. Eddie is available in 4 sizes (A, B, C, D) based on circumference or width. If you select the wrong size for any reason, we’ll ship a replacement size for free.","table_content":"*Measured when flaccid. Picking a size based on measurement is the best way to ensure good fit. <br> **The vast majority of men fit within A, B, or C.","size_image":"shopify:\/\/shop_images\/eddie_sizes.png"}},"home_learning_faqs_FM3E8e":{"type":"Home-Learning-Faqs","blocks":{"faq_pEgVRH":{"type":"faq","settings":{"faq_heading":"How do I find the right fit?","faq_content":"We use two ways to determine which size you need. Either measure the base of your penis or choose it based on the condom size you've typically \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tworn in the past. If you experience frequent performance issues, consider a tighter fit."}},"faq_ahcqmJ":{"type":"faq","settings":{"faq_heading":"How do I measure the circumference of my penis?","faq_content":"To ensure the best fit, wrap a soft measuring tape or string around the base of your penis while flaccid. Note the measurement and see our side guide for our recommendation."}},"faq_khAXea":{"type":"faq","settings":{"faq_heading":"What if the device doesn't fit?","faq_content":"If the fit isn't right, reach out to us. While we don't accept returns on opened products, we'll gladly provide a replacement in a different size at no extra cost. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tJust contact our support team for assistance."}},"faq_yjLYty":{"type":"faq","settings":{"faq_heading":"How should it feel when I'm wearing it?","faq_content":"Your device should feel snug, but not uncomfortably so, like a firm handshake. We offer two tension band options for comfort and support. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tIf the red band is too tight, try the blue one for a gentler touch. Finding the right fit is crucial for effectiveness. Contact us if you need \n\t\t\t\t\t\t\t\t\t\t\t\t\t\thelp choosing the right option."}},"faq_FURq7G":{"type":"faq","settings":{"faq_heading":"What if I resize and it still doesn't work?","faq_content":"If resizing doesn't solve the issue, we offer a 30-day money-back guarantee. Contact our support team for assistance with returns and refunds."}}},"block_order":["faq_pEgVRH","faq_ahcqmJ","faq_khAXea","faq_yjLYty","faq_FURq7G"],"settings":{"faq_section_heading":"Fit matters"}},"home_take_pleasure_9KTzqA":{"type":"Home-Take-Pleasure","settings":{"section_heading":"Take pleasure in health","section_content":"Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.","section_btn_label":"SUBSCRIBE NOW","section_btn_url":"shopify:\/\/products\/eddie-by-giddy"}},"shogun-optimizer":{"type":"shogun-optimizer","settings":{}}},"order":["shogun-helper","size_banner_section_WdXUGt","size_width_section_aqLFtk","home_learning_faqs_FM3E8e","home_take_pleasure_9KTzqA","shogun-optimizer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "size_banner_section_WdXUGt": {
+      "type": "Size-Banner-Section",
+      "settings": {
+        "banner_img": "shopify://shop_images/eddie_flat.jpg",
+        "banner_heading": "It's All About the Fit",
+        "banner_desktop_content": "To effectively use Eddie®, it is important to choose the right size.\n<h1></h1>",
+        "banner_mobile_content": "To effectively use Eddie®, it is important to choose the right size.",
+        "button_label": "SHOP EDDIE NOW",
+        "button_url": "shopify://products/eddie-by-giddy"
+      }
+    },
+    "size_width_section_aqLFtk": {
+      "type": "Size-Width-Section",
+      "blocks": {
+        "table_YfV8pz": {
+          "type": "table",
+          "settings": {
+            "circumference": "0 - 3⁵⁄₈\"",
+            "circumference_cm": "0 - 9.2 cm",
+            "size": "S",
+            "fit": "A - NARROW WIDTH"
+          }
+        },
+        "table_kTtQgw": {
+          "type": "table",
+          "settings": {
+            "circumference": "3¹¹⁄₁₆ - 3⁷⁄₈\"",
+            "circumference_cm": "9.3 - 9.8 cm",
+            "size": "M",
+            "fit": "B - REGULAR WIDTH"
+          }
+        },
+        "table_jbhbzb": {
+          "type": "table",
+          "settings": {
+            "circumference": "3¹⁵⁄₁₆ - 4³⁄₁₆\"",
+            "circumference_cm": "9.9 - 10.4 cm",
+            "size": "L/XL",
+            "fit": "C - WIDE WIDTH"
+          }
+        },
+        "table_dG7YEC": {
+          "type": "table",
+          "settings": {
+            "circumference": "4¹⁄₄\" +",
+            "circumference_cm": "10.5 cm +",
+            "size": "XXL",
+            "fit": "D - EXTRA WIDE WIDTH"
+          }
+        }
+      },
+      "block_order": [
+        "table_YfV8pz",
+        "table_kTtQgw",
+        "table_jbhbzb",
+        "table_dG7YEC"
+      ],
+      "settings": {
+        "section_heading": "Finding Your Size",
+        "section_content": "Eddie should feel tight but not painful. If you choose a size that is too big it will not work. Eddie is available in 4 sizes (A, B, C, D) based on circumference or width. If you select the wrong size for any reason, we’ll ship a replacement size for free.",
+        "table_content": "*Measured when flaccid. Picking a size based on measurement is the best way to ensure good fit. <br> **The vast majority of men fit within A, B, or C.",
+        "size_image": "shopify://shop_images/eddie_sizes.png"
+      }
+    },
+    "home_learning_faqs_FM3E8e": {
+      "type": "Home-Learning-Faqs",
+      "blocks": {
+        "faq_pEgVRH": {
+          "type": "faq",
+          "settings": {
+            "faq_heading": "How do I find the right fit?",
+            "faq_content": "We use two ways to determine which size you need. Either measure the base of your penis or choose it based on the condom size you've typically \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tworn in the past. If you experience frequent performance issues, consider a tighter fit."
+          }
+        },
+        "faq_ahcqmJ": {
+          "type": "faq",
+          "settings": {
+            "faq_heading": "How do I measure the circumference of my penis?",
+            "faq_content": "To ensure the best fit, wrap a soft measuring tape or string around the base of your penis while flaccid. Note the measurement and see our side guide for our recommendation."
+          }
+        },
+        "faq_khAXea": {
+          "type": "faq",
+          "settings": {
+            "faq_heading": "What if the device doesn't fit?",
+            "faq_content": "If the fit isn't right, reach out to us. While we don't accept returns on opened products, we'll gladly provide a replacement in a different size at no extra cost. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tJust contact our support team for assistance."
+          }
+        },
+        "faq_yjLYty": {
+          "type": "faq",
+          "settings": {
+            "faq_heading": "How should it feel when I'm wearing it?",
+            "faq_content": "Your device should feel snug, but not uncomfortably so, like a firm handshake. We offer two tension band options for comfort and support. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tIf the red band is too tight, try the blue one for a gentler touch. Finding the right fit is crucial for effectiveness. Contact us if you need \n\t\t\t\t\t\t\t\t\t\t\t\t\t\thelp choosing the right option."
+          }
+        },
+        "faq_FURq7G": {
+          "type": "faq",
+          "settings": {
+            "faq_heading": "What if I resize and it still doesn't work?",
+            "faq_content": "If resizing doesn't solve the issue, we offer a 30-day money-back guarantee. Contact our support team for assistance with returns and refunds."
+          }
+        }
+      },
+      "block_order": [
+        "faq_pEgVRH",
+        "faq_ahcqmJ",
+        "faq_khAXea",
+        "faq_yjLYty",
+        "faq_FURq7G"
+      ],
+      "settings": {
+        "faq_section_heading": "Fit matters"
+      }
+    },
+    "home_take_pleasure_9KTzqA": {
+      "type": "Home-Take-Pleasure",
+      "settings": {
+        "section_heading": "Take pleasure in health",
+        "section_content": "Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.",
+        "section_btn_label": "SUBSCRIBE NOW",
+        "section_btn_url": "shopify://products/eddie-by-giddy"
+      }
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "size_banner_section_WdXUGt",
+    "size_width_section_aqLFtk",
+    "home_learning_faqs_FM3E8e",
+    "home_take_pleasure_9KTzqA",
+    "shogun-optimizer"
+  ]
+}
