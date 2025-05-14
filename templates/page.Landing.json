@@ -175,44 +175,45 @@
         "table_description": "*per usage of medication"
       }
     },
-    "home_learning_faqs_EWqWyM": {
-      "type": "Home-Learning-Faqs",
+    "lander_learning_faqs_Jhag3a": {
+      "type": "Lander-Learning-Faqs",
       "blocks": {
-        "faq_p9merT": {
+        "faq_KbFzCT": {
           "type": "faq",
           "settings": {
             "faq_heading": "How do I know if I have ED",
             "faq_content": "If you're not able to consistently get and maintain an erection when you want to have sex, you may have ED, a condition that can be caused by a number of physical or \n\t\t\t\t\t\t\t\t\t\t\t\t\t\tpsychological issues, even medication and lifestyle choices. Here are some of the most common symptoms:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br> - Having trouble getting an erection<br>- Having trouble maintaining an erection<br>- Getting erections that aren't as full as you need them to be\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br> If you're wondering whether or not you have ED, we recommend that you take our Quiz."
           }
         },
-        "faq_Wyzmnx": {
+        "faq_KieLNg": {
           "type": "faq",
           "settings": {
             "faq_heading": "How common is ED?",
             "faq_content": "More than 45 million men in the United States experience ED every year due to a wide variety of factors. ED is more prevalent for older men, although age alone is not necessarily responsible for the condition. Many older men maintain healthy erectile function, while some younger men may experience ED due to factors such as stress, lifestyle choices, or underlying health conditions."
           }
         },
-        "faq_Uxf3xN": {
+        "faq_X8YE9P": {
           "type": "faq",
           "settings": {
             "faq_heading": "What is the science behind erections?",
             "faq_content": "Sexual arousal causes the brain to send chemical signals to the blood vessels in the penis, causing them to relax and allow more blood to flow in. This increased blood flow fills the twin chambers called corpora cavernosa, making the penis rigid and erect."
           }
         },
-        "faq_fUYftb": {
+        "faq_7dGrQX": {
           "type": "faq",
           "settings": {
-            "faq_heading": "Can Eddie help sexual performance?",
+            "faq_heading": "Can Eddie help improve sexual performance?",
             "faq_content": "Yes, Eddie can help you maintain a strong erection during foreplay and intercourse.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br> Eddie won't give you an erection by itself, so you should speak to a healthcare provider for medical advice if you have a severe case of ED. Treatment may also involve addressing lifestyle factors, such as improving diet and exercise habits."
           }
         }
       },
       "block_order": [
-        "faq_p9merT",
-        "faq_Wyzmnx",
-        "faq_Uxf3xN",
-        "faq_fUYftb"
+        "faq_KbFzCT",
+        "faq_KieLNg",
+        "faq_X8YE9P",
+        "faq_7dGrQX"
       ],
+      "name": "Lander Learning Faqs",
       "settings": {
         "faq_section_heading": "Learning about the basics of ED"
       }
@@ -369,7 +370,7 @@
     "lander_try_eddie_bRrYwp",
     "lander_how_does_4mBjNq",
     "lander_stacks_up_table_jqEnDa",
-    "home_learning_faqs_EWqWyM",
+    "lander_learning_faqs_Jhag3a",
     "lander_testimonial_6a8gz7",
     "lander_try_eddie_RP6t38"
   ]
