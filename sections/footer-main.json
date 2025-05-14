@@ -15,6 +15,7 @@
       "type": "footer-new",
       "name": "Footer",
       "settings": {
+        "footer_logo": "shopify://shop_images/eddie_logo.png",
         "newsletter_label": "Get the latest from Eddie.",
         "footer_info": "This information does not constitute medical advice and it should not be relied upon as such. Consult with your doctor before modifying your regular medical regimen.",
         "copyright_text": "Copyright Giddy® | All Rights Reserved.",
