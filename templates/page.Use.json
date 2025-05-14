@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "use_banner_section_FGeLGp": {
@@ -37,7 +37,7 @@
         "sex_content": "Apply at any time prior to intercourse and wear throughout. Eddie's unique design allows for a pleasurable orgasm and unencumbered ejaculation.",
         "try_heading": "Try Eddie risk-free.",
         "try_content": "Get free shipping, free resizes, and a 30-day money back guarantee",
-        "try_btn_label": "ORDER NOW.",
+        "try_btn_label": "SHOP EDDIE NOW",
         "try_btn_url": "shopify://products/eddie-by-giddy"
       }
     },
@@ -69,7 +69,11 @@
           }
         }
       },
-      "block_order": ["stories_EAzWtx", "stories_rMAaAD", "stories_JYBNQa"],
+      "block_order": [
+        "stories_EAzWtx",
+        "stories_rMAaAD",
+        "stories_JYBNQa"
+      ],
       "settings": {
         "real_stories_heading": "Real stories. Real change.",
         "real_stories_content": "Learn how Eddie is changing the lives of men and their partners."
@@ -80,7 +84,7 @@
       "settings": {
         "section_heading": "Take pleasure in health",
         "section_content": "Eddie is the feel-good health device that works with your <br class=\"d-lg-block d-none\"> natural physiology to treat erectile dysfunction.",
-        "section_btn_label": "TRY EDDIE",
+        "section_btn_label": "SHOP EDDIE NOW",
         "section_btn_url": "shopify://products/eddie-by-giddy"
       }
     }
