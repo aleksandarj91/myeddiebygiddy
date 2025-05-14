@@ -9,7 +9,7 @@
  */
 {
   "type": "header",
-  "name": "Default Header",
+  "name": "Default Footer",
   "sections": {
     "footer_new_zdyniw": {
       "type": "footer-new",
