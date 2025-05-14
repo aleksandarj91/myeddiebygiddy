@@ -11,9 +11,9 @@
   "type": "header",
   "name": "Group name",
   "sections": {
-    "header_lander_KffCPm": {
-      "type": "header-lander",
-      "name": "Lander's Header",
+    "header_new_XDHani": {
+      "type": "header-new",
+      "name": "Header",
       "settings": {
         "desktop_logo": "shopify://shop_images/eddie_logo.png",
         "mobile_logo": "shopify://shop_images/eddie_logo_dark.png",
@@ -21,11 +21,11 @@
         "buy_button_label": "BUY",
         "buy_link": "shopify://products/eddie-by-giddy",
         "quiz_link": "shopify://pages/quiz1",
-        "main_menu": ""
+        "main_menu": "main-menu"
       }
     }
   },
   "order": [
-    "header_lander_KffCPm"
+    "header_new_XDHani"
   ]
 }
