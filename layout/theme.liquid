@@ -447,10 +447,17 @@ function prqQuizCallback(quizResponse){
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-main' %}
-    <!-- <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1"></main> -->
+    {% if template contains 'page.landing' %}
+      {% sections 'header-landing' %}
+    {% else %}
+      {% sections 'header-main' %}
+    {% endif %}
      {{ content_for_layout }}
-    {% sections 'footer-main' %}
+    {% if template contains 'page.landing' %}
+      {% sections 'footer-landing' %}
+    {% else %}
+      {% sections 'footer-main' %}
+    {% endif %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
