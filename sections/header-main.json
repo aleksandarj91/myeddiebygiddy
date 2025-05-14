@@ -11,9 +11,9 @@
   "type": "header",
   "name": "Group name",
   "sections": {
-    "header_lander_rYATBp": {
-      "type": "header-lander",
-      "name": "Lander's Header",
+    "header_new_3zy7hr": {
+      "type": "header-new",
+      "name": "Header",
       "settings": {
         "buy_button_label": "BUY",
         "buy_link": "",
@@ -23,6 +23,6 @@
     }
   },
   "order": [
-    "header_lander_rYATBp"
+    "header_new_3zy7hr"
   ]
 }
