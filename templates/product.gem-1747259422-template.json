@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "shogun-helper": {
@@ -83,7 +74,7 @@
           }
         },
         "flex_pay_with_hsa_fsa_small_TQD8Vg": {
-          "type": "shopify://apps/flex-pay-with-hsa-fsa/blocks/small/c0438c22-7b33-4278-b0c3-ef6c6b7b5f83",
+          "type": "shopify:\/\/apps\/flex-pay-with-hsa-fsa\/blocks\/small\/c0438c22-7b33-4278-b0c3-ef6c6b7b5f83",
           "disabled": true,
           "settings": {
             "tag": "info",
@@ -136,7 +127,7 @@
         "box_Uz4WLh": {
           "type": "box",
           "settings": {
-            "box_img": "shopify://shop_images/bands.png",
+            "box_img": "shopify:\/\/shop_images\/bands.png",
             "box_title": "TENSION BANDS",
             "box_descriotion": "Compression bands you can change<br> up based on your mood and needs."
           }
@@ -144,7 +135,7 @@
         "box_gFt6Ci": {
           "type": "box",
           "settings": {
-            "box_img": "shopify://shop_images/eddie.png",
+            "box_img": "shopify:\/\/shop_images\/eddie.png",
             "box_title": "EDDIE",
             "box_descriotion": "A groundbreaking ED device you can<br> use right out of the box."
           }
@@ -152,7 +143,7 @@
         "box_QWJRPc": {
           "type": "box",
           "settings": {
-            "box_img": "shopify://shop_images/pamphlet.png",
+            "box_img": "shopify:\/\/shop_images\/pamphlet.png",
             "box_title": "ED GUIDE",
             "box_descriotion": "A detailed guide with tips around usage<br> and care when it comes to Eddie."
           }
@@ -173,65 +164,65 @@
         "logo_8GCFVd": {
           "type": "logo",
           "settings": {
-            "brand_logo": "shopify://shop_images/logo-1.png"
+            "brand_logo": "shopify:\/\/shop_images\/logo-1.png"
           }
         },
         "logo_n9XkNp": {
           "type": "logo",
           "settings": {
-            "brand_logo": "shopify://shop_images/logo-2.png"
+            "brand_logo": "shopify:\/\/shop_images\/logo-2.png"
           }
         },
         "logo_kwYEtm": {
           "type": "logo",
           "settings": {
-            "brand_logo": "shopify://shop_images/logo-3.png"
+            "brand_logo": "shopify:\/\/shop_images\/logo-3.png"
           }
         },
         "logo_XrX6be": {
           "type": "logo",
           "settings": {
-            "brand_logo": "shopify://shop_images/logo-4.png"
+            "brand_logo": "shopify:\/\/shop_images\/logo-4.png"
           }
         },
         "logo_mzXwG4": {
           "type": "logo",
           "settings": {
-            "brand_logo": "shopify://shop_images/logo-5.png"
+            "brand_logo": "shopify:\/\/shop_images\/logo-5.png"
           }
         },
         "brand_kygnex": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-1.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-1.png",
             "brand_content": "“ED medications have a handful of potential side effects, but it’s <br class=\"d-lg-block d-none\"> unlikely you’ll experience any from Eddie by Giddy.”"
           }
         },
         "brand_bYEjYV": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-2.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-2.png",
             "brand_content": "\"For guys who are struggling with ED, or are looking for a<br class=\"d-lg-block d-none\"> recreational 'boost' in their sex lives, Eddie might be the perfect new<br class=\"d-lg-block d-none\"> tech product to bring into the bedroom.\""
           }
         },
         "brand_mUg46Q": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-3.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-3.png",
             "brand_content": "\"ED medications can cause side effects, such as a headache and<br class=\"d-lg-block d-none\"> upset stomach... Eddie offers men with ED and their partners an<br class=\"d-lg-block d-none\"> alternative to medication.\""
           }
         },
         "brand_tA9ywN": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-4.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-4.png",
             "brand_content": "\"Eddie by Giddy empowers men and their partners to live<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tmore fulfilling lives, starting with better sex.\""
           }
         },
         "brand_pqkYAF": {
           "type": "brand",
           "settings": {
-            "brand_img": "shopify://shop_images/logo-5.png",
+            "brand_img": "shopify:\/\/shop_images\/logo-5.png",
             "brand_content": "\"Its ergonomic design is a clear improvement on rings and<br class=\"d-lg-block d-none\">\n\t\t\t\t\t\t\t\t\t\t\t\tpumps and does not require the major surgery of an<br class=\"d-lg-block d-none\"> implantable penile prosthesis.\""
           }
         },
@@ -331,14 +322,14 @@
       ],
       "settings": {
         "testimonial_heading": "See what they are saying",
-        "testimonial_img": "shopify://shop_images/blue-swirlies.jpg"
+        "testimonial_img": "shopify:\/\/shop_images\/blue-swirlies.jpg"
       }
     },
     "home_take_pleasure_9KTzqA": {
       "type": "Home-Take-Pleasure",
       "settings": {
         "section_heading": "Have more questions?",
-        "section_content": "See our <a href=\"/pages/faq\" class=\"text-white\" style=\"text-decoration: underline;\">FAQ</a>",
+        "section_content": "See our <a href=\"\/pages\/faq\" class=\"text-white\" style=\"text-decoration: underline;\">FAQ<\/a>",
         "section_btn_label": "",
         "section_btn_url": ""
       }

@@ -454,9 +454,9 @@ function prqQuizCallback(quizResponse){
     {% endif %}
      {{ content_for_layout }}
     {% if template contains 'page.Landing' %}
-      {% sections 'footer-landing' %}
+      
     {% else %}
-      {% sections 'footer-main' %}
+      
     {% endif %}
 
     <ul hidden>
@@ -562,5 +562,5 @@ function prqQuizCallback(quizResponse){
      // End Quiz offer page param get
     </script>
 
-  {%- render 'foxify-footer' -%}</body>
+  </body>
 </html>
