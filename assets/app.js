@@ -1,14 +1,23 @@
-$(window).on("load", function (e) 
-{
-  //console.log ("window is ready")
-  setTimeout(function (params) 
-  {
-      //$("#ProductSubmitButton-template--23234327085378__main").removeAttr("disabled");
-      //$("#ProductSubmitButton-template--24908126454129__main").show();
-      $(".rc_widget").hide();
-      $(".rc_popup").hide();
-  }, 1000);        
+$(window).on("load", function () {
+  const hideRechargeElements = () => {
+    $(".rc_widget").hide();
+    $(".rc_popup").hide();
+  };
+
+  // Retry hiding if Recharge loads later
+  const interval = setInterval(() => {
+    if ($(".rc_widget").length || $(".rc_popup").length) {
+      hideRechargeElements();
+      clearInterval(interval);
+    }
+  }, 500);
+
+  // Failsafe timeout to stop retrying after 10 seconds
+  setTimeout(() => {
+    clearInterval(interval);
+  }, 10000);
 });
+
 
 // Start Faq page scroll
 $('.faq-side-box .dashboard-mainmenu li a[href*="#"]:not([href="#"])').click(function() {
