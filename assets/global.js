@@ -975,6 +975,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+      this.updateHSALink(this.currentVariant);
     }
   }
 
@@ -1043,6 +1044,25 @@ class VariantSelects extends HTMLElement {
         .map((variantOption) => variantOption[`option${index + 1}`]);
       this.setInputAvailability(optionInputs, availableOptionInputsValue);
     });
+  }
+
+  updateHSALink(currentVariant) {
+    const hsaWrapper = document.querySelector('.hsa-wrapper');
+    const hsaButton = hsaWrapper?.querySelector('a.hsa-btn');
+
+    if (!hsaWrapper || !hsaButton || !currentVariant) return;
+
+    const hsaLinks = JSON.parse(hsaWrapper.dataset.hsaLinks);
+    const variantTitle = currentVariant.title.toLowerCase();
+
+    const newLink = hsaLinks[variantTitle];
+
+    if (newLink) {
+      hsaButton.href = newLink;
+      hsaWrapper.style.display = 'block';
+    } else {
+      hsaWrapper.style.display = 'none';
+    }
   }
 
   setInputAvailability(listOfOptions, listOfAvailableOptions) {

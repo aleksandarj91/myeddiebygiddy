@@ -74,7 +74,6 @@
             endif
           -%}
           <button
-            style="display: none;"
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
@@ -105,6 +104,29 @@
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
+          {% capture hsa_links_json %}
+          {
+            "a - narrow width": "https://checkout.withflex.com/pay/l/fplink_01jsz3p08v1mqejdsqyyjej988",
+            "b - regular width": "https://checkout.withflex.com/pay/l/fplink_01jsz3yan71x8p9c48zz2ymvkz",
+            "c - wide width": "https://checkout.withflex.com/pay/l/fplink_01jsz3z4326qbm43gpyx2hnpkb",
+            "d - extra wide width": "https://checkout.withflex.com/pay/l/fplink_01jsz40j624jtjzkcatphp4qsw"
+          }
+          {% endcapture %}
+          <div class="hsa-wrapper" data-hsa-links='{{ hsa_links_json | escape }}'>
+            <div class="hsa-separator" style="display: flex; align-items: center; text-align: center; margin: 1.5rem 0;">
+              <hr style="flex: 1; border: none; border-top: 1px solid #333; margin: 0;" />
+              <span style="padding: 0 1rem; font-weight: bold; line-height: 1;">OR</span>
+              <hr style="flex: 1; border: none; border-top: 1px solid #333; margin: 0;" />
+            </div>
+            <a
+              href="https://checkout.withflex.com/pay/l/fplink_01jsz3p08v1mqejdsqyyjej988"
+              target="_blank"
+              class="product-form__submit button button--full-width button--primary hsa-btn"
+              style="margin-top: 0.5rem; border-radius: 50px;"
+            >
+              BUY WITH HSA/FSA
+            </a>
+          </div>
         </div>
       {%- endform -%}
     </product-form>
