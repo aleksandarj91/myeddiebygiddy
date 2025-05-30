@@ -1,0 +1,19 @@
+{% assign replace = '"https:\/\/na.shgcdn3.com\/pixel-collector.js?shop=' | append: shop.permanent_domain | append: '"' %}
+{% assign replace_with_comma = replace | append: ',' %}
+{% assign content_for_header = content_for_header | remove: replace_with_comma | remove: replace %}
+{% assign replace = '"https:\/\/admin.revenuehunt.com\/embed.js?shop=' | append: shop.permanent_domain | append: '"' %}
+{% assign replace_with_comma = replace | append: ',' %}
+{% assign content_for_header = content_for_header | remove: replace_with_comma | remove: replace %}
+{% assign replace = '"https:\/\/toastibar-cdn.makeprosimp.com\/v1\/published\/90682\/8ca911be32a44f499e33c149de6a1416\/19\/app.js?v=1&shop=' | append: shop.permanent_domain | append: '"' %}
+{% assign replace_with_comma = replace | append: ',' %}
+{% assign content_for_header = content_for_header | remove: replace_with_comma | remove: replace %}
+{% assign replace = '"https:\/\/assets1.adroll.com\/shopify\/latest\/j\/shopify_rolling_bootstrap_v2.js?adroll_adv_id=FDIFZFOL4JA6FOKXUIZBVP&adroll_pix_id=WO67B4RKUJALBAPYQQJ42Z&shop=' | append: shop.permanent_domain | append: '"' %}
+{% assign replace_with_comma = replace | append: ',' %}
+{% assign content_for_header = content_for_header | remove: replace_with_comma | remove: replace %}
+{% assign replace = '"https:\/\/static.rechargecdn.com\/assets\/js\/widget.min.js?shop=' | append: shop.permanent_domain | append: '"' %}
+{% assign replace_with_comma = replace | append: ',' %}
+{% assign content_for_header = content_for_header | remove: replace_with_comma | remove: replace %}
+{% assign replace = '"https:\/\/cdn.commoninja.com\/sdk\/latest\/commonninja.js?shop=' | append: shop.permanent_domain | append: '"' %}
+{% assign replace_with_comma = replace | append: ',' %}
+{% assign content_for_header = content_for_header | remove: replace_with_comma | remove: replace %}
+{{ content_for_header }}
