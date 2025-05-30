@@ -1,12 +1,4 @@
 <div class="row color-{{ section.settings.color_scheme }}">
-    <a href="{{ section.settings.main_logo_link }}">
-        <img
-                src="{{ section.settings.main_logo_img | img_url: 'master' }}"
-                class="main-logo-image img-fluid"
-                alt="Main Logo Image"
-                loading="lazy"
-        >
-    </a>
     <div class="col-md-12 col-lg-8 order-2 order-lg-1">
         <div class="left-column-content">
             <!-- Stats -->
@@ -71,10 +63,17 @@
     <!-- Right Banner -->
     <div class="col-md-12 col-lg-4 order-1 order-lg-2 d-flex justify-content-center px-0">
         <img
-                src="{{ section.settings.banner_img | img_url: 'master' }}"
-                class="right-banner-image img-fluid"
-                alt="Right banner Image"
-                loading="lazy"
+          src="{{ section.settings.banner_img | img_url: '480x' }}"
+          srcset="
+              {{ section.settings.banner_img | img_url: '360x' }} 360w,
+              {{ section.settings.banner_img | img_url: '480x' }} 480w,
+              {{ section.settings.banner_img | img_url: '750x' }} 750w,
+          "
+          sizes="(max-width: 576px) 360px, (max-width: 768px) 480px, 512px"
+          class="right-banner-image img-fluid"
+          alt="Right banner Image"
+          loading="eager"
+          fetchpriority="high"
         >
     </div>
 </div>
