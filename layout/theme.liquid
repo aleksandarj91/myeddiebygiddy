@@ -290,11 +290,19 @@
     <!-- START: Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-157P2QS556" defer="defer"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-157P2QS556');
-	</script>
+      {% comment %} window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-157P2QS556'); {% endcomment %}
+
+      // Defer tracking config to reduce JS execution blocking
+      setTimeout(function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-157P2QS556');
+      }, 1000);
+    </script>
 
 	<!-- START: VWO Async SmartCode -->
 	<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" crossorigin/>
