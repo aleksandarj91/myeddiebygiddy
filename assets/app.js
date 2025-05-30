@@ -1,20 +1,10 @@
-$(document).ready(function () 
-{
-    //console.log('document is ready');
-    //$("#ProductSubmitButton-template--23234327085378__main").hide();
-    //$(".rc_widget").hide();
-    //$(".rc_popup").hide();
-});
-
-
-
 $(window).on("load", function (e) 
 {
   //console.log ("window is ready")
   setTimeout(function (params) 
   {
       //$("#ProductSubmitButton-template--23234327085378__main").removeAttr("disabled");
-      $("#ProductSubmitButton-template--24908126454129__main").show();
+      //$("#ProductSubmitButton-template--24908126454129__main").show();
       $(".rc_widget").hide();
       $(".rc_popup").hide();
   }, 1000);        
