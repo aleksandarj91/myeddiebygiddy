@@ -104,14 +104,23 @@
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
+          {%- assign product_handle = product.handle -%}
           {% capture hsa_links_json %}
           {
+            {%- if product_handle == "eddie-by-giddy" -%}
             "a - narrow width": "https://checkout.withflex.com/pay/l/fplink_01jsz3p08v1mqejdsqyyjej988",
             "b - regular width": "https://checkout.withflex.com/pay/l/fplink_01jsz3yan71x8p9c48zz2ymvkz",
             "c - wide width": "https://checkout.withflex.com/pay/l/fplink_01jsz3z4326qbm43gpyx2hnpkb",
             "d - extra wide width": "https://checkout.withflex.com/pay/l/fplink_01jsz40j624jtjzkcatphp4qsw"
+            {%- elsif product_handle == "eddie-by-giddy-2-pack" -%}            
+            "a - narrow width": "https://checkout.withflex.com/pay/l/fplink_01jwwfyr41n3b221pewsn586ak",
+            "b - regular width": "https://checkout.withflex.com/pay/l/fplink_01jwwg2h3k138b6zdk0rf1gj43",
+            "c - wide width": "https://checkout.withflex.com/pay/l/fplink_01jwwg3pra3xzj6zqzkxe8zrvn",
+            "d - extra wide width": "https://checkout.withflex.com/pay/l/fplink_01jwwg4n8d7a4gjern23hzn4tq"
+            {%- endif -%}
           }
           {% endcapture %}
+          {%- if product_handle == "eddie-by-giddy" or product_handle == "eddie-by-giddy-2-pack" -%}
           <div class="hsa-wrapper" data-hsa-links='{{ hsa_links_json | escape }}'>
             <div class="hsa-separator" style="display: flex; align-items: center; text-align: center; margin: 1.5rem 0;">
               <hr style="flex: 1; border: none; border-top: 1px solid #333; margin: 0;" />
@@ -119,7 +128,7 @@
               <hr style="flex: 1; border: none; border-top: 1px solid #333; margin: 0;" />
             </div>
             <a
-              href="https://checkout.withflex.com/pay/l/fplink_01jsz3p08v1mqejdsqyyjej988"
+              href="{% if product_handle == 'eddie-by-giddy' %}https://checkout.withflex.com/pay/l/fplink_01jsz3p08v1mqejdsqyyjej988{% elsif product_handle == 'eddie-by-giddy-2-pack' %}https://checkout.withflex.com/pay/l/fplink_01jwwfyr41n3b221pewsn586ak{% endif %}"
               target="_blank"
               class="product-form__submit button button--full-width button--primary hsa-btn"
               style="margin-top: 0.5rem; border-radius: 50px;"
@@ -127,6 +136,7 @@
               BUY WITH HSA/FSA
             </a>
           </div>
+          {%- endif -%}
         </div>
       {%- endform -%}
     </product-form>
