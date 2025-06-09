@@ -9,25 +9,34 @@
  */
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {}
-    },
     "shogun-optimizer": {
       "type": "shogun-optimizer",
       "settings": {}
+    },
+    "thank_you_TWEewL": {
+      "type": "thank-you",
+      "name": "Thank You Page",
+      "settings": {
+        "support_email": "customercare@getmegiddy.com"
+      }
     }
   },
   "order": [
     "shogun-helper",
     "main",
-    "shogun-optimizer"
+    "shogun-optimizer",
+    "thank_you_TWEewL"
   ]
 }
