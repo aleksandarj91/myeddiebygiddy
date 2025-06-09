@@ -11,6 +11,7 @@
   "sections": {
     "shogun-helper": {
       "type": "shogun-helper",
+      "disabled": true,
       "settings": {}
     },
     "main": {
@@ -34,9 +35,9 @@
     }
   },
   "order": [
+    "thank_you_TWEewL",
     "shogun-helper",
     "main",
-    "shogun-optimizer",
-    "thank_you_TWEewL"
+    "shogun-optimizer"
   ]
 }

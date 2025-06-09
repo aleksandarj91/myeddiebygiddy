@@ -13,6 +13,7 @@
   "sections": {
     "footer_new_zdyniw": {
       "type": "footer-new",
+      "disabled": true,
       "name": "Footer",
       "settings": {
         "footer_logo": "shopify://shop_images/eddie_logo.png",

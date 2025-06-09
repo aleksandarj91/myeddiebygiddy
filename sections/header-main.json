@@ -13,6 +13,7 @@
   "sections": {
     "header_new_n7HHiQ": {
       "type": "header-new",
+      "disabled": true,
       "name": "Header",
       "settings": {
         "desktop_logo": "shopify://shop_images/eddie_logo.png",
