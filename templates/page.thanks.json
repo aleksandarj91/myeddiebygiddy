@@ -9,6 +9,13 @@
  */
 {
   "sections": {
+    "thank_you_TWEewL": {
+      "type": "thank-you",
+      "name": "Thank You Page",
+      "settings": {
+        "support_email": "customercare@getmegiddy.com"
+      }
+    },
     "shogun-helper": {
       "type": "shogun-helper",
       "disabled": true,
@@ -24,14 +31,8 @@
     },
     "shogun-optimizer": {
       "type": "shogun-optimizer",
+      "disabled": true,
       "settings": {}
-    },
-    "thank_you_TWEewL": {
-      "type": "thank-you",
-      "name": "Thank You Page",
-      "settings": {
-        "support_email": "customercare@getmegiddy.com"
-      }
     }
   },
   "order": [
