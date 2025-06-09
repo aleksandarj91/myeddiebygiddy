@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "thank_you_TWEewL": {
+    "thank_you_eBq88r": {
       "type": "thank-you",
       "name": "Thank You Page",
       "settings": {
@@ -36,7 +36,7 @@
     }
   },
   "order": [
-    "thank_you_TWEewL",
+    "thank_you_eBq88r",
     "shogun-helper",
     "main",
     "shogun-optimizer"
