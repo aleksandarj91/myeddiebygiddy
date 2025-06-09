@@ -1,37 +1,31 @@
 {% schema %}
 {
-  "name": "Custom Thank You Page",
-  "tag": "section",
-  "class": "thank-you-page",
+  "name": "Thanks Page Withflex",
   "settings": [
     {
-      "type": "text",
-      "id": "support_email",
-      "label": "Support Email",
-      "default": "customercare@getmegiddy.com"
-    }
+    "type": "text",
+    "id": "support_email",
+    "label": "Support Email",
+    "default": "customercare@getmegiddy.com"
+  }
   ],
-  "presets": [
-    {
-      "name": "Thank You Page"
-    }
-  ]
+"presets": [
+  {
+    "name": "Thank You Page"
+  }
+]
 }
 {% endschema %}
 
-<main class="mx-auto w-full">
-  <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-    <div class="max-w-xl">
-      <h1 class="text-base font-medium text-[#0B0077]">Thank you!</h1>
-      <p class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
-        Your purchase has been completed.
-      </p>
-      <p class="mt-4 text-base text-gray-800">
-        If you have any questions, please reach out to us at
-        <a class="text-[#0B0077] underline" href="mailto:{{ section.settings.support_email }}">
-          {{ section.settings.support_email }}
-        </a>.
-      </p>
-    </div>
+<div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+  <div class="max-w-xl">
+    <h1 class="text-base font-medium text-[#0B0077]">Thank you!</h1>
+    <p class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">Your purchase has been completed.</p>
+    <p class="mt-4 text-base text-gray-800">
+      If you have any questions, please reach out to us at
+      <a class="text-[#0B0077] underline" href="mailto:{{ section.settings.support_email }}">
+        {{ section.settings.support_email }} </a
+      >.
+    </p>
   </div>
-</main>
+</div>
