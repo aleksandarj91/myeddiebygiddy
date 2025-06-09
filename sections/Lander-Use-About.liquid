@@ -15,7 +15,15 @@
                             </div>
                             <div class="col-5">
                                 <div class="content animate__animated animate__slideInLeft">
-                                    <img class="w-100-lg radius-10" src="{{ section.settings.use_image | img_url: 'master' }}" alt="Easy to Use - How to Wear" style="border: 2px solid #fff;">
+                                    <img class="w-100-lg radius-10" src="{{ section.settings.use_image | img_url: '480x' }}"
+                                      srcset="
+                                        {{ section.settings.use_image | img_url: '360x' }} 360w,
+                                        {{ section.settings.use_image | img_url: '480x' }} 480w,
+                                        {{ section.settings.use_image | img_url: '750x' }} 750w,
+                                        {{ section.settings.use_image | img_url: '1000x' }} 1000w
+                                    "
+                                    sizes="(max-width: 576px) 360px, (max-width: 768px) 480px, (max-width: 992px) 750px, 1000px"
+                                    alt="Easy to Use - How to Wear" style="border: 2px solid #fff;">
                                 </div>
                             </div>
                             <div class="col-7 ">
@@ -65,7 +73,15 @@
                             </div>
                             <div class="col-5 order-1 order-lg-2">
                                 <div class="content">
-                                    <img class="w-100 radius-10" src="{{ section.settings.fit_image | img_url: 'master' }}" alt="Eddie with Band Applied" style="border: 2px solid #fff;">
+                                    <img class="w-100 radius-10" src="{{ section.settings.fit_image | img_url: '480x' }}"
+                                      srcset="
+                                        {{ section.settings.fit_image | img_url: '360x' }} 360w,
+                                        {{ section.settings.fit_image | img_url: '480x' }} 480w,
+                                        {{ section.settings.fit_image | img_url: '750x' }} 750w,
+                                        {{ section.settings.fit_image | img_url: '1000x' }} 1000w
+                                      "
+                                      sizes="(max-width: 576px) 360px, (max-width: 768px) 480px, (max-width: 992px) 750px, 1000px"
+                                      alt="Eddie with Band Applied" style="border: 2px solid #fff;">
                                 </div>
                             </div>
                             <div class="col-12 order-3 mb--0">
@@ -82,7 +98,15 @@
                             </div>
                             <div class="col-5">
                                 <div class="content">
-                                    <img class="w-100 radius-10 more-pleasure" src="{{ section.settings.sex_image | img_url: 'master' }}" alt="More Pleasure" style="border: 2px solid #fff;">
+                                    <img class="w-100 radius-10 more-pleasure" src="{{ section.settings.sex_image | img_url: '480x' }}"
+                                      srcset="
+                                          {{ section.settings.sex_image | img_url: '360x' }} 360w,
+                                          {{ section.settings.sex_image | img_url: '480x' }} 480w,
+                                          {{ section.settings.sex_image | img_url: '750x' }} 750w,
+                                          {{ section.settings.sex_image | img_url: '1000x' }} 1000w
+                                      "
+                                      sizes="(max-width: 576px) 360px, (max-width: 768px) 480px, (max-width: 992px) 750px, 1000px"
+                                      alt="More Pleasure" style="border: 2px solid #fff;">
                                 </div>
                             </div>
                             <div class="col-7">
