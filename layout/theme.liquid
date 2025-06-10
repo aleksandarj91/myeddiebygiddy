@@ -464,17 +464,21 @@ function prqQuizCallback(quizResponse){
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
+    {% unless template == 'page.thank-you' %}
     {% if template contains 'page.Landing' %}
       {% sections 'header-landing' %}
     {% else %}
       {% sections 'header-main' %}
     {% endif %}
-     {{ content_for_layout }}
-    {% if template contains 'page.Landing' %}
-      {% sections 'footer-landing' %}
-    {% else %}
-      {% sections 'footer-main' %}
-    {% endif %}
+    {% endunless %}
+         {{ content_for_layout }}
+        {% unless template == 'page.thank-you' %}
+      {% if template contains 'page.Landing' %}
+        {% sections 'footer-landing' %}
+      {% else %}
+        {% sections 'footer-main' %}
+      {% endif %}
+    {% endunless %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -569,6 +573,7 @@ function prqQuizCallback(quizResponse){
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
       }
       var quizOfferValue = getParameterByName('quizoffer');
+      console.log("quizoffer", quizOfferValue);
       var quizThankyouDiv = document.querySelector('.quiz_thankyou_div');
       if (quizOfferValue) {
           quizThankyouDiv.style.display = 'block';
