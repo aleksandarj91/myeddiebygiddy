@@ -331,6 +331,35 @@ s.price-item.price-item--regular {
     width: 100%;
 }
 
+.text-thanks {
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(11 0 119);
+    margin: 0;
+}
+
+.text-p1{
+    font-size: 48px !important;
+    line-height: 1;
+    color: #192335;
+    font-weight: 900 !important;
+    margin: 0;
+}
+
+.text-p2 {
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 24px;
+    color: #192335;
+    margin: 0;
+}
+
+.container-thanks {
+    margin-top: 96px;
+}
+
+
 
 /* @media Query */
 @media only screen and (max-width: 991px) {
