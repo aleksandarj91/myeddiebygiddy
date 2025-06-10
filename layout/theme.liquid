@@ -569,7 +569,6 @@ function prqQuizCallback(quizResponse){
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
       }
       var quizOfferValue = getParameterByName('quizoffer');
-      console.log("quizoffer", quizOfferValue);
       var quizThankyouDiv = document.querySelector('.quiz_thankyou_div');
       if (quizOfferValue) {
           quizThankyouDiv.style.display = 'block';
