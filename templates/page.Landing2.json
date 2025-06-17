@@ -87,14 +87,19 @@
         "color_scheme": ""
       }
     },
+    "landing2_fact_table_mizLxp": {
+      "type": "Landing2-Fact-Table",
+      "name": "Landing2 Fact Table",
+      "settings": {}
+    },
     "landing2_comfort_performance_JyaCPd": {
       "type": "Landing2-Comfort-Performance",
       "name": "Landing2 Eddie Advantage",
       "settings": {}
     },
-    "landing2_comfort_performance_HKcC3X": {
-      "type": "Landing2-Comfort-Performance",
-      "name": "Landing2 Eddie Advantage",
+    "landing2_try_eddie_XWifR9": {
+      "type": "Landing2-Try-Eddie",
+      "name": "Landing2 Try Eddie",
       "settings": {}
     }
   },
@@ -103,7 +108,8 @@
     "main",
     "shogun-optimizer",
     "landing2_why_eddie_DmQrKk",
+    "landing2_fact_table_mizLxp",
     "landing2_comfort_performance_JyaCPd",
-    "landing2_comfort_performance_HKcC3X"
+    "landing2_try_eddie_XWifR9"
   ]
 }
