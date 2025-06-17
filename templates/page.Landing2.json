@@ -111,6 +111,11 @@
       "type": "Landing2-Eddie-Guarantee",
       "name": "Landing2 Eddie Guarantee",
       "settings": {}
+    },
+    "landing2_testimonial_64RpY3": {
+      "type": "Landing2-Testimonial",
+      "name": "Landing2 Testimonial",
+      "settings": {}
     }
   },
   "order": [
@@ -122,6 +127,7 @@
     "landing2_comfort_performance_JyaCPd",
     "landing2_try_eddie_XWifR9",
     "landing2_learning_videos_3NgKjN",
-    "landing2_eddie_guarantee_kxbRtD"
+    "landing2_eddie_guarantee_kxbRtD",
+    "landing2_testimonial_64RpY3"
   ]
 }
