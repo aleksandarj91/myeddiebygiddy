@@ -101,6 +101,11 @@
       "type": "Landing2-Try-Eddie",
       "name": "Landing2 Try Eddie",
       "settings": {}
+    },
+    "landing2_learning_videos_3NgKjN": {
+      "type": "Landing2-Learning-Videos",
+      "name": "Landing2 Videos",
+      "settings": {}
     }
   },
   "order": [
@@ -110,6 +115,7 @@
     "landing2_why_eddie_DmQrKk",
     "landing2_fact_table_mizLxp",
     "landing2_comfort_performance_JyaCPd",
-    "landing2_try_eddie_XWifR9"
+    "landing2_try_eddie_XWifR9",
+    "landing2_learning_videos_3NgKjN"
   ]
 }
