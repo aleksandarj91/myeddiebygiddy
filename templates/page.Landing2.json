@@ -121,6 +121,11 @@
       "type": "Landing2-Eddie-Treatment",
       "name": "Landing2 Eddie Treatment",
       "settings": {}
+    },
+    "landing2_faq_afkxYr": {
+      "type": "Landing2-Faq",
+      "name": "Landing2 Faq",
+      "settings": {}
     }
   },
   "order": [
@@ -134,6 +139,7 @@
     "landing2_learning_videos_3NgKjN",
     "landing2_eddie_guarantee_kxbRtD",
     "landing2_testimonial_64RpY3",
-    "landing2_eddie_treatment_FBAbah"
+    "landing2_eddie_treatment_FBAbah",
+    "landing2_faq_afkxYr"
   ]
 }
