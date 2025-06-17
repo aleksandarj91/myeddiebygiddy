@@ -86,12 +86,24 @@
         "cta_featuretext": "Featured in",
         "color_scheme": ""
       }
+    },
+    "landing2_comfort_performance_JyaCPd": {
+      "type": "Landing2-Comfort-Performance",
+      "name": "Landing2 Eddie Advantage",
+      "settings": {}
+    },
+    "landing2_comfort_performance_HKcC3X": {
+      "type": "Landing2-Comfort-Performance",
+      "name": "Landing2 Eddie Advantage",
+      "settings": {}
     }
   },
   "order": [
     "shogun-helper",
     "main",
     "shogun-optimizer",
-    "landing2_why_eddie_DmQrKk"
+    "landing2_why_eddie_DmQrKk",
+    "landing2_comfort_performance_JyaCPd",
+    "landing2_comfort_performance_HKcC3X"
   ]
 }
