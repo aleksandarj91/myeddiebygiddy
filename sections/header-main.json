@@ -1,1 +1,31 @@
-{"type":"header","name":"Default Footer","sections":{"header_new_n7HHiQ":{"type":"header-new","disabled":true,"name":"Header","settings":{"desktop_logo":"shopify:\/\/shop_images\/eddie_logo.png","mobile_logo":"shopify:\/\/shop_images\/eddie_logo_dark.png","mobile_ED_img":"shopify:\/\/shop_images\/red_small_b4ba0d46-cb2f-44fb-9368-20bb907ac851.png","buy_button_label":"BUY","buy_link":"shopify:\/\/products\/eddie-by-giddy","quiz_link":"shopify:\/\/pages\/quiz1","main_menu":"main-menu"}}},"order":["header_new_n7HHiQ"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Default Footer",
+  "sections": {
+    "header_new_n7HHiQ": {
+      "type": "header-new",
+      "name": "Header",
+      "settings": {
+        "desktop_logo": "shopify://shop_images/eddie_logo.png",
+        "mobile_logo": "shopify://shop_images/eddie_logo_dark.png",
+        "mobile_ED_img": "shopify://shop_images/red_small_b4ba0d46-cb2f-44fb-9368-20bb907ac851.png",
+        "buy_button_label": "BUY",
+        "buy_link": "shopify://products/eddie-by-giddy",
+        "quiz_link": "shopify://pages/quiz1",
+        "main_menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "header_new_n7HHiQ"
+  ]
+}
