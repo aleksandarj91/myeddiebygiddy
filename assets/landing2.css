@@ -46,21 +46,21 @@
 
 
 .banner-card-styled {
-  width: 100%;
-  max-width: 490px;
-  padding: 20px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 100%;
+    max-width: 490px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  position: absolute;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .banner-card-title {
@@ -107,99 +107,128 @@
 }
 
 .fact-table-section {
-  padding: 80px 60px;
+    padding: 80px 60px;
 }
 
 .fact-table-container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .fact-table-heading {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 80px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 80px;
 }
 
 .fact-table {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1.5fr;
-  border-radius: 12px;
-  overflow: hidden;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .fact-table-row {
-  display: contents;
+    display: contents;
 }
 
 .feature-col,
 .eddie-col,
 .rings-col {
-  padding: 20px 16px;
-  border-bottom: 1px solid #e5e7eb;
-  background-color: white;
+    padding: 20px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+}
+
+.feature-col,
+.rings-col {
+    color: #19233599;
 }
 
 .fact-table-row.header .feature-col,
 .fact-table-row.header .rings-col {
-  font-weight: 700;
-  color: var(--color-heading);
-  font-size: 24px; /* ← apply only here */
+    font-weight: 500;
+    color: var(--color-heading);
+    font-size: 24px;
+    /* ← apply only here */
+}
+
+.fact-table-row {
+    font-size: 24px;
+}
+
+.fact-table-row .eddie-col svg {
+    flex-shrink: 0;
+    /* Prevent SVG from shrinking */
+    width: 20px;
+    /* Fixed size */
+    height: 20px;
+    margin-top: 7px;
+    /* Adjust this to fine-tune vertical alignment */
+}
+
+.fact-table-row .eddie-col {
+    align-items: flex-start;
+    /* Keep this if text should align from top */
 }
 
 .fact-table-row.header .feature-col,
 .fact-table-row.header .rings-col {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .fact-table-row.header .eddie-col {
-  background-color: #2654f6;
-  color: white;
-  font-weight: bold;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+    background-color: #2654f6;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .eddie-col {
-  background-color: #2654f6;
-  color: white;
-  font-weight: 500;
+    background-color: #2654f6;
+    color: white;
+    font-weight: 500;
 }
 
 .fact-table-row:last-child .eddie-col {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.fact-table-logo {
+    width: 119px;
+    height: 35px;
 }
 
 /* ✅ Mobile: Keep layout, reduce spacing + text */
 @media (max-width: 768px) {
-  .fact-table-section {
-    padding: 40px 16px;
-  }
+    .fact-table-section {
+        padding: 40px 16px;
+    }
 
-  .fact-table-heading {
-    font-size: 20px;
-    margin-bottom: 24px;
-  }
+    .fact-table-heading {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
 
-  .feature-col,
-  .eddie-col,
-  .rings-col {
-    padding: 12px 8px;
-    font-size: 14px;
-  }
+    .feature-col,
+    .eddie-col,
+    .rings-col {
+        padding: 12px 8px;
+        font-size: 16px;
+    }
 }
 
 
 
 @media (max-width: 991px) {
-  .banner-card-styled {
-    position: static;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .banner-card-styled {
+        position: static;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
