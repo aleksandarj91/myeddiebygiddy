@@ -7,7 +7,7 @@
     {% render 'facebookpixel' %}
     {% render 'msbingpixel' %}
     {% render 'impact' %}
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -42,7 +42,7 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-  {{ content_for_header }}
+    {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -264,7 +264,8 @@
     {{ 'fix.css' | asset_url | stylesheet_tag }}
     {{ 'media.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin/>
+    {{ 'landing2.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin>
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -288,17 +289,32 @@
     {%- endif -%}
 
     <script type="text/javascript">
-      var flspdx = new Worker("data:text/javascript;base64," + btoa('onmessage=function(e){var t=new Request("https://raw.githubusercontent.com/gospeedify/files/main/speedreq.js",{redirect:"follow"});fetch(t).then(e=>e.text()).then(e=>{postMessage(e)})};'));flspdx.onmessage = function (t) {var e = document.createElement("script");e.type = "text/javascript", e.textContent = t.data, document.head.appendChild(e)}, flspdx.postMessage("init");
+      var flspdx = new Worker(
+        'data:text/javascript;base64,' +
+          btoa(
+            'onmessage=function(e){var t=new Request("https://raw.githubusercontent.com/gospeedify/files/main/speedreq.js",{redirect:"follow"});fetch(t).then(e=>e.text()).then(e=>{postMessage(e)})};'
+          )
+      );
+      (flspdx.onmessage = function (t) {
+        var e = document.createElement('script');
+        (e.type = 'text/javascript'), (e.textContent = t.data), document.head.appendChild(e);
+      }),
+        flspdx.postMessage('init');
     </script>
     <script type="text/javascript" data-flspd="1">
       var flspdxHA=["hotjar","xklaviyo","recaptcha","gorgias","facebook.net","gtag","tagmanager","gtm"],flspdxSA=["googlet","klaviyo","gorgias","stripe"],observer=new MutationObserver(function(e){e.forEach(function(e){e.addedNodes.forEach(function(e){if("SCRIPT"===e.tagName&&1===e.nodeType)if(e.innerHTML.includes("asyncLoad")||"analytics"===e.className)e.type="text/flspdscript";else{for(var t=0;t<flspdxSA.length;t++)if(e.src.includes(flspdxSA[t]))return void(e.type="text/flspdscript");for(var r=0;r<flspdxHA.length;r++)if(e.innerHTML.includes(flspdxHA[r]))return void(e.type="text/flspdscript")}})})}),ua=navigator.userAgent.toLowerCase();ua.match(new RegExp("chrome|firefox"))&&-1===window.location.href.indexOf("no-optimization")&&observer.observe(document.documentElement,{childList:!0,subtree:!0});Add commentMore actions
     </script>
-    <div style="position:absolute;font-size:1200px;line-height:1;word-wrap:break-word;top:0;left:0;width:50vw;height:50vh;max-width:50vw;max-height:50vh;pointer-events:none;z-index:99999999999;color:transparent;overflow:hidden;" data-optimizer="SP: Store-js">□</div>
+    <div
+      style="position:absolute;font-size:1200px;line-height:1;word-wrap:break-word;top:0;left:0;width:50vw;height:50vh;max-width:50vw;max-height:50vh;pointer-events:none;z-index:99999999999;color:transparent;overflow:hidden;"
+      data-optimizer="SP: Store-js"
+    >
+      □
+    </div>
     <script src="{{ 'speedmin.js' | asset_url }}"></script>
 
     <!-- START: Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-157P2QS556" defer="defer"></script>
-	<script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-157P2QS556" defer="defer"></script>
+    <script>
       {% comment %} window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
@@ -313,19 +329,170 @@
       }, 1000);
     </script>
 
-	<!-- START: VWO Async SmartCode -->
-	<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" crossorigin/>
-	<script type='text/javascript' id='vwoCode' defer="defer"> 
-	window._vwo_code || (function() {
-	var account_id=463194,
-	version=2.1,
-	settings_tolerance=2000,
-	hide_element='body',
-	hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
-	/* DO NOT EDIT BELOW THIS LINE */
-	f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var i=this.getSettings(),n=d.createElement('script'),r=this;t=t||{};if(i){n.textContent=i;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var i=this.hide_element(),n=i?i+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=n;else t.appendChild(d.createTextNode(n));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var n=d.createElement('div');n.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;';n.setAttribute('id','_vis_opt_path_hides');n.classList.add('_vis_hide_layer');t.parentNode.insertBefore(n,t.nextSibling)}var o='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:o})}else{this.load(o+'&x=true')}}};w._vwo_code=code;code.init();})();
-	</script>
-	<!-- END: VWO Async SmartCode -->
+    <!-- START: VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" crossorigin>
+    <script type="text/javascript" id="vwoCode" defer="defer">
+      window._vwo_code ||
+        (function () {
+          var account_id = 463194,
+            version = 2.1,
+            settings_tolerance = 2000,
+            hide_element = 'body',
+            hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector('#vwoCode'),
+            cK = '_vwo_' + account_id + '_settings',
+            cc = {};
+          try {
+            var c = JSON.parse(localStorage.getItem('_vwo_' + account_id + '_config'));
+            cc = c && typeof c === 'object' ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === 'session' ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== 'undefined' ? use_existing_jquery : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== 'undefined' ? library_tolerance : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return '{' + (cc.hES || hide_element_style) + '}';
+            },
+            hide_element: function () {
+              if (performance.getEntriesByName('first-contentful-paint')[0]) {
+                return '';
+              }
+              return typeof cc.hE === 'string' ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function (e) {
+              if (!f) {
+                f = true;
+                var t = d.getElementById('_vis_opt_path_hides');
+                if (t) t.parentNode.removeChild(t);
+                if (e) new Image().src = 'https://dev.visualwebsiteoptimizer.com/ee.gif?a=' + account_id + e;
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            addScript: function (e) {
+              var t = d.createElement('script');
+              t.type = 'text/javascript';
+              if (e.src) {
+                t.src = e.src;
+              } else {
+                t.text = e.text;
+              }
+              d.getElementsByTagName('head')[0].appendChild(t);
+            },
+            load: function (e, t) {
+              var i = this.getSettings(),
+                n = d.createElement('script'),
+                r = this;
+              t = t || {};
+              if (i) {
+                n.textContent = i;
+                d.getElementsByTagName('head')[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  r.load(e);
+                }
+              } else {
+                var o = new XMLHttpRequest();
+                o.open('GET', e, true);
+                o.withCredentials = !t.dSC;
+                o.responseType = t.responseType || 'text';
+                o.onload = function () {
+                  if (t.onloadCb) {
+                    return t.onloadCb(o, e);
+                  }
+                  if (o.status === 200) {
+                    _vwo_code.addScript({ text: o.responseText });
+                  } else {
+                    _vwo_code.finish('&e=loading_failure:' + e);
+                  }
+                };
+                o.onerror = function () {
+                  if (t.onerrorCb) {
+                    return t.onerrorCb(e);
+                  }
+                  _vwo_code.finish('&e=loading_failure:' + e);
+                };
+                o.send();
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf('__vwo_disable__') > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t;
+              if (this.hide_element() !== 'body') {
+                t = d.createElement('style');
+                var i = this.hide_element(),
+                  n = i ? i + this.hide_element_style() : '',
+                  r = d.getElementsByTagName('head')[0];
+                t.setAttribute('id', '_vis_opt_path_hides');
+                v && t.setAttribute('nonce', v.nonce);
+                t.setAttribute('type', 'text/css');
+                if (t.styleSheet) t.styleSheet.cssText = n;
+                else t.appendChild(d.createTextNode(n));
+                r.appendChild(t);
+              } else {
+                t = d.getElementsByTagName('head')[0];
+                var n = d.createElement('div');
+                n.style.cssText =
+                  'z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;';
+                n.setAttribute('id', '_vis_opt_path_hides');
+                n.classList.add('_vis_hide_layer');
+                t.parentNode.insertBefore(n, t.nextSibling);
+              }
+              var o =
+                'https://dev.visualwebsiteoptimizer.com/j.php?a=' +
+                account_id +
+                '&u=' +
+                encodeURIComponent(d.URL) +
+                '&vn=' +
+                version;
+              if (w.location.search.indexOf('_vwo_xhr') !== -1) {
+                this.addScript({ src: o });
+              } else {
+                this.load(o + '&x=true');
+              }
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- END: VWO Async SmartCode -->
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -333,127 +500,129 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-{% comment %}
-  Quiz Callback Function
-{% endcomment %}  
-<script>
-function prqQuizCallback(quizResponse){
-    console.log(quizResponse);
-    let i=0;
-    let delim="|"
-    let qparm="";
-    let noParm=false;
-    let responseText='';
-    let answerText='';
-    let ref=[];
-    quizResponse.quiz.attributes.slides.data.forEach(function(element){
-        switch(i) {
+    {% comment %}
+      Quiz Callback Function
+    {% endcomment %}
+    <script>
+      function prqQuizCallback(quizResponse) {
+        console.log(quizResponse);
+        let i = 0;
+        let delim = '|';
+        let qparm = '';
+        let noParm = false;
+        let responseText = '';
+        let answerText = '';
+        let ref = [];
+        quizResponse.quiz.attributes.slides.data.forEach(function (element) {
+          switch (i) {
             case 5:
-                element.attributes.values.forEach(function(slideElement){
-                    if (slideElement.indexOf("QwhJ6RN")==-1){
-                        noParm=true;
-                    }
-                });
-                if (noParm){
-                    ref[ref.length]="q5="+encodeURIComponent("Consume alcohol");
-                    noParm=false;
+              element.attributes.values.forEach(function (slideElement) {
+                if (slideElement.indexOf('QwhJ6RN') == -1) {
+                  noParm = true;
                 }
-                break;
+              });
+              if (noParm) {
+                ref[ref.length] = 'q5=' + encodeURIComponent('Consume alcohol');
+                noParm = false;
+              }
+              break;
             case 6:
-                element.attributes.values.forEach(function(slideElement){
-                    if (slideElement.indexOf("JNhwezb")==-1){
-                        noParm=true;
-                    }
-                });
-                if (noParm){
-                    ref[ref.length]="q6="+encodeURIComponent("Consume nicotine products");
-                    noParm=false;
+              element.attributes.values.forEach(function (slideElement) {
+                if (slideElement.indexOf('JNhwezb') == -1) {
+                  noParm = true;
                 }
-                break;
+              });
+              if (noParm) {
+                ref[ref.length] = 'q6=' + encodeURIComponent('Consume nicotine products');
+                noParm = false;
+              }
+              break;
             case 7:
-                element.attributes.values.forEach(function(slideElement){
-                    if (slideElement.indexOf("3Oi9rL5")==-1){
-                        switch (slideElement) {
-                            case "WOh7DwX":
-                                noParm=true;
-                                responseText='Antidepressant Meds';
-                                break;
-                            case "wjhxzP4":
-                                noParm=true;
-                                responseText='Anti-anxiety Meds';
-                                break;
-                            case "bdhYzJA":
-                                noParm=true;
-                                responseText='Opiods and pain relievers';
-                                break;
-                            case "qahY4OM":
-                                noParm=true;
-                                responseText='High blood pressure';
-                                break;
-                            case "DlhEZYE":
-                                noParm=true;
-                                responseText='Hair loss medication';
-                                break;
-                            default:
-                        }
-                        if (noParm){
-                            answerText+=responseText+"|";
-                            console.log(responseText);
-                        }
-                    }
-                });
-                if (noParm){
-                    ref[ref.length]="q7="+encodeURIComponent(answerText.substring(0, answerText.length - 1));
-                    answerText='';
-                    noParm=false;
+              element.attributes.values.forEach(function (slideElement) {
+                if (slideElement.indexOf('3Oi9rL5') == -1) {
+                  switch (slideElement) {
+                    case 'WOh7DwX':
+                      noParm = true;
+                      responseText = 'Antidepressant Meds';
+                      break;
+                    case 'wjhxzP4':
+                      noParm = true;
+                      responseText = 'Anti-anxiety Meds';
+                      break;
+                    case 'bdhYzJA':
+                      noParm = true;
+                      responseText = 'Opiods and pain relievers';
+                      break;
+                    case 'qahY4OM':
+                      noParm = true;
+                      responseText = 'High blood pressure';
+                      break;
+                    case 'DlhEZYE':
+                      noParm = true;
+                      responseText = 'Hair loss medication';
+                      break;
+                    default:
+                  }
+                  if (noParm) {
+                    answerText += responseText + '|';
+                    console.log(responseText);
+                  }
                 }
-                break;
+              });
+              if (noParm) {
+                ref[ref.length] = 'q7=' + encodeURIComponent(answerText.substring(0, answerText.length - 1));
+                answerText = '';
+                noParm = false;
+              }
+              break;
             case 8:
-                element.attributes.values.forEach(function(slideElement){
-                    if (slideElement.indexOf("rgixOnM")==-1){
-                        switch (slideElement) {
-                            case "4EhWD8A":
-                                noParm=true;
-                                responseText='Obesity';
-                                break;
-                            case "OJhDzW2":
-                                noParm=true;
-                                responseText='Cardiac issue';
-                                break;
-                            case "V4hdlZX":
-                                noParm=true;
-                                responseText='Diabetes';
-                                break;
-                            case "rehQl7p":
-                                noParm=true;
-                                responseText='Prostate Cancer';
-                                break;
-                            default:
-                        }
-                        if (noParm){
-                            answerText+=responseText+"|";
-                            console.log(responseText);
-                        }
-                    }
-                });
-                if (noParm){
-                    //remove trailing comma
-                    qNum=ref.length;
-                    ref[ref.length]="q8="+encodeURIComponent(answerText.substring(0, answerText.length - 1));
-                    answerText='';
-                    noParm=false;
+              element.attributes.values.forEach(function (slideElement) {
+                if (slideElement.indexOf('rgixOnM') == -1) {
+                  switch (slideElement) {
+                    case '4EhWD8A':
+                      noParm = true;
+                      responseText = 'Obesity';
+                      break;
+                    case 'OJhDzW2':
+                      noParm = true;
+                      responseText = 'Cardiac issue';
+                      break;
+                    case 'V4hdlZX':
+                      noParm = true;
+                      responseText = 'Diabetes';
+                      break;
+                    case 'rehQl7p':
+                      noParm = true;
+                      responseText = 'Prostate Cancer';
+                      break;
+                    default:
+                  }
+                  if (noParm) {
+                    answerText += responseText + '|';
+                    console.log(responseText);
+                  }
                 }
-                break;
+              });
+              if (noParm) {
+                //remove trailing comma
+                qNum = ref.length;
+                ref[ref.length] = 'q8=' + encodeURIComponent(answerText.substring(0, answerText.length - 1));
+                answerText = '';
+                noParm = false;
+              }
+              break;
             default:
-        }
-        i+=1;
-    });
-    document.location.href="https://lander.eddiebygiddy.com/quiz/quiz_response.html?"+ref.join("&");
-}
-</script>
+          }
+          i += 1;
+        });
+        document.location.href = 'https://lander.eddiebygiddy.com/quiz/quiz_response.html?' + ref.join('&');
+      }
+    </script>
 
-  {% render 'shogun-head' %}
-{%- render 'foxify-head' -%}{% include 'pagefly-app-header' %}</head>
+    {% render 'shogun-head' %}
+    {%- render 'foxify-head' -%}
+    {% include 'pagefly-app-header' %}
+  </head>
 
   <body class="edy-header-sticky gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -464,15 +633,15 @@ function prqQuizCallback(quizResponse){
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% unless template == 'page.thank-you' %}
-    {% if template contains 'page.Landing' %}
-      {% sections 'header-landing' %}
-    {% else %}
-      {% sections 'header-main' %}
-    {% endif %}
+    {% unless template == 'page.thank-you' or template == 'page.Landing2' %}
+      {% if template contains 'page.Landing' %}
+        {% sections 'header-landing' %}
+      {% else %}
+        {% sections 'header-main' %}
+      {% endif %}
     {% endunless %}
-         {{ content_for_layout }}
-        {% unless template == 'page.thank-you' %}
+    {{ content_for_layout }}
+    {% unless template == 'page.thank-you'%}
       {% if template contains 'page.Landing' %}
         {% sections 'footer-landing' %}
       {% else %}
@@ -529,10 +698,10 @@ function prqQuizCallback(quizResponse){
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    
+
     <!-- Javascript Source Files -->
     <script src="{{ 'jquery.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'modernizr.min.js' | asset_url }}" defer="defer"></script>  
+    <script src="{{ 'modernizr.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'sal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>
@@ -559,29 +728,30 @@ function prqQuizCallback(quizResponse){
     <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'app.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'quiz.js' | asset_url }}" defer="defer"></script>
-    
-    <script>      
+
+    <script>
       // Quiz offer page param get
       // Function to get URL parameter by name
       function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, '\\$&');
-      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-      results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
       }
       var quizOfferValue = getParameterByName('quizoffer');
-      console.log("quizoffer", quizOfferValue);
+      console.log('quizoffer', quizOfferValue);
       var quizThankyouDiv = document.querySelector('.quiz_thankyou_div');
       if (quizOfferValue) {
-          quizThankyouDiv.style.display = 'block';
+        quizThankyouDiv.style.display = 'block';
       } else {
-          quizThankyouDiv.style.display = 'none';
+        quizThankyouDiv.style.display = 'none';
       }
-     // End Quiz offer page param get
+      // End Quiz offer page param get
     </script>
 
-  {%- render 'foxify-footer' -%}</body>
+    {%- render 'foxify-footer' -%}
+  </body>
 </html>

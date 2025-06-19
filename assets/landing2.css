@@ -1,0 +1,205 @@
+.banner-mt {
+    margin-top: 80px;
+}
+
+.banner-logo {
+    margin-left: 3%;
+    margin-top: 1%;
+    width: 120px;
+    height: 40px;
+}
+
+.title-landing2 {
+    font-size: 64px;
+    color: var(--color-white);
+}
+
+.para-landing2-subtitle {
+    font-size: 24px;
+    line-height: auto;
+    color: var(--color-white);
+    font-weight: 100;
+    font-family: var(--font-secondary);
+    padding-bottom: 5px;
+}
+
+.fsa-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.fsa-icon-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    /* adjust if needed */
+}
+
+.fsa-icon-item img {
+    height: 40px;
+    width: auto;
+}
+
+
+.banner-card-styled {
+  width: 100%;
+  max-width: 490px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.banner-card-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.banner-card-para {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.banner-card-img-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Optional spacing between image and text */
+}
+
+.banner-card-img-wrapper img.banner-card-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Optional: make it circular */
+}
+
+.banner-card-img-wrapper .banner-card-name {
+    font-size: 16px;
+    /* Adjust if needed */
+}
+
+.banner-card-name-short {
+    font-size: 24px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.fact-table-section {
+  padding: 80px 60px;
+}
+
+.fact-table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fact-table-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.fact-table {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.fact-table-row {
+  display: contents;
+}
+
+.feature-col,
+.eddie-col,
+.rings-col {
+  padding: 20px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.fact-table-row.header .feature-col,
+.fact-table-row.header .rings-col {
+  font-weight: 700;
+  color: var(--color-heading);
+  font-size: 24px; /* ← apply only here */
+}
+
+.fact-table-row.header .feature-col,
+.fact-table-row.header .rings-col {
+  font-weight: 700;
+}
+
+.fact-table-row.header .eddie-col {
+  background-color: #2654f6;
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.eddie-col {
+  background-color: #2654f6;
+  color: white;
+  font-weight: 500;
+}
+
+.fact-table-row:last-child .eddie-col {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* ✅ Mobile: Keep layout, reduce spacing + text */
+@media (max-width: 768px) {
+  .fact-table-section {
+    padding: 40px 16px;
+  }
+
+  .fact-table-heading {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .feature-col,
+  .eddie-col,
+  .rings-col {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .banner-card-styled {
+    position: static;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

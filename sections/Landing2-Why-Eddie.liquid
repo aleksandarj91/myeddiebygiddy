@@ -1,216 +1,175 @@
-<div class="row color-{{ section.settings.color_scheme }}">
-    <div class="col-md-12 col-lg-9 order-2 order-lg-1">
-        <div class="left-column-content">
-            <!-- Stats -->
-            <div class="stats-wrapper d-flex flex-column">
-                <div class="percentage-wrapper d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-end align-items-center stat-box">
-                        <h4 class="stat-percentage">{{ section.settings.stat_1_percentage }}</h4>
-                        <div>
-                            <h6 class="stat-line">{{ section.settings.stat_1_line_1 }}</h6>
-                            <h6 class="stat-line">{{ section.settings.stat_1_line_2 }}</h6>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-start align-items-center stat-box">
-                        <h4 class="stat-divider"> | </h4>
-                    </div>
-                    <div class="d-flex justify-content-start align-items-center stat-box">
-                        <h4 class="stat-percentage">{{ section.settings.stat_2_percentage }}</h4>
-                        <div>
-                            <h6 class="stat-line">{{ section.settings.stat_2_line_1 }}</h6>
-                            <h6 class="stat-line">{{ section.settings.stat_2_line_2 }}</h6>
-                        </div>
-                    </div>
+<section
+  style="background-image: url({{ section.settings.banner_img | img_url: 'master' }})"
+  class="edy-banner-6 variation-02 bg_image bg_learn_hero header-transperent-spacer"
+  data-black-overlay="2"
+>
+  <div class="wrapper w-100">
+    <div>
+      <img
+        class="banner-logo"
+        src="{{ block.settings.logo | img_url: 'master' }}"
+        alt="Banner Logo"
+      >
+    </div>
+    <div class="container">
+      <div class="row row--15">
+        <div class="col-lg-12">
+          <div class="banner-mt">
+            <div class="row">
+              <!-- Left: Banner Text + Button -->
+              <div class="col-lg-6 col-md-12 text-left">
+                <h2 class="title-landing2 mb-24">{{ section.settings.banner_heading }}</h2>
+                <p class="para-landing2-subtitle mb-24 d-none d-sm-block">
+                  {{ section.settings.banner_desktop_content }}
+                </p>
+                <p class="para-home-subtitle d-block d-sm-none">{{ section.settings.banner_mobile_content }}</p>
+                <div class="contact-btn xmt--10 text-center mb-24">
+                  <a
+                    id="btn-quiz"
+                    class="edy-btn radius-round replace-url button--full-width"
+                    href="{{ section.settings.banner_btn_url }}"
+                  >
+                    <span class="btn-text" style="font-size: 18px;">{{ section.settings.banner_btn_label }}</span>
+                  </a>
                 </div>
-
-                <div class="headline-wrapper text-center">
-                    <h1 class="h1-64 mb--0">{{ section.settings.headline }}</h1>
-                    <h6 class="h6-24 m-0">{{ section.settings.subheadline }}</h6>
+                <div class="fsa-icons-wrapper mb-24 text-center">
+                  <span class="fsa-icon-item">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfdJREFUSEu9lb1rVEEUxX/n/1CMYhFSi4JVAmKIhV1EEPwAiZjK2kYtUgcCGkyT+FGI6SwC2phKNGgrNmpEG/+K47uPmWWcfbv7ICQDW+zMvffMnHvPeeKQl/rWtz0NXE3xryR965PbC8D2XeAJsJ+KTgHLktYngXQC2D4LXErJM8AisC5pOfZsv05728DXFLcjaa8GHAKw/R6YLQK/ABuSNspk22vAAnC62N+VNFfG/Qdg+yLwFpiTtDvp+RVgXCouNy/pXT6rAR42DDyQ1Ks39QVsG3jUpEeddh05wCYwVfM4iirbsyWVqX/7km4NvaB5XUsPcEPS80n8274PrJSU2L4OPCv3WopsX2um4WU5iuMAbN8DVoFtSVeqZodeQjd3YvIyQFBzQdLxjsmIV92W9D1dZgl42lU859r+3YD8lXQmAzwOYUk6WQHEnO8AH5M2QnAvxhVPl/gZqo9eZoBIDHUO1FrcJp+9AS73KJ4pans5GNOiyS131UsyyBDnVVymb6CFWgfxilPBXYeIZpqGZt/pnAHbn4EfZeOPXGiHbhVh058OaHbnStvuY9fhqpu1upNqwxJKax9v18Vohm2fT/9PNDN9s/rg5FHcAn6luA+lTXe66RhTyz71J8Ucq215VG5v37cdMx6/WENfuAMDTHLXUef/AKr59hlTYe8VAAAAAElFTkSuQmCC"
+                      alt="icon"
+                    >
+                    &nbsp;<span>FDA registered</span>
+                  </span>
+                  <span class="fsa-icon-item">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAetJREFUSEu1lT2oj2EYxn/X7oySJANRZ7MRA5OVwUkZfJZJYTL4ZjCRlJJ8DAahyKYUi3MsMihFKEkGI4Msl+eu5z297/k/74cXdz3L//+813Xf93Pd9yX+c2gIvu1NwBZgZb7/AXgs6Vnf960EthcD2/MJglIEwb04kr6VLkwQ2F4FHM7AQTIBUiAP8CC6KOl9nahBYPsgcA74BNwBHkp609UG29PAVmAHsAI4July9c1Cgs/AK+CApK99/a3/b3spcBVYK2n5BIHt1cDblP0eSbf+BLy6a3t3quImsEbSu/h9voKslKfA5iHqKCVQwhhNYDsU9lHSy1oFobZGkqMIMvjdLM+Zf0rQBh4ko1pk+xHwM8l1pgv8bwhOpeRO5kGKvsfUzrdlgVTHvYHt/cC1LvDRFdQecHrAVHdWsAj4DuyTdGPkoO0FrgNTkn40Bi2X+Bz40tbjPtK0l0K6yyRtaNtFVYmnJcXjDg7blRgam6C0riuS18A2SWEurWF7CXAf2FhaM0XDsT0VjpXOeuCQpEstu2cncDu53Vw4nqR4w0Z0WqbtM8DxlN0T4IqkBzU57gJie56VdKKtxF5Pth3KOA+Eu80Cv5LLRRvDxY72Ka6XIGcc4EeAdTnTF8CFNh+uVzOIYLCUChd/A20e/xnvxY96AAAAAElFTkSuQmCC"
+                      alt="icon"
+                    >
+                    &nbsp;<span>Safe to Use</span>
+                  </span>
                 </div>
-            </div>
+              </div>
 
-            <!-- CTA -->
-            <div class="cta-wrapper d-flex flex-column text-center">
-                <h3 class="h3-32">{{ section.settings.cta_title }}</h3>
-                <a id="btn-quiz" class="edy-btn radius-round button--full-width"
-                   href="{{ section.settings.cta_link }}">
-                    <span class="btn-text">{{ section.settings.cta_text }}</span>
-                </a>
-                <h6 class="h6-16">{{ section.settings.cta_subtext }}</h6>
-            </div>
+              <!-- Right: Testimonial Text -->
+              <div class="col-lg-6 col-md-12 text-left position-relative">
+                <div class="banner-card-styled">
+                  <div class="banner-card-icon-wrapper mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="17" fill="#FFB200">
+                      <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="17" fill="#FFB200">
+                      <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="17" fill="#FFB200">
+                      <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="17" fill="#FFB200">
+                      <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15" height="17" fill="#FFB200">
+                      <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/>
+                    </svg>
+                  </div>
+                  <p class="banner-card-title text-white">
+                    {{ section.settings.banner_card_title }}
+                  </p>
+                  <p class="banner-card-para text-white mb-8">
+                    {{ section.settings.banner_card_para }}
+                  </p>
 
-            <!-- Brand Images -->
-            <div class="d-flex flex-column brands-wrapper justify-content-center text-center">
-                <h6 class="h6-24 mb--0">{{ section.settings.cta_featuretext }}</h6>
-                <div class="row flex-row d-flex justify-content-center brand-logos">
-                    {% for block in section.blocks %}
-                        {% if block.type == 'brand_logo' %}
-                            <div class="col-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2 justify-content-center d-flex brand-logo">
-                                {% assign index = forloop.index %}
-                                <img
-                                        src="{{ block.settings.image | img_url: 'master' }}"
-                                        alt="{{ block.settings.alt | default: 'Brand logo' }}"
-                                />
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                  <div class="banner-card-img-wrapper">
+                    <img
+                      class="banner-card-avatar"
+                      src="{{ block.settings.banner_card_img | img_url: 'master' }}"
+                      alt="Testimonial Image"
+                    >
+                    <span class="banner-card-name-short text-white">{{ section.settings.banner_card_name_short }}</span>
+                  </div>
                 </div>
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
-
-    <!-- Right Banner -->
-    <div class="col-md-12 col-lg-3 order-1 order-lg-2 d-flex justify-content-center px-0">
-        <img
-                src="{{ section.settings.banner_img | img_url: 'master' }}"
-                class="right-banner-image img-fluid"
-                alt="Right banner Image"
-                loading="lazy"
-        >
-    </div>
-</div>
+  </div>
+</section>
 
 {% schema %}
 {
   "name": "Landing2 Why Eddie",
   "settings": [
     {
-      "type": "text",
-      "id": "main_logo_link",
-      "label": "Main Logo Link",
-      "default": "#"
+      "type": "header",
+      "content": "Banner Content"
     },
     {
-      "type": "text",
-      "id": "stat_1_percentage",
-      "label": "Stat 1 - Percentage",
-      "default": "93%"
-    },
-    {
-      "type": "text",
-      "id": "stat_1_line_1",
-      "label": "Stat 1 - Line 1",
-      "default": "improved"
-    },
-    {
-      "type": "text",
-      "id": "stat_1_line_2",
-      "label": "Stat 1 - Line 2",
-      "default": "hardness"
-    },
-    {
-      "type": "text",
-      "id": "stat_2_percentage",
-      "label": "Stat 2 - Percentage",
-      "default": "95%"
-    },
-    {
-      "type": "text",
-      "id": "stat_2_line_1",
-      "label": "Stat 2 - Line 1",
-      "default": "report"
-    },
-    {
-      "type": "text",
-      "id": "stat_2_line_2",
-      "label": "Stat 2 - Line 2",
-      "default": "effectiveness"
-    },
-    {
-      "type": "text",
-      "id": "headline",
-      "label": "Main Headline",
-      "default": "Perform Better with Eddie"
-    },
-    {
-      "type": "text",
-      "id": "subheadline",
-      "label": "Subheadline",
-      "default": "A wearable FDA Class II medical device to treat ED."
-    },
-    {
-      "type": "text",
-      "id": "cta_title",
-      "label": "CTA Title",
-      "default": "See if Eddie is right for you"
-    },
-    {
-      "type": "text",
-      "id": "cta_text",
-      "label": "CTA Button Text",
-      "default": "TAKE THE QUIZ & GET $20 OFF"
-    },
-    {
-      "type": "text",
-      "id": "cta_link",
-      "label": "CTA Button Link",
-      "default": "#"
-    },
-    {
-      "type": "text",
-      "id": "cta_subtext",
-      "label": "CTA Subtext (below button)",
-      "default": "2 minutes to complete"
-    },
-    {
-      "type": "text",
-      "id": "cta_featuretext",
-      "label": "CTA Feature Text (above logos)",
-      "default": "Featured in"
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
     },
     {
       "type": "image_picker",
       "id": "banner_img",
-      "label": "Right Side Background Image"
+      "label": "Banner Image"
     },
     {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-2"
-    }
-  ],
-  "blocks": [
+      "type": "text",
+      "id": "banner_heading",
+      "label": "Banner Heading",
+      "default": "Traditional Rings Cut Off Blood Flow. Eddie Sets It Free."
+    },
     {
-      "type": "brand_logo",
-      "name": "Brand Logo",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Logo Image"
-        },
-        {
-          "type": "text",
-          "id": "alt",
-          "label": "Alt Text",
-          "default": "Brand logo"
-        }
-      ]
+      "type": "textarea",
+      "id": "banner_desktop_content",
+      "label": "Banner Desktop Content",
+      "default": "It’s a fact: your penis isn’t shaped like a circle. It’s shaped like an oval. Eddie is designed to work with the natural physiology of an erection. That means harder, longer-lasting, more satisfying erections."
+    },
+    {
+      "type": "textarea",
+      "id": "banner_mobile_content",
+      "label": "Banner Mobile Content",
+      "default": "It’s a fact: your penis isn’t shaped like a circle. It’s shaped like an oval. Eddie is designed to work with the natural physiology of an erection. That means harder, longer-lasting, more satisfying erections."
+    },
+    {
+      "type": "text",
+      "id": "banner_btn_label",
+      "label": "Banner Button Label",
+      "default": "Try Risk Free"
+    },
+    {
+      "type": "url",
+      "id": "banner_btn_url",
+      "label": "Banner Button URL"
+    },
+    {
+      "type": "text",
+      "id": "banner_card_title",
+      "label": "Banner Card Title",
+      "default": "Can't Believe It Works So Well"
+    },
+    {
+      "type": "textarea",
+      "id": "banner_card_para",
+      "label": "Banner Card Description",
+      "default": "Long-time user of ED Medication. Now I just use Eddie. Without being too explicit, the finales are so much more like the old days from 20+ years ago."
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_card_img",
+      "label": "Banner Card Image"
+    },
+    {
+      "type": "text",
+      "id": "banner_card_name_short",
+      "label": "Banner Card Title",
+      "default": "R.D."
     }
   ],
   "presets": [
     {
       "name": "Landing2 Why Eddie",
-      "category": "Landing2",
-      "blocks": [
-        {
-          "type": "brand_logo"
-        },
-        {
-          "type": "brand_logo"
-        },
-        {
-          "type": "brand_logo"
-        },
-        {
-          "type": "brand_logo"
-        },
-        {
-          "type": "brand_logo"
-        }
-      ]
+      "category": "Landing2"
     }
   ]
 }

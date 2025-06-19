@@ -29,45 +29,6 @@
     },
     "landing2_why_eddie_DmQrKk": {
       "type": "Landing2-Why-Eddie",
-      "blocks": {
-        "brand_logo_xDHYJN": {
-          "type": "brand_logo",
-          "settings": {
-            "alt": "Brand logo"
-          }
-        },
-        "brand_logo_d4qMba": {
-          "type": "brand_logo",
-          "settings": {
-            "alt": "Brand logo"
-          }
-        },
-        "brand_logo_eqB3TA": {
-          "type": "brand_logo",
-          "settings": {
-            "alt": "Brand logo"
-          }
-        },
-        "brand_logo_Wc3HDE": {
-          "type": "brand_logo",
-          "settings": {
-            "alt": "Brand logo"
-          }
-        },
-        "brand_logo_dHcGFx": {
-          "type": "brand_logo",
-          "settings": {
-            "alt": "Brand logo"
-          }
-        }
-      },
-      "block_order": [
-        "brand_logo_xDHYJN",
-        "brand_logo_d4qMba",
-        "brand_logo_eqB3TA",
-        "brand_logo_Wc3HDE",
-        "brand_logo_dHcGFx"
-      ],
       "name": "Landing2 Why Eddie",
       "settings": {
         "main_logo_link": "#",
