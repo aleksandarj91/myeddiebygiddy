@@ -1,12 +1,55 @@
+<section class="bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image (always first on mobile, left on desktop) -->
+      <div class="ol-12 col-md-7 mb-4 mb-md-0 px-0 px-md-3">
+        <img
+          class="lander2-sec3-img"
+          src="{{ section.settings.couple_image | img_url: 'master' }}"
+          alt="Banner Logo"
+        >
+      </div>
+
+      <!-- Text Content -->
+      <div class="col-12 col-md-5 ps-md-7 text-center text-md-start">
+        <h2 class="lander2-headline mb-18">
+          {{section.settings.heading_line | raw }}
+        </h2>
+        <p class="lander2-description mb-5 mb-md-0">
+          {{ section.settings.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Landing2 Eddie Advantage",
-    "settings": [],
-    "presets": [
-      {
-        "name": "Landing2 Eddie Advantage",
-        "category": "Landing2"        
-      }
-    ]
-  }
+{
+  "name": "Landing2 Eddie Advantage",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "couple_image",
+      "label": "Couple Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_line",
+      "label": "Heading Line",
+      "default": "The only ED Device <span class=\"d-none d-md-inline\"><br></span> Engineered for <span class=\"d-md-inline d-md-none\"><br></span> Performance and Comfort"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Paragraph Text",
+      "default": "Unlike traditional rings that can cause discomfort or even restrict circulation, Eddie’s patented open-bottom design ensures that blood flows where it should – boosting erection quality while preserving natural sensation. With adjustable tension bands, Eddie adapts to your body – not the other way around."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Landing2 Eddie Advantage",
+      "category": "Landing2"
+    }
+  ]
+}
 {% endschema %}

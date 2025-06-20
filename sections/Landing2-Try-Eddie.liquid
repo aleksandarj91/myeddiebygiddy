@@ -1,12 +1,71 @@
+<section
+  class="edy-lander-cta-area edy-section-gap bg-cover bg-center has-dark-overlay"
+  style="background-image: url({{ section.settings.background_image | img_url: 'master' }});"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <div class="edy-callto-action edy-cta-default style-6">
+            <div class="container">
+              <div class="row g-5 align-items-center content-wrapper">
+                <div class="col-lg-12">
+                  <div class="inner">
+                    <div class="content text-center">
+                      <h2 class="title color-white mb--25">{{ section.settings.section_heading }}</h2>
+                      {% if section.settings.section_btn_url %}
+                        <a
+                          id="btn-order"
+                          class="edy-btn radius-round replace-url button-width-30"
+                          href="{{ section.settings.section_btn_url }}"
+                        >
+                          <span class="btn-text">{{ section.settings.section_btn_label }}</span>
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Landing2 Try Eddie",
-    "settings": [],
-    "presets": [
-      {
-        "name": "Landing2 Try Eddie",
-        "category": "Landing2"
-      }
-    ]
-  }
+{
+  "name": "Landing2 Try Eddie",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Try Eddie Heading",
+      "default": "Join 4000+ happy Eddie customers"
+    },
+    {
+      "type": "text",
+      "id": "section_btn_label",
+      "label": "Button Label",
+      "default": "Try Eddie Now"
+    },
+    {
+      "type": "url",
+      "id": "section_btn_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Landing2 Try Eddie",
+      "category": "Landing2"
+    }
+  ]
+}
 {% endschema %}

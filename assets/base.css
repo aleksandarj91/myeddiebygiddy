@@ -1362,6 +1362,12 @@ button.shopify-payment-button__button--unbranded {
   width: 100%;
 }
 
+.button-width-30 {
+  display: flex;
+  width: 30%;
+
+}
+
 .button--half-width {
   display: flex;
   justify-content: center;
